@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+    --color-primary: #0b4b86;
+    --color-secondary: #313a4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    color: var(--color-secondary);
+    background: rgb(230, 239, 252);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: 0.3s;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background: rgba(104, 147, 240, 0.1);
+    padding-bottom: 15px;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+nav {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.nav-bar .container {
+    display: flex;
+}
+
+.nav-bar .container .nav-logo {
+    justify-self: left;
+    flex: 1;
+}
+
+.nav-bar .container .nav-menu {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.nav-bar .container .nav-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bar .container .nav-menu ul li {
+    padding: 0 10px;
+}
+
+/* Search section */
+/* 
+.search {
+    background: linear-gradient(
+        rgba(168, 177, 226, 0.45), 
+        rgba(218, 218, 218, 0.45)
+      ), url('/images/surveillance-block.png');
+} */
+
+.search .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+.slogan {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.search-bar {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+
+.search-bar form .form-control {
+    display: inline;
+}
+
+.form-control {
+    line-height: 2.5rem;
+    padding: 0.5rem 0.5rem;
+    margin: 3px;
+}
+
+.form-control input[type="text"] {
+    border: 0;
+    outline: none;
+    width: 83%;
+    padding-left: 10px;
+    line-height: inherit;
+    font-size: 1.0rem;
+    background: transparent;
+    color: var(--color-secondary);
+}
+
+.form-control ::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.form-control .fas {
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.search-buttons {
+    margin-bottom: 35px;
+}
+
+.search-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-message a {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-bottom ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer-bottom-a,
+.footer-bottom-b {
+    flex: 1;
+}
+
+.footer-bottom-a ul {
+    text-align: left;
+}
+
+.footer-bottom-b ul {
+    text-align: right;
+}
+
+/* Utility */
+.btn {
+    padding: 10px;
+    margin: 0 1rem;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color-secondary);
+}
+
+.btn:hover {
+    background: var(--color-secondary);
+    color: rgb(230, 239, 252)   ;
+}
