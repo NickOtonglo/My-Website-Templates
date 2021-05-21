@@ -20,11 +20,75 @@
                     <li><a href="#">History</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#"><i class="fas fa-question-circle"></i></a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                    <li><i id="open-nav-drawer" class="fas fa-bars"></i></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="nav-drawer">
+        <i id="close-nav-drawer" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <!-- Account -->
+            <p>Account</p>
+            <ul>
+                <li><a href=""><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                <li><a href=""><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                <li><a href=""><i class="fas fa-ghost"></i> Anonymous Auth</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category apps">
+            <!-- Apps and services -->
+            <p>Apps & Services</p>
+            <ul>
+                <div>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Mail</a></li>
+                    <li><a href="#"><i class="fas fa-paper-plane"></i> Messenger</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> Video Call</a></li>
+                    <li><a href="#"><i class="fas fa-handshake"></i> Meetings</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i> Work Suite</a></li>
+                    <li><a href="#"><i class="fas fa-file-contract"></i> Docs</a></li>
+                </div>
+                <div>
+                    <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> News App</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+                    <li><a href="#"><i class="fas fa-cloud"></i> Cloud</a></li>
+                    <li><a href="#"><i class="fas fa-gamepad"></i> Games</a></li>
+                    <li><a href="#"><i class="fas fa-tv "></i> Stream</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <!-- Other services -->
+            <p>Other Services</p>
+            <ul>
+                <li><a href="#">Migrate to us</a></li>
+                <li><a href="#">Integrate our apps & services</a></li>
+                <li><a href="#">Freedom API</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <!-- Links -->
+            <p>Links</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <!-- Support -->
+            <p>Support</p>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support articles</a></li>
+                <li><a href="#">Contact a representative</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Search section -->
     <section class="search">
@@ -66,6 +130,7 @@
                     <ul>
                         <li><a href="#">Advertising</a></li>
                         <li><a href="#">Business</a></li>
+                        <li><a href="#">Partners</a></li>
                         <li><a href="#">SEO</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
@@ -80,5 +145,6 @@
             </div>
         </div>
     </footer>
+    <script src="nav-drawer.js"></script>
 </body>
 </html>
