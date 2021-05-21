@@ -105,7 +105,7 @@ nav {
 .nav-drawer {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background: var(--color-primary);
@@ -197,34 +197,41 @@ nav {
 .search-bar {
     margin: auto;
     margin-bottom: 25px;
-    width: 50%;
+    width: 600px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background: transparent;
 }
 
-.search-bar form .form-control {
-    display: inline;
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .form-control {
-    line-height: 2.5rem;
+    line-height: 1.7rem;
     padding: 0.5rem 0.5rem;
     margin: 3px;
+    flex: 0.3;
+}
+
+.form-control:first-child {
+    flex: 5;
+}
+
+.form-control ::placeholder {
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .form-control input[type="text"] {
     border: 0;
     outline: none;
-    width: 83%;
     padding-left: 10px;
     line-height: inherit;
     font-size: 1.0rem;
     background: transparent;
     color: var(--color-secondary);
-}
-
-.form-control ::placeholder {
-    color: rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 .form-control .fas {
@@ -244,6 +251,7 @@ nav {
 
 .search-message a {
     font-size: 1rem;
+    text-align: center;
 }
 
 /* Footer */
@@ -295,4 +303,82 @@ footer .container {
 .btn:hover {
     background: var(--color-secondary);
     color: rgb(230, 239, 252)   ;
+}
+
+/* Media queries */
+@media(max-width: 915px){
+    footer {
+        position: static;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-message {
+        padding-top: 50px;
+    }
+
+    .footer-top {
+        padding-bottom: 45px;
+    }
+
+    .footer-bottom {
+        align-items: stretch;
+    }
+
+    .footer-bottom ul li {
+        display: block;
+        padding: 3px;
+    }
+
+    .footer-bottom-a ul,
+    .footer-bottom-b ul {
+        text-align: center;
+    }
+}
+
+@media(max-width: 660px) {
+    .nav-bar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo {
+        margin: 25px;
+        font-size: 1.8rem;
+    }
+
+    .nav-bar .container .nav-menu ul li {
+        padding: 0 25px;
+    }
+    
+    .search .container {
+        padding: 100px 0;
+    }
+}
+
+@media(max-height: 750px) {
+    footer {
+        position: static;
+    }
+
+    .footer-top {
+        padding-bottom: 45px;
+    }
+
+    .footer-bottom {
+        align-items: stretch;
+    }
+
+    .footer-bottom-a ul,
+    .footer-bottom-b ul {
+        text-align: center;
+    }
+}
+
+@media(max-height: 500px) {
+    .search .container {
+        padding: 40px;
+    }
 }
