@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 9px 17px;
+    border: 1px solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav .container {
+    padding: 20px 70px;
+    display: flex;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+footer a {
+    color: #ddd;
+    padding: 0 50px;
+    padding-bottom: 0;
+}
+
+/* Header */
+.header {
+    background: rgba(0, 0, 0, 0.2) url('images/showcase.jpg') no-repeat center center;
+    filter: opacity(0.9);
+    color: #fff;
+    min-height: 450px;
+}
+
+/* Nav */
+.nav-logo {
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+.nav-logo h2 {
+    text-shadow: 2px 2px 3px #ddd;
+    color: #fff;
+}
+
+.nav-menu {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    line-height: 1.5rem;
+    margin: 0 16px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-menu a:hover {
+    text-shadow: 1px 0 1.65px;
+}
+
+/* Showcase */
+.showcase {
+    padding: 150px;
+}
+
+.showcase p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+}
+
+.showcase button {
+    border-color: #fff;
+    color: #fff;
+    transition: 0.2s;
+    display: block;
+    margin: auto;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+
+.showcase button:hover {
+    background: #ddd;
+    color: #333;
+    text-shadow: 1px 0 0 #333;
+}
+
+/* About */
+.about {
+    padding: 70px 100px;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+.about p {
+    line-height: 1.55rem;
+    font-size: 1.1rem;
+}
+
+/* Services */
+.services {
+    padding: 70px 100px;
+    background: #333;
+    color: #ccc;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .card {
+    width: 263px;
+    margin: 2.5%;
+    text-align: center;
+    background:  rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.services .card:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.services .card h4 {
+    padding: 12px;
+}
+
+.services .card p {
+    padding: 16px;
+    padding-top: 0;
+}
+
+/* Partners */
+.partners {
+    padding: 100px;
+}
+
+.partners-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.partners-list a:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer-top {
+    background: #333;
+    padding: 20px;
+}
+
+.footer-top .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-top .links ul {
+    display: flex;
+}
+
+.footer-top a {
+    margin: 10px;
+}
+
+.footer-top a:hover {
+    text-shadow: 1px 0 1.65px;
+}
+
+.footer-bottom {
+    background: #222;
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+}
+
+@media(max-width: 1110px) {
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav .nav-logo {
+        padding: 25px;
+    }
+
+    .nav-menu {
+        text-align: center;
+    }
+
+    .services .cards {
+        justify-content: center;
+    }
+
+    .footer-top .links {
+        flex-direction: column;
+    }
+
+    .footer-top .links ul {
+        padding: 20px 0;
+    }
+}
+
+@media(max-width: 850px) {
+    .partners {
+        padding: 100px 50px;
+    }
+
+    .partners-list a {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 660px) {
+    nav .container {
+        padding: 20px 5px;
+    }
+
+    .header {
+        min-height: 500px;
+    }
+
+    .nav-menu a {
+        line-height: 2rem;
+    }
+
+    .showcase {
+        padding: 15px;
+    }
+
+    .about, .services, .partners {
+        padding: 50px;
+    }
+
+    .footer-top {
+        padding: 5px 20px;
+    }
+
+    .footer-top .links {
+        flex-direction: row;
+    }
+
+    .footer-top .links ul {
+        display: inline;
+    }
+
+    .footer-top .links ul li {
+        padding: 15px;
+    }
+}
