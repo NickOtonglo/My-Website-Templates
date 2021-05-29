@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+section {
+    padding: 60px 25px;
+}
+
+footer {
+    background: #111;
+    padding: 15px 20px;
+    color: #eee;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Divider */
+.divider i {
+    display: inline;
+    position: relative;
+    text-align: center;
+    top: -12px;
+    left: 50%;
+    background: white;
+    /* margin: 0 4px; */
+}
+
+.divider hr {
+    width: 80%;
+    margin: auto;
+    border-color: #111;
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    min-height: 420px;
+    background: url('images/showcase.jpg') no-repeat right;
+    background-size: 100%;
+    color: #fff;
+}
+
+.header a {
+    color: #eee;
+    text-decoration: none;
+}
+
+/* Navbar */
+.nav-logo {
+    font-size: 1.4rem;
+    padding: 0 15px;
+}
+
+.nav-logo h2 {
+    border: 1px solid #eee;
+    padding: 5px 8px;
+}
+
+.nav-logo h2:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu ul li {
+    display: inline;
+    padding: 15px;
+}
+
+.nav-menu ul li a {
+    padding: 3px;
+}
+
+.nav-menu ul li a:hover {
+    border-bottom: 2px solid;
+}
+
+/* Showcase */
+.showcase {
+    text-align: center;
+    padding: 80px 50px;
+}
+
+.showcase h1 {
+    display: inline;
+    border-bottom: 4px solid rgb(192, 58, 18);
+    padding-bottom: 15px;
+}
+
+.showcase p {
+    padding-top: 60px;
+}
+
+/* About */
+#about {
+    text-align: center;
+}
+
+#about .container h2 {
+    /* display: inline; */
+    font-size: 2.2rem;
+    padding: 20px;
+}
+
+#about .container p {
+    padding: 15px;
+}
+
+/* Services */
+#services {
+    text-align: center;
+}
+
+#services .container h2 {
+    font-size: 2.2rem;
+    padding: 20px;
+}
+
+#services .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px 10%;
+    padding: 20px;
+}
+
+#services .card i {
+    padding: 30px;
+}
+
+#services .card p {
+    padding: 0 15px 15px;
+}
+
+/* Partners */
+#partners {
+    text-align: center;
+}
+
+#partners .container h2 {
+    font-size: 2.2rem;
+    padding: 20px;
+}
+
+#partners .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Team */
+#team {
+    text-align: center;
+}
+
+#team .container h2 {
+    font-size: 2.2rem;
+    padding: 20px;
+}
+
+#team .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#team .card img {
+    width: 170px;
+    margin: auto;
+    padding: 10px;
+}
+
+#team .card h3,
+#team .card p {
+    padding: 0 15px 10px;
+}
+
+/* Contact */
+#contact  .container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 20px;
+}
+
+#contact .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact form */
+.contact-form form input {
+    display: block;
+    padding: 7px;
+    margin: 12px;
+}
+
+.contact-form form input::placeholder {
+    color: rgba(192, 58, 18, 0.7);
+}
+
+.contact-form input[type="submit"] {
+    display: inline;
+    float: right;
+    background: rgb(192, 58, 18);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.form-control {
+    width: 270px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(192, 58, 18);
+}
+
+/* Contact info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-info p,
+.contact-info a,
+.contact-info div {
+    width: 100%;
+}
+
+.contact-info div a {
+    margin: 0 20px;
+}
+
+.contact-info div a:first-child {
+    margin-left: 0;
+}
+
+/* Cards */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Media queries */
+@media(max-width: 1160px) {
+    #services .card p {
+        padding: 0 8px 15px;
+    }
+
+    #services .cards {
+        gap: 40px;
+    }
+}
+
+@media(max-width: 890px) {
+    body {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 10px 25px 30px;
+    }
+
+    section .container h2 {
+        font-size: 1.7rem;
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        order: 2;
+        margin-top: 20px;
+    }
+    
+    .nav-menu ul li {
+        padding: 15px 7px;
+    }
+}
+
+@media(max-width: 720px) {
+    .header {
+        background-size: auto;
+        background-position: 45% center;
+    }
+    
+    #services .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #team .cards {
+        justify-content: center;
+        padding: 0;
+    }
+
+    #team .card {
+        margin: 40px;
+    }
+
+    #contact .container div {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .contact-form {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 400px;
+    }
+
+    .contact-info {
+        position: absolute;
+        left: -100px;
+    }
+
+    .contact-info div a {
+        margin: 5px 0;
+    }
+}
+
+@media(max-width: 700px) {
+    #team .card {
+        margin: 12px;
+        padding: 7px;
+    }
+
+    #team .card img {
+        width: 140px;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 520px) {
+    .showcase {
+        text-align: center;
+        padding: 80px 30px;
+    }
+
+    .showcase h1 {
+        font-size: 1.8rem;
+    }
+
+    #services .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #team .card {
+        margin: 18px;
+        padding: 10px;
+    }
+
+    #team .card img {
+        width: 280px;
+        margin: auto;
+        padding: 20px;
+    }
+}
