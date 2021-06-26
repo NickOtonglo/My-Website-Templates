@@ -1,0 +1,73 @@
+.btn-link {
+    padding: 12px;
+    background: var(--color-background-main);
+    border-radius: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Main card */
+
+.card {
+    margin: 35px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.card a:hover {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.card .image {
+    position: relative;
+    background: url(../images/thumb_default.jpg) center center;
+    height: 225px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .image img {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+.card .card-info {
+    padding: 8px 14px;
+}
+
+.card-info h4 {
+    font-size: 1.1rem;
+}
+
+.card-info .location {
+    font-size: 1.1rem;
+}
+
+.card-info .price {
+    font-size: 1.15rem;
+}
+
+.card-info .timestamp {
+    font-size: 0.8rem;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.7rem;
+}

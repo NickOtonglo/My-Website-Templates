@@ -190,7 +190,7 @@ tr:first-child:hover {
 
 .nav-drawer .container {
     overflow-y: auto;
-    height: 91.1vh;
+    height: 94.1vh;
     padding-bottom: 15px;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -372,6 +372,12 @@ nav ul li {
 }
 
 /* Media queries */
+@media(min-width: 1430px) {
+    .nav-drawer-logo {
+        width: 25vw;
+    }
+}
+
 @media(max-width: 1300px) {
     .content-table {
         flex: 2;
