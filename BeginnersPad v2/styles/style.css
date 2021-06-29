@@ -89,7 +89,7 @@ nav .nav-menu .badge {
     display: inline-block;
     margin: 0 10px;
 }
-
+/* Page - / */
 /* Showcase */
 #showcase {
     background: url(../images/city_clipart.png) no-repeat center center;
@@ -121,12 +121,9 @@ nav .nav-menu .badge {
 }
 
 /* Listings */
+/* see "utilities.css" for cards section */
 #listings {
     margin-top: 50px;
-}
-
-#listings .container .section-more {
-    text-align: right;
 }
 
 /* Marketing */
@@ -149,26 +146,32 @@ nav .nav-menu .badge {
 }
 
 /* Links */
-#links {
-    padding: 0 50px;
-    background: var(--color-tertiary);
+/* see "utilities.css" */
+
+/* Page - /help */
+.section-help .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
 }
 
-#links div {
-    padding: 70px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.section-help .help-links, .section-help .help-form {
+    padding: 0 25px;
 }
 
-#links div:nth-child(2) {
-    align-self: flex-start;
+.section-help p {
+    text-align: justify;
 }
 
-#links div a {
-    padding: 4px 0;
-    font-size: 1.1rem;
+.section-help a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.section-help .link-item {
+    margin: 15px 0;
+}
+
+/* Help form */
+.section-help .help-form form {
+    border: 1px solid var(--color-form-border);
 }

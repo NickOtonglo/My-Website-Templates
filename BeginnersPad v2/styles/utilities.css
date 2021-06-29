@@ -1,7 +1,12 @@
+/* Params */
+:root {
+    --rounded-btn-radius: 25px;
+}
+
 .btn-link {
     padding: 12px;
     background: var(--color-background-main);
-    border-radius: 25px;
+    border-radius: var(--rounded-btn-radius);
 }
 
 .cards {
@@ -10,7 +15,6 @@
 }
 
 /* Main card */
-
 .card {
     margin: 35px;
     border-radius: 20px;
@@ -70,4 +74,85 @@
     text-align: center;
     padding: 15px 0;
     font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+/* Links */
+#links {
+    padding: 0 50px;
+    background: var(--color-tertiary);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* #links div {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#links div:nth-child(2) {
+    align-self: flex-start;
+} */
+
+#links div {
+    padding: 70px 0;
+    display: inline-block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#links div a {
+    display: block;
+    margin: 18px 0;
+    font-size: 1.1rem;
+}
+
+/* Section .section-more link */
+.container .section-more {
+    text-align: right;
+}
+
+/* Form */
+form {
+    padding: 15px;
+}
+
+form .btn-submit {
+    border-radius: var(--rounded-btn-radius);
+    padding: 9px 14px;
+    margin-top: 15px;
+    border: 1px solid var(--color-font);
+    color: var(--color-font);
+    background: none;
+    font-size: 0.9rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+form .btn-submit:hover {
+    background: var(--color-font);
+    color: var(--color-background-main);
+}
+
+.form-group {
+    padding-top: 5px;
+}
+
+.form-group * {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    margin: 3px 0;
+    outline: none;
+    font-family: 'Heebo', sans-serif;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid var(--color-form-border);
+    padding: 6px;
 }
