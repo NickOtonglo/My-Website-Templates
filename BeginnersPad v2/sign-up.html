@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/default-theme.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Beginners Pad</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="index.html">Beginners Pad</a></h1>
+        <ul class="nav-menu">
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li class="selected"><a href="sign-up.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="sign-in.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="section-auth">
+        <div class="container">
+             <!-- Form -->
+            <div class="auth-form">
+                <h3 class="section-title">Sign up</h3>
+                <form>
+                    <div class="form-group name">
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="form-group name">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Phone number (+254xxxxxxxxx)</label>
+                        <input type="text" name="telephone" id="telephone">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username (must be unique)</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_type">Account type</label>
+                        <select name="user_type" id="user_type">
+                            <option value="" selected>--select account type--</option>
+                            <option value="5">Customer</option>
+                            <option value="4">Property lister</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password_confirmation">Confirm password</label>
+                        <input type="password" name="password_confirmation" id="password_confirmation">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="terms" id="terms" >
+                            <p class="form-check-label">
+                                I agree to the <a href="#">Terms and Conditions of Beginners Pad</a>
+                            </p>
+                        </div>
+                    </div>
+                    <input class="btn-submit" type="button" value="Sign up">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2021 Beginners Pad</p>
+    </footer>
+</body>
+</html>

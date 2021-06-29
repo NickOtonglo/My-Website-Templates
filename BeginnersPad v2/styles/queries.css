@@ -1,0 +1,5 @@
+@media(max-height: 573px) {
+    .page-min-height {
+        display: none;
+    }
+}

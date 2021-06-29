@@ -1,6 +1,8 @@
 /* Params */
 :root {
     --rounded-btn-radius: 25px;
+    --container-width-default: 80%;
+    --section-auth-container-width: 600px;
 }
 
 .btn-link {
@@ -154,5 +156,29 @@ form .btn-submit:hover {
     background: transparent;
     border-radius: 3px;
     border: 1px solid var(--color-form-border);
-    padding: 6px;
+    padding: 6px 16px;
+}
+
+.form-group select {
+    padding: 6px 10px;
+}
+
+.form-group .form-check {
+    text-align: left;
+}
+
+.form-group .form-check * {
+    display: inline;
+}
+
+.form-group .form-check input[type=checkbox] {
+    display: inline;
+    width: 15px;
+}
+
+/* No scroll footer */
+.page-min-height {
+    position:absolute;
+    bottom:0;
+    width:100%;
 }

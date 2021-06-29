@@ -49,7 +49,7 @@ footer {
 
 /* Container */
 .container {
-    width: 80%;
+    width: var(--container-width-default);
     margin: auto;
 }
 
@@ -88,6 +88,11 @@ nav .nav-menu {
 nav .nav-menu .badge {
     display: inline-block;
     margin: 0 10px;
+}
+
+nav .nav-menu .badge li.selected a {
+    font-weight: bold;
+    color: var(--color-primary);
 }
 /* Page - / */
 /* Showcase */
@@ -174,4 +179,18 @@ nav .nav-menu .badge {
 /* Help form */
 .section-help .help-form form {
     border: 1px solid var(--color-form-border);
+}
+
+/* Auth (sign-up & sign-in) */
+.section-auth .container {
+    width: var(--section-auth-container-width);
+}
+
+.section-auth .auth-form form {
+    border: 1px solid var(--color-form-border);
+}
+
+.link-forgot-password {
+    text-align: center;
+    margin: 10px 0
 }
