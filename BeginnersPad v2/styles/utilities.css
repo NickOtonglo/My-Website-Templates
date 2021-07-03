@@ -25,12 +25,12 @@
     transition: 0.3s;
 }
 
-.card:hover {
+.card:hover, .card-unit:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
     transform: translateY(-5px);
 }
 
-.card a:hover {
+.card a:hover, .card-unit a:hover {
     text-decoration: none;
     font-weight: normal;
 }
@@ -69,6 +69,41 @@
 
 .card-info .timestamp {
     font-size: 0.8rem;
+}
+
+/* Unit cards */
+.card-unit {
+    margin: 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.card-unit a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.card-unit .unit-details {
+    padding: 15px;
+    width: 60%;
+}
+
+.unit-details .label {
+    font-size: 0.9rem;
+}
+
+.unit-details .timestamp {
+    font-size: 0.85rem;
+}
+
+.card-unit .thumb {
+    background: url('../images/thumb_unit.jpg') no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: 40%;
+    border-radius: 0 7px 7px 0;
 }
 
 /* Section title */
@@ -149,7 +184,7 @@ form .btn-submit:hover {
     font-size: 1rem;
     margin: 3px 0;
     outline: none;
-    font-family: 'Heebo', sans-serif;
+    font-family: inherit;
 }
 
 .form-group input, .form-group select, .form-group textarea {
@@ -181,4 +216,29 @@ form .btn-submit:hover {
     position:absolute;
     bottom:0;
     width:100%;
+}
+
+/* Select dropdown with  button styling */
+select.btn-dropdown {
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid var(--color-form-border);
+    outline: none;
+}
+
+.container-btn-dropdown {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Maps */
+.listing-map #map {
+    border: 1px solid #666;
+    margin: 15px;
+    padding: 10px;
+    height: 300px;
 }

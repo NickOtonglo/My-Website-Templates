@@ -104,13 +104,23 @@ nav .nav-menu .badge li.selected a {
     padding: 0;
 }
 
+.showcase-small {
+    background: url(../images/city_clipart.png) no-repeat center center;
+    filter: opacity(0.9);
+    color: #fff;
+    height: 200px;
+    padding: 0;
+}
+
 .showcase-overlay {
     background: rgba(136, 105, 162, 0.7);
     min-height: inherit;
+    height: inherit;
 }
 
 /* This <div> is solely purposed to center its contents */
-#showcase .container div {
+#showcase .container div,
+.showcase-small .container div {
     position: absolute;
     top: 40%;
     width: inherit;
@@ -119,6 +129,11 @@ nav .nav-menu .badge li.selected a {
 #showcase .container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.showcase-small .container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
 #showcase .container p {
@@ -181,6 +196,7 @@ nav .nav-menu .badge li.selected a {
     border: 1px solid var(--color-form-border);
 }
 
+/* Page - /sign-up & /sign-in */
 /* Auth (sign-up & sign-in) */
 .section-auth .container {
     width: var(--section-auth-container-width);
@@ -193,4 +209,212 @@ nav .nav-menu .badge li.selected a {
 .link-forgot-password {
     text-align: center;
     margin: 10px 0
+}
+
+#form-auth .form-group:first-child {
+    display: flex;
+} 
+
+#form-auth .grp-name:first-child {
+    margin-right: 5px;
+}
+
+#form-auth .grp-name:last-child {
+    margin-left: 5px;
+}
+
+/* View listing */
+.showcase-listing {
+    min-height: 400px;
+    padding: 0;
+    position: relative;
+}
+
+.showcase-listing-img-group {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    min-height: inherit;
+}
+
+.showcase-listing-img-1 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.showcase-listing-img-2 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.showcase-listing-img-3 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+}
+
+.showcase-listing-img-4 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+}
+
+.showcase-listing-img-5 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+}
+
+.showcase-listing-img-6 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+}
+
+.showcase-listing-img-7 {
+    background: url('../images/thumb_default.jpg') right center no-repeat;
+    background-size: cover;
+    grid-column: 4 / span 3;
+    grid-row: 3;
+}
+
+.showcase-listing-img-8 {
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+    grid-column: 7 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.showcase-listing .more-images {
+    display: inline-block;
+    padding: 6px;
+    /* margin: 0 auto; */
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--color-background-main);
+    border: 1px dashed var(--color-background-main);
+    background: var(--color-font);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.showcase-listing .more-images:hover {
+    opacity: 1;
+}
+
+.section-listing-primary {
+    padding-bottom: 0;
+}
+
+.listing-info-main .info-name {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-name .name {
+    flex: 9;
+}
+
+.info-name .info-actions {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.info-name .info-actions i {
+    padding: 0 10px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.info-name .info-actions i:hover {
+    color: var(--color-primary);
+}
+
+.listing-info-main .location {
+    font-size: 1.2rem;
+}
+
+.info-rating-grp .stars, .info-rating-grp .rating {
+    display: inline-block;
+}
+
+.info-rating-grp .rating {
+    margin-right: 10px;
+}
+
+.listing-info-aux {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    border: 1px solid var(--color-font);
+    padding: 20px;
+    margin: 20px;
+}
+
+.listing-info-aux .aux-grp {
+    padding: 0 30px;
+    border-right: 1px solid var(--color-font);
+}
+
+.listing-info-aux .aux-grp:last-child {
+    border: none;
+}
+
+.listing-info-description {
+    text-align: center;
+}
+
+.section-listing-secondary .panel-grp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.panel-grp .panel {
+    padding: 0 15px;
+}
+
+.panel-grp .panel > * {
+    margin-bottom: 30px;
+}
+
+/* see "utilities.css" for cards section */
+
+.listing-features .features,
+.listing-nearby-places .place,
+.listing-reviews .review-item {
+    border: 1px solid #666;
+    margin: 15px;
+    padding: 10px;
+    max-height: 400px;
+}
+
+.listing-nearby-places .place:hover,
+.listing-reviews .review-item:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+    border-color: var(--color-tertiary);
+}
+
+.features ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: inherit;
+}
+
+.features ul li {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.listing-nearby-places .place .distance {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.listing-nearby-places .place .location {
+    font-size: 1.1rem;
 }
