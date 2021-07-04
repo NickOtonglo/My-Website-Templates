@@ -382,6 +382,32 @@ nav .nav-menu .badge li.selected a {
 
 /* see "utilities.css" for cards section */
 
+.panel .lister-details .details {
+    border: 1px solid #666;
+    margin: 15px;
+    padding: 10px;
+}
+
+.lister-details .details .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lister-details .details .header .timestamp {
+    font-size: 0.9rem;
+}
+
+.lister-details .details .header img {
+    width: 90px;
+    padding: 6px;
+    border: 1px solid #666;
+}
+
+.lister-details .details .info-rating-grp {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
 .listing-features .features,
 .listing-nearby-places .place,
 .listing-reviews .review-item {
@@ -417,4 +443,5 @@ nav .nav-menu .badge li.selected a {
 
 .listing-nearby-places .place .location {
     font-size: 1.1rem;
+    font-style: italic;
 }
