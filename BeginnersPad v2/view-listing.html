@@ -243,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="section-more">
-                                <a href="#">View lister profile <i class="fas fa-chevron-right"></i></a>
+                                <a href="#">View profile <i class="fas fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -265,26 +265,26 @@
                         </div>
                     </div>
                     <div class="listing-map">
-                        <h3>Map goes here</h3>
+                        <h3>Location</h3>
                         <div id="map"></div>
                     </div>
                     <div class="listing-nearby-places">
                         <h3>Nearby schools</h3>
                         <div class="places-list">
-                            <div class="place">
-                                <h3 class="title">Place name</h3>
+                            <div class="place" id="sch1">
+                                <h3 class="title" id="sch1-title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
                             </div>
-                            <div class="place">
-                                <h3 class="title">Place name</h3>
+                            <div class="place" id="sch2">
+                                <h3 class="title" id="sch2-title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
                             </div>
-                            <div class="place">
-                                <h3 class="title">Place name</h3>
+                            <div class="place" id="sch3">
+                                <h3 class="title" id="sch3-title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
@@ -294,19 +294,19 @@
                     <div class="listing-nearby-places">
                         <h3>Nearby markets</h3>
                         <div class="places-list">
-                            <div class="place">
+                            <div class="place" id="mkt1">
                                 <h3 class="title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
                             </div>
-                            <div class="place">
+                            <div class="place" id="mkt2">
                                 <h3 class="title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
                             </div>
-                            <div class="place">
+                            <div class="place" id="mkt3">
                                 <h3 class="title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
@@ -317,19 +317,19 @@
                     <div class="listing-nearby-places">
                         <h3>Nearby bus stops</h3>
                         <div class="places-list">
-                            <div class="place">
+                            <div class="place" id="bus1">
                                 <h3 class="title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
                             </div>
-                            <div class="place">
+                            <div class="place" id="bus2">
                                 <h3 class="title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
                                 <p class="distance">0 km</p>
                             </div>
-                            <div class="place">
+                            <div class="place" id="bus3">
                                 <h3 class="title">Place name</h3>
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
                                 <p class="location">Location, Location, Location</p>
@@ -410,6 +410,9 @@
         <p>&copy; 2021 Beginners Pad</p>
     </footer>
 
+    <!-- <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&libraries=places&callback=initMap">
+    </script> -->
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&callback=initMap">
     </script>
