@@ -25,12 +25,13 @@
     transition: 0.3s;
 }
 
-.card:hover, .card-unit:hover {
+.card:hover, .card-sm:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
     transform: translateY(-5px);
 }
 
-.card a:hover, .card-unit a:hover {
+.card a:hover,
+.card-sm a:hover {
     text-decoration: none;
     font-weight: normal;
 }
@@ -77,39 +78,52 @@
     font-size: 0.8rem;
 }
 
-/* Unit cards */
-.card-unit {
+/* Card v2 & Unit cards */
+.card-sm {
     margin: 15px;
     border-radius: 7px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
 
-.card-unit a {
+.card-sm a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
 }
 
-.card-unit .unit-details {
+.card-sm .details {
     padding: 15px;
     width: 60%;
 }
 
-.unit-details .label {
+.card-sm .details .label {
     font-size: 0.9rem;
 }
 
-.unit-details .timestamp {
+.card-sm .details .timestamp {
     font-size: 0.85rem;
+}
+
+.card-sm .info-rating-grp {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.card-sm .thumb {
+    background-size: cover;
+    height: inherit;
+    width: 40%;
 }
 
 .card-unit .thumb {
     background: url('../images/thumb_unit.jpg') no-repeat;
-    background-size: cover;
-    height: inherit;
-    width: 40%;
     border-radius: 0 7px 7px 0;
+}
+
+.card-2 .thumb {
+    background: url('../images/thumb_default.jpg') no-repeat center;
+    border-radius: 7px 0 0 7px;
 }
 
 /* Section title */

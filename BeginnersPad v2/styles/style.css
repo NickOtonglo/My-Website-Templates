@@ -367,7 +367,8 @@ nav .nav-menu .badge li.selected a {
     text-align: center;
 }
 
-.section-listing-secondary .panel-grp {
+.section-listing-secondary .panel-grp,
+.section-unit-secondary .panel-grp {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
