@@ -480,6 +480,7 @@ nav .nav-menu .badge li.selected a {
 .section-unit-main .container .main-info {
     margin: 8px;
     padding: 0 15px;
+    align-self: center;
 }
 
 .section-unit-main .main-info h2 {
@@ -493,12 +494,29 @@ nav .nav-menu .badge li.selected a {
 
 .section-unit-main .main-info .timestamp {
     font-size: 0.9rem;
-    margin: 8px 0;
+    margin: 8px 0 15px;
 }
 
-.panel .features {
+.panel .features,
+.unit-apply .apply-grp {
     border: 1px solid #666;
     margin: 15px;
     padding: 10px;
     max-height: 400px;
+}
+
+/* see "utilities.css" for buttons */
+.unit-apply .apply-grp .apply,
+.unit-apply .apply-grp .tour {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.apply-grp p {
+    margin: 8px 0 5px;
+}
+
+.apply-grp button {
+    font-size: 1.1rem;
 }

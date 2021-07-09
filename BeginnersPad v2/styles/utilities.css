@@ -5,10 +5,16 @@
     --section-auth-container-width: 600px;
 }
 
-.btn-link {
-    padding: 12px;
-    background: var(--color-background-main);
+button, .btn {
+    padding: 9px 14px;
     border-radius: var(--rounded-btn-radius);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-link {
+    background: none;
+    border: 1px solid var(--color-font);
 }
 
 .cards {
@@ -178,15 +184,10 @@ form {
 }
 
 form .btn-submit {
-    border-radius: var(--rounded-btn-radius);
-    padding: 9px 14px;
     margin-top: 15px;
-    border: 1px solid var(--color-font);
     color: var(--color-font);
-    background: none;
     font-size: 0.9rem;
     font-weight: normal;
-    cursor: pointer;
 }
 
 form .btn-submit:hover {
@@ -280,4 +281,14 @@ select.btn-dropdown {
 
 .more-images:hover {
     opacity: 1;
+}
+
+/* Primary button */
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
 }
