@@ -262,3 +262,22 @@ select.btn-dropdown {
     padding: 10px;
     height: 300px;
 }
+
+/* More images button */
+.more-images {
+    display: inline-block;
+    padding: 6px;
+    /* margin: 0 auto; */
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--color-background-main);
+    border: 1px dashed var(--color-background-main);
+    background: var(--color-font);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.more-images:hover {
+    opacity: 1;
+}
