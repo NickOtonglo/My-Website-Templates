@@ -184,10 +184,15 @@ form {
 }
 
 form .btn-submit {
+    border-radius: var(--rounded-btn-radius);
+    padding: 9px 14px;
     margin-top: 15px;
+    border: 1px solid var(--color-font);
     color: var(--color-font);
+    background: none;
     font-size: 0.9rem;
     font-weight: normal;
+    cursor: pointer;
 }
 
 form .btn-submit:hover {
