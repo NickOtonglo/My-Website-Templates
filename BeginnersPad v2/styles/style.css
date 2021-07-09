@@ -481,3 +481,24 @@ nav .nav-menu .badge li.selected a {
     margin: 8px;
     padding: 0 15px;
 }
+
+.section-unit-main .main-info h2 {
+    font-size: 1.9rem;
+    margin: 15px 0;
+}
+
+.section-unit-main .main-info .price {
+    font-size: 1.5rem;
+}
+
+.section-unit-main .main-info .timestamp {
+    font-size: 0.9rem;
+    margin: 8px 0;
+}
+
+.panel .features {
+    border: 1px solid #666;
+    margin: 15px;
+    padding: 10px;
+    max-height: 400px;
+}
