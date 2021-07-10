@@ -405,8 +405,7 @@ nav .nav-menu .badge li.selected a {
     max-height: 400px;
 }
 
-.listing-nearby-places .place:hover,
-.listing-reviews .review-item:hover {
+.listing-nearby-places .place:hover {
     color: var(--color-primary);
     cursor: pointer;
     border-color: var(--color-tertiary);
@@ -527,12 +526,16 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* Page - /view-listing-reviews */
-.listing-info-header .header-grp {
+.section-listing-info-header {
+    padding-bottom: 0;
+}
+
+.section-listing-info-header .header-grp {
     height: 170px;
     position: relative;
 }
 
-.listing-info-header .header-grp .thumb {
+.section-listing-info-header .header-grp .thumb {
     width: 220px;
     height: inherit;
     background: url('../images/thumb_default.jpg') no-repeat;
@@ -540,7 +543,7 @@ nav .nav-menu .badge li.selected a {
     display: inline-block;
 }
 
-.listing-info-header .header-grp .details {
+.section-listing-info-header .header-grp .details {
     display: inline-block;
     margin: 0 15px;
     position: absolute;
@@ -557,9 +560,24 @@ nav .nav-menu .badge li.selected a {
     font-size: 1.2rem;
 }
 
-.listing-info-header .container .section-more {
+.section-listing-info-header .container .section-more {
     text-align: left;
     margin-top: 15px;
     position: absolute;
     bottom: 15px;
+}
+
+.section-listing-reviews .review-item {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: none;
+    border-bottom: 1px dashed #666;
+}
+
+.section-listing-reviews .review-item:last-child {
+    border-bottom: none;
+}
+
+.section-listing-reviews .review-item .review {
+    text-align: justify;
 }
