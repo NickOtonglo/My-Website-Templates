@@ -201,6 +201,15 @@ nav .nav-menu .badge li.selected a {
     border: 1px solid var(--color-form-border);
 }
 
+/* Page - /view-faqs */
+.section-faqs .item {
+    padding: 15px 0;
+}
+
+.section-faqs .item p {
+    padding-top: 5px;
+}
+
 /* Page - /sign-up & /sign-in */
 /* Auth (sign-up & sign-in) */
 .section-auth .container {
