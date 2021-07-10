@@ -545,4 +545,21 @@ nav .nav-menu .badge li.selected a {
     margin: 0 15px;
     position: absolute;
     top: 15px;
+    height: inherit;
+}
+
+.header-grp .details .timestamp {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.header-grp .details .info-rating-grp {
+    font-size: 1.2rem;
+}
+
+.listing-info-header .container .section-more {
+    text-align: left;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 15px;
 }
