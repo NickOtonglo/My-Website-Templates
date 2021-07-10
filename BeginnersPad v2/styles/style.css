@@ -140,6 +140,11 @@ nav .nav-menu .badge li.selected a {
     margin-bottom: 25px;
 }
 
+#showcase .btn-link {
+    background-color: var(--color-background-main);
+    border: none;
+}
+
 /* Listings */
 /* see "utilities.css" for cards section */
 #listings {
@@ -519,4 +524,25 @@ nav .nav-menu .badge li.selected a {
 
 .apply-grp button {
     font-size: 1.1rem;
+}
+
+/* Page - /view-listing-reviews */
+.listing-info-header .header-grp {
+    height: 170px;
+    position: relative;
+}
+
+.listing-info-header .header-grp .thumb {
+    width: 220px;
+    height: inherit;
+    background: url('../images/thumb_default.jpg') no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.listing-info-header .header-grp .details {
+    display: inline-block;
+    margin: 0 15px;
+    position: absolute;
+    top: 15px;
 }
