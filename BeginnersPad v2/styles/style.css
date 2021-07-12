@@ -61,7 +61,7 @@ nav h1 a {
 nav h1 {
     font-size: 1.4rem;
     line-height: 2.2rem;
-    transition: font-size 0.15s;
+    /* transition: font-size 0.15s; */
     border-width: 2px;
     border-style: double none double none;
     /* border-radius: 2px; */

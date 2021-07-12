@@ -317,7 +317,7 @@ select.btn-dropdown {
 
 .search-bar .search-bar-grp .search-input {
     flex: 9;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 8px 12px;
     background: var(--color-background-main);
     outline: none;
@@ -326,7 +326,7 @@ select.btn-dropdown {
 }
 
 .search-input::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .search-bar .search-bar-grp .search-button {
@@ -334,5 +334,16 @@ select.btn-dropdown {
     display: flex;
     align-self: center;
     justify-content: center;
-    position: relative;
+    padding: 1px;
+    cursor: pointer;
+    /* transition: 0.15s; */
+}
+
+.search-bar .search-bar-grp .search-button:hover {
+    background:#666;
+    color: var(--color-background-main);
+}
+
+.search-button .fa-search {
+    padding: 15px;
 }
