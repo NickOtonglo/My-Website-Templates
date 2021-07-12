@@ -151,6 +151,11 @@ nav .nav-menu .badge li.selected a {
     margin-top: 50px;
 }
 
+#section-listings .search-bar {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
 /* Marketing */
 #marketing .marketing-item {
     padding-top: 20px;
