@@ -307,6 +307,12 @@ select.btn-dropdown {
     justify-content: center;
 }
 
+.search-bar.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .search-bar .search-bar-grp {
     display: flex;
     flex-direction: row;

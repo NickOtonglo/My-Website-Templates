@@ -216,6 +216,10 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* Page - /view-topics */
+.section-topics .search-bar {
+    margin-bottom: 50px;
+}
+
 .section-topics .item {
     padding: 15px 0;
 }
@@ -608,3 +612,4 @@ nav .nav-menu .badge li.selected a {
 .section-listing-reviews .review-item .review {
     text-align: justify;
 }
+
