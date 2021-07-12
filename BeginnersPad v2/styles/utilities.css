@@ -297,3 +297,42 @@ select.btn-dropdown {
 .btn-primary:hover {
     opacity: 0.8;
 }
+
+/* Search bar */
+.search-bar {
+    /* background: black; */
+    height: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.search-bar .search-bar-grp {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 900px;
+    border: 1px solid #666;
+}
+
+.search-bar .search-bar-grp .search-input {
+    flex: 9;
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    background: var(--color-background-main);
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+.search-input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-bar .search-bar-grp .search-button {
+    flex: 1;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+}
