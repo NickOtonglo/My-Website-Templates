@@ -28,7 +28,63 @@ button, .btn {
     opacity: 0.8;
 }
 
+/* Button group (.btn-grp) */
+.btn-grp {
+    display: flex;
+    padding: 8px;
+}
 
+.btn-grp.vertical {
+    flex-direction: column;
+}
+
+.btn-grp.vertical > button {
+    border-bottom: none;
+}
+
+.btn-grp.vertical > button:first-child {
+    border-radius: 15px 15px 0 0;
+}
+
+.btn-grp.vertical > button:last-child {
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid #666;
+}
+
+.btn-grp.horizontal {
+    flex-direction: row;
+}
+
+.btn-grp.horizontal > button {
+    border-right: none;
+}
+
+.btn-grp.horizontal > button:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.btn-grp.horizontal > button:last-child {
+    border-radius: 0 15px 15px 0;
+    border-right: 1px solid #666;
+}
+
+.btn-grp > button {
+    border-radius: 0;
+    border: 1px solid #666;
+    font-size: 1rem;
+    background: var(--color-background-main);
+    transition: background 0.15s;
+}
+
+.btn-grp > button:hover {
+    background: #aaa;
+    /* color: #fff; */
+}
+
+.btn-grp > button.selected {
+    background: #666;
+    color: #fff;
+}
 
 .cards {
     display: grid;
