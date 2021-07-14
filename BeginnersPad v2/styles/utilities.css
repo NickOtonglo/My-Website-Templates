@@ -374,7 +374,7 @@ select.btn-dropdown {
     grid-template-columns: 3fr 1fr;
 }
 
-.section-read.links .item {
+.section-read .item {
     padding: 15px 0;
 }
 
@@ -382,19 +382,19 @@ select.btn-dropdown {
     border-bottom: 1px dashed #666;
 }
 
-.section-read.links .item.item-bottom-border:last-child {
+.section-read .item.item-bottom-border:last-child {
     border-bottom: none;
 }
 
-/* .section-read.links .item h4 {
+/* .section-read .item h4 {
     font-size: 1.1rem;
 } */
 
-.section-read.links .item h5 {
+.section-read .item h5 {
     font-size: 0.9rem;
 }
 
-.section-read.links .item .title-main {
+.section-read .item .title-main {
     margin-top: 12px;
 }
 
