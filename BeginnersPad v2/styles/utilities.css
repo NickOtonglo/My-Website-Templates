@@ -397,3 +397,8 @@ select.btn-dropdown {
 .section-read-links .item .text-main {
     padding: 5px 0;
 }
+
+/* .panel-grp */
+.panel-grp {
+    display: grid;
+}
