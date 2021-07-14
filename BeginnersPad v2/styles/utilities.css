@@ -369,36 +369,36 @@ select.btn-dropdown {
     padding: 40px 0;
 }
 
-/* .section-read-links (e.g. view-topics.html) */
-.section-read-links .panel-grp {
+/* .section-read (e.g. view-topics.html) */
+.section-read.links .panel-grp {
     grid-template-columns: 3fr 1fr;
 }
 
-.section-read-links .item {
+.section-read.links .item {
     padding: 15px 0;
 }
 
-.section-read-links .item.item-bottom-border {
+.section-read.links .item.item-bottom-border {
     border-bottom: 1px dashed #666;
 }
 
-.section-read-links .item.item-bottom-border:last-child {
+.section-read.links .item.item-bottom-border:last-child {
     border-bottom: none;
 }
 
-/* .section-read-links .item h4 {
+/* .section-read.links .item h4 {
     font-size: 1.1rem;
 } */
 
-.section-read-links .item h5 {
+.section-read.links .item h5 {
     font-size: 0.9rem;
 }
 
-.section-read-links .item .title-main {
+.section-read.links .item .title-main {
     margin-top: 12px;
 }
 
-.section-read-links .item .text-main {
+.section-read.links .item .text-main {
     padding: 5px 0;
     overflow: hidden;
     text-overflow: ellipsis;
