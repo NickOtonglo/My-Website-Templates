@@ -589,6 +589,14 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* Page - /view-tickets-user */
+#panel-tickets-user {
+    position: relative;
+}
+
 .tickets-categories-user {
+    padding-top: 10px;
     margin-left: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
