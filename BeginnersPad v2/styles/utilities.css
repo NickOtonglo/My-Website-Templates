@@ -17,6 +17,16 @@ button, .btn {
     border: 1px solid var(--color-font);
 }
 
+/* Primary button */
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -288,16 +298,6 @@ select.btn-dropdown {
     opacity: 1;
 }
 
-/* Primary button */
-.btn-primary {
-    background: var(--color-primary);
-    color: #fff;
-}
-
-.btn-primary:hover {
-    opacity: 0.8;
-}
-
 /* Search bar */
 #search-bar {
     padding: 0;
@@ -370,6 +370,10 @@ select.btn-dropdown {
 }
 
 /* .section-read-links (e.g. view-topics.html) */
+.section-read-links .panel-grp {
+    grid-template-columns: 3fr 1fr;
+}
+
 .section-read-links .item {
     padding: 15px 0;
 }
@@ -396,6 +400,11 @@ select.btn-dropdown {
 
 .section-read-links .item .text-main {
     padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 /* .panel-grp */
