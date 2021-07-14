@@ -588,3 +588,7 @@ nav .nav-menu .badge li.selected a {
     text-align: justify;
 }
 
+/* Page - /view-tickets-user */
+.tickets-categories-user {
+    margin-left: 5px;
+}

@@ -10,6 +10,7 @@ button, .btn {
     border-radius: var(--rounded-btn-radius);
     cursor: pointer;
     border: none;
+    font-family: inherit;
 }
 
 .btn-link {
@@ -26,6 +27,8 @@ button, .btn {
 .btn-primary:hover {
     opacity: 0.8;
 }
+
+
 
 .cards {
     display: grid;
