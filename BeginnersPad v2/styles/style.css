@@ -600,3 +600,12 @@ nav .nav-menu .badge li.selected a {
     position: sticky;
     top: 0;
 }
+
+/* Page - /view-ticket-user */
+.ticket-full h3, .ticket-full h4 {
+    margin: 5px 0;
+}
+
+.ticket-full .title-main {
+    padding: 8px 0 2px 0;
+}
