@@ -40,6 +40,7 @@ button, .btn {
 
 .btn-grp.vertical > button {
     border-bottom: none;
+    font-size: 1rem;
 }
 
 .btn-grp.vertical > button:first-child {
@@ -71,7 +72,6 @@ button, .btn {
 .btn-grp > button {
     border-radius: 0;
     border: 1px solid #666;
-    font-size: 1rem;
     background: var(--color-background-main);
     transition: background 0.15s;
 }
