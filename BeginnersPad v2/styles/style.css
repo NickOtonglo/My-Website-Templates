@@ -147,7 +147,7 @@ nav .nav-menu .badge li.selected a {
 
 /* Listings */
 /* see "utilities.css" for cards section */
-#section-listings .search-bar {
+.section-listings .search-bar {
     margin-top: -50px;
     margin-bottom: 50px;
 }
