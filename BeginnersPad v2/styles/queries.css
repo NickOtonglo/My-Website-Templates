@@ -138,13 +138,20 @@
     }
 
     nav .nav-menu {
-        display: none;
+        /* https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property */
+        display: flex;
         flex-direction: column;
         width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: visibility 0s, opacity 0.3s linear;
     }
 
     nav .nav-menu.open {
-        display: flex;
+        visibility: visible;
+        opacity: 1;
+        height: unset;
     }
 
     nav .nav-menu .badge {
