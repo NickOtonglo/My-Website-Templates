@@ -129,7 +129,32 @@
 }
 
 @media(max-width: 375px) {
-    
+    nav {
+        padding-bottom: 0;
+    }
+
+    nav h1 {
+        line-height: unset;
+    }
+
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-menu.open {
+        display: flex;
+    }
+
+    nav .nav-menu .badge {
+        padding: 8px;
+        border-top: 1px solid #666
+    }
+
+    nav .nav-menu .badge:last-child {
+        padding-bottom: 16px;
+    }
 
     .card {
         margin: 20px 0;
