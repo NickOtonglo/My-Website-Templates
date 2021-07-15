@@ -86,6 +86,17 @@ button, .btn {
     color: #fff;
 }
 
+/* Text */
+/* single-line text with ellipsis overflow */
+.txt-single-line, .card-info.txt-single-line > * {
+    width: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
