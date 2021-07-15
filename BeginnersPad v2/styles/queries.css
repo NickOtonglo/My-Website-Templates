@@ -28,7 +28,7 @@
 }
 
 @media(max-width: 768px) {
-    #section-listings .container, #section-marketing .container {
+    #section-listings .container {
         width: 95%;
     }
 }
@@ -48,5 +48,15 @@
 
     .card {
         margin: 25px;
+    }
+}
+
+@media(max-width: 565px) {
+    #section-marketing .marketing-item h4 {
+        font-size: 1.3rem;
+    }
+
+    #section-marketing .marketing-item p {
+        font-size: 1.1rem;
     }
 }
