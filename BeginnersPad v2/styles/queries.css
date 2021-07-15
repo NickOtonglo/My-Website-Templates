@@ -3,3 +3,28 @@
         display: none;
     }
 }
+
+/* Page - /index */
+/* Page - /view-listings */
+/* Page - /view-listing */
+/* Page - /view-listing-unit */
+/* Page - /view-listing-reviews */
+/* Page - /help */
+/* Page - /sign-up */
+/* Page - /sign-in */
+/* Page - /view-faqs */
+/* Page - /view-topics */
+/* Page - /view-tickets-user */
+/* Page - /view-ticket-user */
+
+@media(max-width: 1225px) {
+    #section-listings .container, #section-marketing .container {
+        width: 90%;
+    }
+    
+    .card {
+        margin: 20px;
+    }
+}
+
+@media(max-width)

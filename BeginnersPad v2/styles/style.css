@@ -153,20 +153,20 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* Marketing */
-#marketing .marketing-item {
+#section-marketing .marketing-item {
     padding-top: 20px;
     text-align: center;
 }
 
-#marketing .marketing-item h4 {
+#section-marketing .marketing-item h4 {
     font-size: 1.5rem;
 }
 
-#marketing .marketing-item p {
+#section-marketing .marketing-item p {
     font-size: 1.3rem;
 }
 
-#marketing .marketing-item a {
+#section-marketing .marketing-item a {
     display: inline-block;
     padding-top: 15px;
 }
