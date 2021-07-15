@@ -76,6 +76,7 @@
         top: 30%;
         width: inherit;
     }
+
     #showcase .container h1 {
         font-size: 1.7rem;
     }
@@ -98,5 +99,27 @@
         padding: 0;
         align-items: unset;
         margin: unset;
+    }
+}
+
+@media(max-width: 408px) {
+    body > * {
+        font-size: 0.9rem;
+    }
+
+    #showcase .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    #section-marketing .marketing-item h4 {
+        font-size: 1.2rem;
+    }
+
+    #section-marketing .marketing-item p {
+        font-size: 1.0rem;
     }
 }
