@@ -129,6 +129,8 @@
 }
 
 @media(max-width: 375px) {
+    
+
     .card {
         margin: 20px 0;
     }
