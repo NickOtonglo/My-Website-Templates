@@ -606,6 +606,10 @@ nav .nav-menu .badge li.selected a {
     margin: 5px 0;
 }
 
+.ticket-full h4 {
+    font-weight: lighter;
+}
+
 .ticket-full .title-main {
     padding: 8px 0 2px 0;
 }
