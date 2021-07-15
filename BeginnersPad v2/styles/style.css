@@ -82,7 +82,7 @@ nav h1:hover {
 nav .toggle {
     color: var(--color-primary);
     position: absolute;
-    right: -2%;
+    right: -100%;
     top: 17px;
     transition: 0.15s;
 }

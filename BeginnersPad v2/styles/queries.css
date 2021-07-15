@@ -137,6 +137,10 @@
         line-height: unset;
     }
 
+    nav .toggle {
+        right: -2%;
+    }
+
     nav .nav-menu {
         /* https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property */
         display: flex;
