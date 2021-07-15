@@ -210,14 +210,14 @@ button, .btn {
 }
 
 /* Links */
-#links {
+#section-links {
     padding: 0 50px;
     background: var(--color-tertiary);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* #links div {
+/* #section-links div {
     padding: 70px 0;
     display: flex;
     flex-direction: column;
@@ -225,18 +225,18 @@ button, .btn {
     justify-content: space-between;
 }
 
-#links div:nth-child(2) {
+#section-links div:nth-child(2) {
     align-self: flex-start;
 } */
 
-#links div {
+#section-links div {
     padding: 70px 0;
     display: inline-block;
     align-items: center;
     margin: 0 auto;
 }
 
-#links div a {
+#section-links div a {
     display: block;
     margin: 18px 0;
     font-size: 1.1rem;

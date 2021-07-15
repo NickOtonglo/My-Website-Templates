@@ -23,8 +23,12 @@
     }
     
     .card {
-        margin: 20px;
+        margin: 20px 10px;
     }
 }
 
-@media(max-width)
+@media(max-width: 768px) {
+    #section-listings .container, #section-marketing .container {
+        width: 95%;
+    }
+}
