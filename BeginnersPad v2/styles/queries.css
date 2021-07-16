@@ -17,6 +17,12 @@
 /* Page - /view-tickets-user */
 /* Page - /view-ticket-user */
 
+@media(min-width: 2560px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media(min-width: 1600px) {
     .cards {
         gap: 50px;
