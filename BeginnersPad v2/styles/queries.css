@@ -17,6 +17,19 @@
 /* Page - /view-tickets-user */
 /* Page - /view-ticket-user */
 
+@media(min-width: 1600px) {
+    .cards {
+        gap: 50px;
+        padding: 20px 0;
+    }
+
+    /* Main card */
+    .card {
+        margin: auto;
+        width: 356px;
+    }
+}
+
 @media(max-width: 1225px) {
     #section-listings .container, #section-marketing .container {
         width: 90%;
@@ -24,12 +37,6 @@
     
     .card {
         margin: 20px 10px;
-    }
-}
-
-@media(max-width: 1024px) {
-    .card {
-        width: unset;
     }
 }
 
