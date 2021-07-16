@@ -27,6 +27,12 @@
     }
 }
 
+@media(max-width: 1024px) {
+    .card {
+        width: unset;
+    }
+}
+
 @media(max-width: 768px) {
     #section-listings .container {
         width: 95%;
