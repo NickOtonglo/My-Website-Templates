@@ -18,21 +18,25 @@
 /* Page - /view-ticket-user */
 
 @media(min-width: 2560px) {
+    .showcase-listing {
+        min-height: 600px;
+    }
+
     .cards {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .listing-units-grp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media(min-width: 1920px) {
-    .listing-units-grp,
     .listing-nearby-places .places-list,
     .listing-reviews .reviews-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .card-sm, .card-sm .details .label {
-        font-size: 0.9rem;
     }
 }
 
@@ -46,6 +50,10 @@
     .card {
         margin: auto;
         width: 356px;
+    }
+
+    .card-sm {
+        width: 580px;
     }
 
     .listing-info-aux {
