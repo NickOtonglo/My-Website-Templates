@@ -594,6 +594,7 @@ nav .nav-menu .badge li.selected a {
     padding-bottom: 18px;
     border: none;
     border-bottom: 1px dashed #666;
+    max-height: unset;
 }
 
 .section-listing-reviews .review-item:last-child {

@@ -97,6 +97,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .section-listing-reviews .reviews-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media(max-width: 768px) {
@@ -198,6 +202,20 @@
     .section-unit-secondary {
         padding-top: 15px;
     }
+
+    .section-listing-info-header .header-grp {
+        height: 200px;
+    }
+
+    .section-listing-info-header .header-grp .thumb {
+        width: 170px;
+    }
+
+    .section-listing-info-header .header-grp .details,
+    .section-listing-info-header .header-grp .details .timestamp,
+    .section-listing-info-header .header-grp .details .info-rating-grp {
+        font-size: 0.85rem;
+    }
 }
 
 @media(max-width: 565px) {
@@ -248,7 +266,8 @@
         width: 90%;
     }
 
-    .section-listing-secondary .container {
+    .section-listing-secondary .container,
+    .section-listing-reviews .container {
         width: 95%;
     }
     
@@ -289,6 +308,10 @@
     .card-sm, .card-sm .details .label {
         font-size: 0.75rem;
     }
+
+    .section-listing-info-header {
+        padding-top: 10px;
+    }
 }
 
 @media(max-width: 408px) {
@@ -310,6 +333,15 @@
 
     #section-marketing .marketing-item p {
         font-size: 1.0rem;
+    }
+
+    .section-listing-info-header .header-grp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-listing-info-header .header-grp .thumb {
+        opacity: 0.3;
     }
 }
 
