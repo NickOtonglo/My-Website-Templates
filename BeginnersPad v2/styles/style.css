@@ -321,6 +321,8 @@ nav .nav-menu .badge li.selected a {
 
 .info-name .name {
     flex: 9;
+    width: 10%;
+    word-wrap: break-word;
 }
 
 .info-name .info-actions {

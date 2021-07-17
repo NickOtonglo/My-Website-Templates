@@ -48,6 +48,27 @@
     .card {
         margin: 20px 10px;
     }
+
+    .listing-info-aux .aux-grp {
+        padding: 0 15px;
+    }
+
+    .listing-info-aux .aux-grp .data {
+        font-size: 1.0rem;
+    }
+}
+
+@media(max-width: 941px) {
+    .section-listing-secondary .panel-grp {
+        grid-template-columns: 1fr;
+    }
+
+    .listing-units-grp,
+    .listing-nearby-places .places-list,
+    .listing-reviews .reviews-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media(max-width: 768px) {
@@ -55,8 +76,45 @@
         width: 95%;
     }
 
+    .section-listing-primary .container {
+        width: 80%;
+    }
+
     #showcase .container, .showcase-small .container {
         width: 80%;
+    }
+
+    
+    .info-name .name {
+        font-size: 1.6rem;
+    }
+
+    .listing-units-grp {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .listing-info-aux {
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .listing-info-aux .aux-grp {
+        padding: 10px;
+        border: none;
+    }
+
+    .listing-info-aux .aux-grp .data {
+        font-size: .9rem;
+    }
+
+    .listing-info-aux .aux-grp:nth-child(odd) {
+        border-right: 1px solid var(--color-font);
+    }
+
+    .listing-info-aux .aux-grp:nth-child(1),
+    .listing-info-aux .aux-grp:nth-child(2) {
+        border-bottom: 1px solid var(--color-font);
     }
 }
 
@@ -76,6 +134,12 @@
     .card {
         margin: 25px;
     }
+
+    .listing-nearby-places .places-list,
+    .listing-reviews .reviews-list {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
 }
 
 @media(max-width: 565px) {
@@ -89,6 +153,12 @@
 
     #section-links div a {
         font-size: 1rem;
+    }
+
+    .listing-units-grp,
+    .listing-nearby-places .places-list,
+    .listing-reviews .reviews-list {
+        padding: 0;
     }
 }
 
@@ -116,6 +186,13 @@
         width: 80%;
     }
 
+    .section-listing-primary .container {
+        width: 90%;
+    }
+
+    .section-listing-secondary .container {
+        width: 95%;
+    }
     
     #showcase .container, .showcase-small .container {
         width: 80%;
@@ -135,6 +212,24 @@
         padding: 0;
         align-items: unset;
         margin: unset;
+    }
+
+    .listing-info-main .info-name .name,
+    .listing-info-main .info-name .info-actions {
+        font-size: 1.3rem;
+    }
+
+    .listing-info-main .location,
+    .listing-info-main .info-rating-grp {
+        font-size: 1rem;
+    }
+
+    .listing-info-description {
+        text-align: justify;
+    }
+
+    .card-sm, .card-sm .details .label {
+        font-size: 0.75rem;
     }
 }
 
@@ -201,5 +296,14 @@
 
     .card {
         margin: 20px 0;
+    }
+
+    .card-sm .details {
+        padding: 8px;
+    }
+
+    
+    .section-listing-secondary .container {
+        width: 100%;
     }
 }
