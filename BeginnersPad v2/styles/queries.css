@@ -185,8 +185,12 @@
     }
 
     .section-unit-main {
-        padding-top: 15px;
+        padding-top: 0px;
         padding-bottom: 15px;
+    }
+
+    .section-unit-main .container .main-img .img:first-child {
+        margin-top: 0;
     }
 
     .section-unit-secondary {
