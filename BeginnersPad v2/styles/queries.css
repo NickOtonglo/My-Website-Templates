@@ -86,7 +86,7 @@
 
 @media(max-width: 941px) {
     .panel-grp,
-    .section-listing-secondarygit .panel-grp,
+    .section-listing-secondary .panel-grp,
     .section-unit-secondary .panel-grp {
         grid-template-columns: 1fr;
     }
