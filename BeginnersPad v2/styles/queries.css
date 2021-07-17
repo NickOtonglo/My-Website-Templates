@@ -312,6 +312,10 @@
     .section-listing-info-header {
         padding-top: 10px;
     }
+
+    .section-read {
+        padding-top: 10px;
+    }
 }
 
 @media(max-width: 408px) {
