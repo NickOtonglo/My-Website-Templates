@@ -104,7 +104,8 @@
 }
 
 @media(max-width: 768px) {
-    .container {
+    #section-listings .container, #section-marketing .container,
+    .section-listings .container{
         width: 95%;
     }
 
@@ -160,6 +161,14 @@
     .section-unit-main .container .main-img .img:nth-child(3),
     .section-unit-main .container .main-img .img:last-child {
         height: 110px;
+    }
+
+    .section-help .container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-help .help-form {
+        padding-top: 25px;
     }
 }
 
@@ -258,7 +267,7 @@
         font-size: 1.7rem;
     }
     
-    .container {
+    #section-listings .container, #section-marketing .container {
         width: 80%;
     }
 
@@ -273,6 +282,10 @@
     
     #showcase .container, .showcase-small .container {
         width: 80%;
+    }
+
+    .section-help .container {
+        width: 100%;
     }
 
     .cards {
@@ -315,6 +328,10 @@
 
     .section-read {
         padding-top: 10px;
+    }
+
+    .section-help {
+        padding-top: 0;
     }
 }
 
@@ -399,5 +416,9 @@
     
     .section-listing-secondary .container {
         width: 100%;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
     }
 }
