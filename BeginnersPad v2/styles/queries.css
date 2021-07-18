@@ -243,6 +243,10 @@
     #tickets-user-list.section-read.links .panel-grp .panel .text-main {
         -webkit-line-clamp: 5;
     }
+
+    .section-auth .container {
+        width: 90%;
+    }
 }
 
 @media(max-width: 565px) {
@@ -262,6 +266,22 @@
     .listing-nearby-places .places-list,
     .listing-reviews .reviews-list {
         padding: 0;
+    }
+
+    #form-auth .form-group {
+        flex-direction: column;
+    }
+
+    #form-auth .grp-name:first-child {
+        margin-right: 0;
+    }
+    
+    #form-auth .grp-name:last-child {
+        margin-left: 0;
+    }
+
+    .form-group .form-check .form-check-label, .form-group .form-check .form-check-label a {
+        font-size: 0.9rem;
     }
 }
 
@@ -354,6 +374,10 @@
 
     .section-help {
         padding-top: 0;
+    }
+
+    .section-auth {
+        padding: 0;
     }
 }
 
