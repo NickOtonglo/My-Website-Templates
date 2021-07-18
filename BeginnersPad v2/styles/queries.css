@@ -182,7 +182,7 @@
     
     .tickets-categories-user .btn-grp.vertical {
         margin: 0 auto;
-        
+
     }
 }
 
@@ -346,6 +346,10 @@
 
     .section-read {
         padding-top: 10px;
+    }
+
+    #tickets-user-list.section-read {
+        padding-top: 0;
     }
 
     .section-help {
