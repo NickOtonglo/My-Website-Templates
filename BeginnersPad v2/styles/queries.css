@@ -170,6 +170,20 @@
     .section-help .help-form {
         padding-top: 25px;
     }
+
+    #tickets-user-list.section-read.links .panel-grp {
+        grid-template-columns: 1fr;
+    }
+
+    #tickets-user-list.section-read.links .panel-grp .panel:last-child {
+        grid-row: 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .tickets-categories-user .btn-grp.vertical {
+        margin: 0 auto;
+        
+    }
 }
 
 @media(max-width: 720px) {
@@ -224,6 +238,10 @@
     .section-listing-info-header .header-grp .details .timestamp,
     .section-listing-info-header .header-grp .details .info-rating-grp {
         font-size: 0.85rem;
+    }
+
+    #tickets-user-list.section-read.links .panel-grp .panel .text-main {
+        -webkit-line-clamp: 5;
     }
 }
 

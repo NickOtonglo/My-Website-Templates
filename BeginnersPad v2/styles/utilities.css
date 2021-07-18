@@ -36,6 +36,8 @@ button, .btn {
 
 .btn-grp.vertical {
     flex-direction: column;
+    max-width: 285px;
+    min-width: 211px;
 }
 
 .btn-grp.vertical > button {
