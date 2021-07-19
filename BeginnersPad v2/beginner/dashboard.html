@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/dashmin.css">
+    <title>Dashmin - Simple Dashboard</title>
+</head>
+<body>
+    <!-- Nav drawer -->
+    <div id="dsmNavDrawer" class="nav-drawer nav-open">
+        <div class="nav-drawer-logo">
+            <a href="#"><h2>DashMin v2.0</h2></a>
+            <i id="dsmNavDrawerToggle" class="fas fa-tachometer-alt fa-2x"></i>
+        </div>
+        <div class="container">
+            <div class="nav-drawer-category">
+                <!-- Users -->
+                <p>Users</p>
+                <ul>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Regular</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Inactive</a></li>
+                    <li><a href="#">Suspended</a></li>
+                    <li><a href="#">Tickets</a></li>
+                </ul>
+            </div>
+            <div class="nav-drawer-category">
+                <!-- Sales -->
+                <p>Transactions</p>
+                <ul>
+                    <li><a href="#">Most Recent</a></li>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Verified</a></li>
+                    <li><a href="#">Failed</a></li>
+                    <li><a href="#">Blocked</a></li>
+                    <li><a href="#">Flagged</a></li>
+                </ul>
+            </div>
+            <div class="nav-drawer-category">
+                <!-- Tools -->
+                <p>Tools</p>
+                <ul>
+                    <li><a href="#">Analysis</a></li>
+                    <li><a href="#">Merging</a></li>
+                    <li><a href="#">Transfer</a></li>
+                    <li><a href="#">Automation</a></li>
+                </ul>
+            </div>
+            <div class="nav-drawer-category">
+                <!-- System -->
+                <p>System</p>
+                <ul>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Logs</a></li>
+                    <li><a href="#">Auto-pilot</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav>
+        <h2>Dashboard</h2>
+        <ul class="nav-menu">
+            <div class="badge">
+                <span class="badge-mark">19</span>
+                <li><a href="#"><i class="fas fa-question-circle fa-2x"></i></a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark">10</span>
+                <li><a href="#"><i class="fas fa-envelope-open fa-2x"></i></a></li>
+            </div>
+            <div class="badge">
+                <li><i class="fas fa-user-circle fa-2x"></i></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Main area -->
+    <section id="dsmSectionMain" class="nav-open">
+        <div class="container">
+            <div class="label">
+                <p>Live Feed</p>
+            </div>
+            <div class="cards">
+                <div class="card card-warning">
+                    <p>Unresolved Tickets</p>
+                    <h3>19</h3>
+                    <i class="fas fa-ticket-alt fa-3x"></i>
+                </div>
+                <div class="card card-success">
+                    <p>Closed Tickets</p>
+                    <h3>87</h3>
+                    <i class="fas fa-ticket-alt fa-3x"></i>
+                </div>
+                <div class="card card-warning">
+                    <p>Urgent Tickets</p>
+                    <h3>6</h3>
+                    <i class="fas fa-ticket-alt fa-3x"></i>
+                </div>
+                <div class="card card-primary">
+                    <p>Unread Messages</p>
+                    <h3>10</h3>
+                    <i class="fas fa-envelope fa-3x"></i>
+                </div>
+                <div class="card card-danger">
+                    <p>Flagged Transactions</p>
+                    <h3>3</h3>
+                    <i class="fas fa-money-check-alt fa-3x"></i>
+                </div>
+                <div class="card card-warning">
+                    <p>Suspended Users</p>
+                    <h3>11</h3>
+                    <i class="fas fa-user-slash fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="label">
+                <p>Updates</p>
+            </div>
+            <div class="content">
+                <div class="content-categories">
+                    <div class="content-table">
+                        <h5>User Status</h5>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>Kohn Doe</td>
+                                <td>kohn@doe.com</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Alicin Wanda Land</td>
+                                <td>wonderlander@mail.com</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Tobb Ako</td>
+                                <td>tobb@smoke.com</td>
+                                <td>Inactive</td>
+                            </tr>
+                            <tr>
+                                <td>Some Body</td>
+                                <td>some@body.com</td>
+                                <td>Suspended</td>
+                            </tr>
+                            <tr>
+                                <td>Debt Ceiling</td>
+                                <td>debt@ceiling.com</td>
+                                <td>Inactive</td>
+                            </tr>
+                            <tr>
+                                <td>End Game</td>
+                                <td>end@game.com</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Sodium Hypochlorite</td>
+                                <td>hypo.c@mail.com</td>
+                                <td>Suspended</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="content-sidebar">
+                        <div class="container">
+                            <h5>Recent</h5>
+                            <ul>
+                                <li class="content-sidebar-item">
+                                    <img src="images/avatar.png" alt="">
+                                    <div class="item-info">
+                                        <h4>Kohn Doe</h4>
+                                        <p class="action">Update sales record #7864.7</p>
+                                        <p class="time">43 minutes ago</p>
+                                    </div>
+                                </li>
+                                <li class="content-sidebar-item">
+                                    <img src="images/avatar.png" alt="">
+                                    <div class="item-info">
+                                        <h4>Kohn Doe</h4>
+                                        <p class="action">Update sales record #7864.4</p>
+                                        <p class="time">55 minutes ago</p>
+                                    </div>
+                                </li>
+                                <li class="content-sidebar-item">
+                                    <img src="images/avatar.png" alt="">
+                                    <div class="item-info">
+                                        <h4>Kohn Doe</h4>
+                                        <p class="action">Request sales report #7864</p>
+                                        <p class="time">1 hour ago</p>
+                                    </div>
+                                </li>
+                                <li class="content-sidebar-item">
+                                    <img src="images/avatar.png" alt="">
+                                    <div class="item-info">
+                                        <h4>Kohn Doe</h4>
+                                        <p class="action">Update purchases report #7971</p>
+                                        <p class="time">2 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="content-sidebar-item">
+                                    <img src="images/avatar.png" alt="">
+                                    <div class="item-info">
+                                        <h4>Kohn Doe</h4>
+                                        <p class="action">Request purchases report #7971</p>
+                                        <p class="time">2 hours ago</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/dashmin.js"></script>
+</body>
+</html>
