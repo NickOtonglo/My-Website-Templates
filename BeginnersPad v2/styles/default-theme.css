@@ -7,4 +7,10 @@
     --color-background-main: #fee;
     --color-form-border: rgba(0, 0, 0, 0.2);
     /* --color-panel */
+    --color-font-contrast: #fff;
+    --color-danger: rgb(238, 14, 14);
+    --color-warning: rgb(207, 95, 50);
+    --color-success: rgb(13, 180, 138);
+
+    --color-dashboard-hover: #ba86f5;
 }

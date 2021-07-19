@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-:root {
-    --primary-theme: rgb(18, 105, 175);
-    --primary-light: rgba(22, 89, 214, 0.2);
-    --secondary-theme: rgb(22, 48, 121);
-    --dark-text-colour: #333;
-    --light-text-colour: #fff;
-    --card-danger: rgb(238, 14, 14);
-    --card-warning: rgb(207, 95, 50);
-    --card-success: rgb(13, 180, 138);
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -19,13 +8,13 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    color: var(--dark-text-colour);
+    color: var(--color-links);
     background-color: #eef;
     font-size: .9rem;
 }
 
 a {
-    color: var(--dark-text-colour);
+    color: var(--color-links);
     text-decoration: none;
     transition: font-size 0.3s;
 }
@@ -41,7 +30,7 @@ li {
 nav {
     position: relative;
     display: flex;
-    background: var(--light-text-colour);
+    background: var(--color-font-contrast);
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
@@ -55,7 +44,7 @@ nav a {
 
 nav a:hover {
     font-size: 0.9rem;
-    color: var(--primary-theme);
+    color: var(--color-primary);
 }
 
 nav i {
@@ -64,7 +53,7 @@ nav i {
 }
 
 nav i:hover {
-    color: var(--primary-theme);
+    color: var(--color-primary);
 }
 
 section {
@@ -84,7 +73,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid var(--primary-theme);
+    border: 1px solid var(--color-primary);
 }
 
 th, td {
@@ -92,8 +81,8 @@ th, td {
 }
 
 th {
-    background: var(--primary-theme);
-    color: var(--light-text-colour);
+    background: var(--color-primary);
+    color: var(--color-font-contrast);
     text-align: left;
 }
 
@@ -102,7 +91,7 @@ tr {
 }
 
 tr:nth-child(even) {
-    background: var(--primary-light);
+    background: var(--color-dashboard-hover);
 }
 
 tr:hover {
@@ -134,10 +123,10 @@ tr:first-child:hover {
 /* Nav drawer */
 .nav-drawer {
     position: fixed;
-    background: var(--primary-theme);
+    background: var(--color-tertiary);
     width: 22%;
     height: 100vh;
-    color: var(--light-text-colour);
+    color: var(--color-font);
     z-index: 10;
     left: -22%;
     transition: 1s;
@@ -148,7 +137,7 @@ tr:first-child:hover {
 }
 
 .nav-drawer a {
-    color: var(--light-text-colour);
+    color: var(--color-font);
     line-height: 1rem;
 }
 
@@ -164,18 +153,18 @@ tr:first-child:hover {
     margin-top: 10px;
     width: 119%;
     background: #eee;
-    color: var(--primary-theme);
+    color: var(--color-tertiary);
     border-radius: 0 25px 25px 0;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .nav-drawer-logo a {
-    color: var(--primary-theme);
+    color: var(--color-tertiary);
 }
 
 .nav-drawer-logo a:hover {
     font-size: 0.9rem;
-    color: var(--secondary-theme);
+    color: var(--color-secondary);
 }
 
 .nav-drawer-logo i {
@@ -185,7 +174,7 @@ tr:first-child:hover {
 }
 
 .nav-drawer-logo i:hover {
-    color: var(--secondary-theme);
+    color: var(--color-secondary);
 }
 
 .nav-drawer .container {
@@ -203,7 +192,7 @@ tr:first-child:hover {
 .nav-drawer-category {
     margin: 10px 2px 0;
     padding: 5px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav-drawer-category:last-child {
@@ -235,14 +224,18 @@ nav ul li {
 }
 
 /* Main area */
+.section-main {
+    background: var(--color-background-main);
+}
+
 .container {
     padding: 15px;
 }
 
 .label {
     padding: 4px 8px;
-    background: var(--secondary-theme);
-    color: var(--light-text-colour);
+    background: var(--color-secondary);
+    color: var(--color-font-contrast);
     font-weight: bold;
     margin: 10px 0;
 }
@@ -269,7 +262,7 @@ nav ul li {
 }
 
 .card * {
-    /* border: 1px solid var(--primary-theme); */
+    /* border: 1px solid var(--color-primary); */
     margin: 8px;
 }
 
@@ -286,43 +279,43 @@ nav ul li {
 }
 
 .card-success {
-    border-color: var(--card-success);
-    color: var(--card-success);
+    border-color: var(--color-success);
+    color: var(--color-success);
 }
 
 .card-success:hover {
-    color: var(--light-text-colour);
-    background: var(--card-success);
+    color: var(--color-font-contrast);
+    background: var(--color-success);
 }
 
 .card-warning {
-    border-color: var(--card-warning);
-    color: var(--card-warning);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
 }
 
 .card-warning:hover {
-    color: var(--light-text-colour);
-    background: var(--card-warning);
+    color: var(--color-font-contrast);
+    background: var(--color-warning);
 }
 
 .card-primary {
-    border-color: var(--primary-theme);
-    color: var(--primary-theme);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .card-primary:hover {
-    color: var(--light-text-colour);
-    background: var(--primary-theme);
+    color: var(--color-font-contrast);
+    background: var(--color-primary);
 }
 
 .card-danger {
-    border-color: var(--card-danger);
-    color: var(--card-danger);
+    border-color: var(--color-danger);
+    color: var(--color-danger);
 }
 
 .card-danger:hover {
-    color: var(--light-text-colour);
-    background: var(--card-danger);
+    color: var(--color-font-contrast);
+    background: var(--color-danger);
 }
 
 .content h5 {
@@ -357,7 +350,7 @@ nav ul li {
 }
 
 .content-sidebar-item:hover {
-    background: var(--primary-light);
+    background: var(--color-dashboard-hover);
 }
 
 .content-sidebar-item img {
