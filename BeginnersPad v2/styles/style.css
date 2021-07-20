@@ -231,6 +231,10 @@ nav .nav-menu .badge li.selected a {
     height: inherit;
 }
 
+.showcase-overlay.success {
+    background: rgba(13, 180, 138, 0.85);
+}
+
 /* This <div> is solely purposed to center its contents */
 #showcase .container div,
 .showcase-small .container div {

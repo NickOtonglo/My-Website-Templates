@@ -13,6 +13,8 @@ button, .btn {
     font-family: inherit;
 }
 
+
+
 .btn-link {
     background: none;
     border: 1px solid var(--color-font);
@@ -24,8 +26,14 @@ button, .btn {
     color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-danger:hover {
     opacity: 0.8;
+}
+
+.btn-danger {
+    background: var(--color-danger);
+    color: #fff;
 }
 
 /* Button group (.btn-grp) */
@@ -483,4 +491,20 @@ select.btn-dropdown {
 /* .panel-grp */
 .panel-grp {
     display: grid;
+}
+
+.panel-sub .sub-grp {
+    border: 1px solid #666;
+    margin: 15px;
+    padding: 10px;
+    max-height: 400px;
+}
+
+#occupied.sub-grp {
+    border: none;
+}
+
+#occupied.sub-grp .item {
+    display: inline-block;
+    margin: 0 5px;
 }
