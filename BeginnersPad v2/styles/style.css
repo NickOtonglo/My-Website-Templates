@@ -132,6 +132,7 @@ nav .nav-menu .badge li.selected a {
     top: 0;
     right: 0;
     background: var(--color-primary);
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.4);
     width: 377px;
     height: 100%;
     z-index: 20;
@@ -144,6 +145,7 @@ nav .nav-menu .badge li.selected a {
 .nav-drawer.closed {
     position: fixed;
     right: -377px;
+    box-shadow: none;
 }
 
 #navDrawerClose {
