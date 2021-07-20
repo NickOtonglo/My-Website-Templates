@@ -10,6 +10,11 @@ body {
     font-family: 'Heebo', sans-serif;
     color: var(--color-font);
     background-color: var(--color-background-main);
+    transition: background 1s;
+}
+
+body.unfocused {
+    background: rgba(0, 0, 0, 0.6);
 }
 
 section {
@@ -177,6 +182,10 @@ nav .nav-menu .badge li.selected a {
 
 .nav-drawer-category ul li {
     padding: 8px;
+}
+
+.nav-drawer-category ul li.selected {
+    background: var(--color-secondary);
 }
 
 .nav-drawer-category ul li i {
