@@ -508,3 +508,12 @@ select.btn-dropdown {
     display: inline-block;
     margin: 0 5px;
 }
+
+.sub-grp ul li {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.sub-grp ul li > span {
+    font-weight: bold;
+}
