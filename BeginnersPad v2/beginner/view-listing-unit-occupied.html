@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/default-theme.css">
+    <link rel="stylesheet" href="../styles/utilities.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <title>Beginners Pad</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="index.html">Beginners Pad</a></h1>
+        <i id="navToggle" class="fas fa-bars fa-2x toggle"></i>
+        <ul id="navMenu" class="nav-menu authed">
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Account</a></li>
+            </div>
+            <div class="badge" id="navDrawerOpen">
+                <span class="badge-mark"></span>
+                <li><i class="fas fa-bars"></i></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="navDrawer">
+        <i id="navDrawerClose" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <ul>
+                <li><a href="../help.html"><i class="fas fa-question-circle"></i> Help</li>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Manage account</a></li>
+                <li><a href="../sign-in.html"><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Menu</p>
+            <ul>
+                <li><a href="/beginner/dashboard.html">Dashboard</a></li>
+                <li class="selected"><a href="/beginner/view-listing.html">Listings</a></li>
+                <li><a href="/beginner/my-reviews.html">My reviews</a></li>
+                <li><a href="/beginner/favourites.html">Favourites</a></li>
+                <li><a href="/beginner/property-history.html">Property history</a></li>
+                <li><a href="/beginner/my-tickets.html">My tickets</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Premium</p>
+            <ul>
+                <li><a href="#">Waiting list <i class="fas fa-star"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="showcase-small">
+        <div class="showcase-overlay success">
+            <div class="container">
+                <div>
+                    <h2>You are the occupant of this unit</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ex corporis aut porro vitae nam iusto neque est</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-unit-main">
+        <div class="container">
+            <div class="main-img">
+                <!-- Images -->
+                <div class="img">
+                    <div class="more-images">
+                        <i class="fas fa-images"></i>
+                        <span>All images</span>
+                    </div>
+                </div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <!-- Info -->
+            <div class="main-info">
+                <h2>Unit title</h2>
+                <p class="price">KES 0.00</p>
+                <p class="deposit">Initial deposit: not required</p>
+                <p class="floor">Floor: ground floor</p>
+                <p class="timestamp">Added on 01-01-2021 00:00:00</p>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quae explicabo numquam soluta in
+                    repellat, consectetur iure officiis beatae alias quibusdam sit saepe, quam pariatur.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-unit-secondary">
+        <div class="container">
+            <div class="panel-grp">
+                <div class="panel">
+                    <div class="unit-features">
+                        <h3>Unit features</h3>
+                        <div class="features">
+                            <ul>
+                                <li>1 bedroom</li>
+                                <li>2 bathrooms</li>
+                                <li>40sq Metres</li>
+                                <li>WiFi connectivity</li>
+                                <li>1 balcony</li>
+                                <li>instant showers</li>
+                                <li>power-saving light bulbs</li>
+                                <li>cooling fans in bedroom and living room</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="unit-disclaimer">
+                        <h3>Disclaimer (important)</h3>
+                        <div class="features">
+                            <ul>
+                                <li>unit to be used for residential purposes only</li>
+                                <li>2 pets max</li>
+                                <li>both pets must be neutered and vaccinated</li>
+                                <li>rubbish must be deposited every Sunday for collection</li>
+                                <li>all issues should be reported to caretaker within 24 hours of discovery/occurrence</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-sub">
+                        <h3>Actions</h3>
+                        <div class="sub-grp" id="occupied">
+                            <div class="item">
+                                <button class="btn-danger">
+                                    Check out <i class="fas fa-sign-out-alt"></i>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="btn-link">Contact lister</button>
+                            </div>
+                            <div class="item">
+                                <button class="btn-primary">Review listing</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="listing-units-list">
+                        <h3>Property</h3>
+                        <div class="listing-units-grp">
+                            <div class="card-sm card-2">
+                                <a href="/view-listing.html">
+                                    <div class="thumb"></div>
+                                    <div class="details">
+                                        <h2>Listing name</h2>
+                                        <div class="location">
+                                            <span class="spec">Location,</span>
+                                            <span class="spec">Location,</span>
+                                            <span class="spec">Location</span>
+                                        </div>
+                                        <p class="timestamp">Added 5 hours ago</p>
+                                        <div class="info-rating-grp">
+                                            <p class="rating">Rating: 4.0/5</p>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="section-more">
+                            <a href="#">View lister profile <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/nav-drawer.js"></script>
+    <script src="../js/css-base.js"></script>
+</body>
+</html>
