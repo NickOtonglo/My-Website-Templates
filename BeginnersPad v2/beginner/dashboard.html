@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/default-theme.css">
+    <link rel="stylesheet" href="../styles/utilities.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <title>Beginners Pad</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="index.html">Beginners Pad</a></h1>
+        <i id="navToggle" class="fas fa-bars fa-2x toggle"></i>
+        <ul id="navMenu" class="nav-menu">
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="sign-in.html"><i class="fas fa-user-circle"></i> Account</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><i class="fas fa-bars"></i></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Filler -->
+    <div id="pageFiller">
+
+    </div>
+
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="navDrawer">
+        <i id="navDrawerClose" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <ul>
+                <li><a href=""><i class="fas fa-question-circle"></i> Help</li>
+                <li><a href=""><i class="fas fa-user-circle"></i> Manage account</a></li>
+                <li><a href=""><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Menu</p>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">My reviews</a></li>
+                <li><a href="#">Waiting list <i class="fas fa-star"></i></a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Property history</a></li>
+                <li><a href="#">My tickets</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="../js/nav-drawer.js"></script>
+    <script src="../js/css-base.js"></script>
+</body>
+</html>
