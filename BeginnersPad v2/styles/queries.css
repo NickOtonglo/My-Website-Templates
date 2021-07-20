@@ -436,6 +436,10 @@
         transition: visibility 0s, opacity 0.3s linear;
     }
 
+    nav .nav-menu.authed {
+        display: none;
+    }
+
     nav .nav-menu.open {
         visibility: visible;
         opacity: 1;
@@ -449,6 +453,10 @@
 
     nav .nav-menu .badge:last-child {
         padding-bottom: 16px;
+    }
+
+    .nav-drawer {
+        width: 300px;
     }
 
     .card {
