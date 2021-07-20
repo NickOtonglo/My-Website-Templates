@@ -109,6 +109,78 @@ nav .nav-menu .badge li.selected a {
     color: var(--color-primary);
 }
 
+/* Nav drawer */
+.nav-drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--color-primary);
+    width: 377px;
+    height: 100%;
+    z-index: 10;
+    padding: 7px 15px;
+    color: #fff;
+    transition: 1s;
+    overflow-y: auto;
+}
+/* 
+.nav-drawer.closed {
+    position: fixed;
+    right: -377px;
+} */
+
+#navDrawerClose {
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.nav-drawer a {
+    color: var(--color-background-main);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-drawer a:hover {
+    font-weight: 500;
+}
+
+.nav-drawer .container {
+    padding: 0;
+}
+
+.nav-drawer-category {
+    padding: 12px 0 3px 0;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.nav-drawer-category:last-child {
+    border-bottom: 0;
+}
+
+.nav-drawer-category p {
+    font-size: 1rem;
+}
+
+.nav-drawer-category ul li {
+    padding: 8px;
+}
+
+.nav-drawer-category ul li i {
+    margin-right: 5px;
+}
+
+.nav-drawer-category.apps ul {
+    display: flex;
+}
+
+.nav-drawer-category.apps ul div {
+    width: 50%;
+}
+
 /* Page - / */
 /* Showcase */
 #showcase {
