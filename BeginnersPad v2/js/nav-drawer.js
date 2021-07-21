@@ -16,8 +16,8 @@ navDrawerClose.onclick = function(){
     // pageFiller.classList.remove('filler');
 }
 
-pageFiller.onclick = function(){
-    navDrawer.classList.add('closed');
-    // body.classList.remove('unfocused');
-    // pageFiller.classList.remove('filler');
-}
+// pageFiller.onclick = function(){
+//     navDrawer.classList.add('closed');
+//     // body.classList.remove('unfocused');
+//     // pageFiller.classList.remove('filler');
+// }
