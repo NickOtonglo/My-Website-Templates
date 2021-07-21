@@ -739,3 +739,61 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* Page - /beginner/favourites */
+#sectionBookmarks .container {
+    margin: auto;
+}
+
+.favourites-grp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.favourites-grp .fav {
+    width: 400px;
+    margin: 8px;
+    border: 1px solid #666;
+    height: 200px;
+    position: relative;
+}
+
+.favourites-grp .fav a {
+    text-decoration: none;
+    height: inherit;
+}
+
+.favourites-grp .fav a:hover {
+    font-weight: normal;
+}
+
+.favourites-grp .fav .details {
+    padding: 8px;
+}
+
+.favourites-grp .fav.topic .title-main,
+.favourites-grp .fav.topic .text-main {
+    padding: 8px 8px 0 8px;
+}
+
+.favourites-grp .fav.listing a,
+.favourites-grp .fav.unit a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.favourites-grp .fav .thumb {
+    width: 180px;
+    height: 198px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.favourites-grp .fav.listing .thumb {
+    background: url('../images/thumb_default.jpg') no-repeat center;
+}
+
+.favourites-grp .fav.unit .thumb {
+    background: url('../images/thumb_unit.jpg') no-repeat;
+}
