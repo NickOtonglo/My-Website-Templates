@@ -101,6 +101,21 @@ button, .btn {
     color: #fff;
 }
 
+.btn-fav-close {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 12px;
+    z-index: 1;
+}
+
+.btn-fav-close:hover {
+    background: var(--color-danger);
+    color: #fff;
+    border-color: var(--color-danger);
+}
+
 /* Text */
 /* single-line text with ellipsis overflow */
 .txt-single-line, .card-info.txt-single-line > * {
@@ -490,6 +505,15 @@ select.btn-dropdown {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.txt-six-line {
+    padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
 
