@@ -26,8 +26,14 @@ button, .btn {
 }
 
 .btn-primary:hover,
-.btn-danger:hover {
+.btn-danger:hover,
+.btn-warning:hover {
     opacity: 0.8;
+}
+
+.btn-warning {
+    background: var(--color-warning);
+    color: #fff;
 }
 
 .btn-danger {

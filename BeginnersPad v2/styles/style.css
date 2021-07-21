@@ -235,6 +235,10 @@ nav .nav-menu .badge li.selected a {
     background: rgba(13, 180, 138, 0.85);
 }
 
+.showcase-overlay.warning {
+    background: rgba(207, 95, 50, 0.85);
+}
+
 /* This <div> is solely purposed to center its contents */
 #showcase .container div,
 .showcase-small .container div {
