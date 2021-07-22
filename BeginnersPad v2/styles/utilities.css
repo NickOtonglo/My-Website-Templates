@@ -108,6 +108,7 @@ button, .btn {
     right: 0;
     padding: 6px 12px;
     z-index: 1;
+    background: var(--color-background-main);
 }
 
 .btn-fav-close:hover {
@@ -208,25 +209,30 @@ button, .btn {
     text-decoration: none;
 }
 
-.card-sm .details {
+.card-sm .details,
+.fav .details {
     padding: 15px;
     width: 60%;
 }
 
-.card-sm .details .label {
+.card-sm .details .label,
+.fav .details .label {
     font-size: 0.9rem;
 }
 
-.card-sm .details .timestamp {
+.card-sm .details .timestamp,
+.fav .details .timestamp {
     font-size: 0.85rem;
 }
 
-.card-sm .info-rating-grp {
+.card-sm .info-rating-grp,
+.fav .info-rating-grp {
     font-size: 1.1rem;
     margin-top: 5px;
 }
 
-.card-sm .thumb {
+.card-sm .thumb,
+.fav .thumb {
     background-size: cover;
     height: inherit;
     width: 40%;
@@ -463,6 +469,39 @@ select.btn-dropdown {
 .search-button .fa-search {
     padding: 15px;
     opacity: 0.6;
+}
+
+/* .categories-grp */
+.categories-grp {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    width: 100%;
+    border-top: 1px solid rgba(95, 92, 92, 0.4);
+    border-bottom: 1px solid rgba(95, 92, 92, 0.4);
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.categories-grp::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.categories-grp .category {
+    margin: 0 5px;
+}
+
+.categories-grp .category button {
+    border: 1px solid #666;
+    background: transparent;
+    white-space:nowrap;
+}
+
+.categories-grp .category button:hover {
+    color: var(--color-background-main);
+    background: #666;
 }
 
 .section-blank {
