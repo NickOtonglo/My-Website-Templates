@@ -397,6 +397,10 @@
         flex-wrap: wrap;
         align-items: center;
     }
+
+    #sectionMyReviews.section-listing-reviews {
+        padding-top: 0;
+    }
 }
 
 @media(max-width: 408px) {
