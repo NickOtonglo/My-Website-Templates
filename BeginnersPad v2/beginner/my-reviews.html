@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/default-theme.css">
+    <link rel="stylesheet" href="../styles/utilities.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <title>Beginners Pad</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="/index.html">Beginners Pad</a></h1>
+        <i id="navToggle" class="fas fa-bars fa-2x toggle"></i>
+        <ul id="navMenu" class="nav-menu authed">
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Account</a></li>
+            </div>
+            <div class="badge" id="navDrawerOpen">
+                <span class="badge-mark"></span>
+                <li><i class="fas fa-bars"></i></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Filler -->
+    <div id="pageFiller"></div>
+
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="navDrawer">
+        <i id="navDrawerClose" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <ul>
+                <li><a href="../help.html"><i class="fas fa-question-circle"></i> Help</li>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Manage account</a></li>
+                <li><a href="../sign-in.html"><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Menu</p>
+            <ul>
+                <li><a href="/beginner/dashboard.html">Dashboard</a></li>
+                <li><a href="/view-listings.html">Listings</a></li>
+                <li><a href="/beginner/my-reviews.html">My reviews</a></li>
+                <li><a href="/beginner/favourites.html">Favourites</a></li>
+                <li><a href="/beginner/property-history.html">Property history</a></li>
+                <li><a href="/beginner/my-tickets.html">My tickets</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Premium</p>
+            <ul>
+                <li><a href="/beginner/waiting-list.html">Waiting list <i class="fas fa-star"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section-listing-reviews" id="sectionMyReviews">
+        <div class="container">
+            <div class="listing-reviews">
+                <h3 class="section-title">Your reviews</h3>
+                <div class="reviews-list">
+                    <div class="review-item">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="time">4 hours ago</p>
+                        <h3 class="occupant">Verified occupant</h3>
+                        <p class="reveiw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officiis unde amet nobis consectetur velit, eius
+                        quaerat! Adipisci non alias expedita suscipit!</p>
+                        <a class="link" href="#">Manage <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <div class="review-item">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="time">4 hours ago</p>
+                        <h3 class="occupant">Verified occupant</h3>
+                        <p class="reveiw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officiis unde amet nobis consectetur velit, eius
+                        quaerat! Adipisci non alias expedita suscipit!</p>
+                        <a class="link" href="#">Manage <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <div class="review-item">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="time">4 hours ago</p>
+                        <h3 class="occupant">Verified occupant</h3>
+                        <p class="reveiw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et voluptatum veniam fugit unde ipsum illo est, officiis
+                        harum? Porro molestias atque commodi ullam ea explicabo dicta minus soluta doloribus facilis, enim ipsum eveniet amet
+                        dolores quidem distinctio ipsam adipisci laborum ut? Quae omnis cupiditate illum iusto nesciunt itaque excepturi optio
+                        sed, in ratione odit quasi pariatur architecto vero, placeat laboriosam illo sit non! Architecto officia recusandae
+                        veniam atque ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et voluptatum veniam fugit unde ipsum illo est, officiis
+                        harum? Porro molestias atque commodi ullam ea explicabo dicta minus soluta doloribus facilis, enim ipsum eveniet amet
+                        dolores quidem distinctio ipsam adipisci laborum ut? Quae omnis cupiditate illum iusto nesciunt itaque excepturi optio
+                        sed, in ratione odit quasi pariatur architecto vero, placeat laboriosam illo sit non! Architecto officia recusandae
+                        veniam atque ipsum.</p>
+                        <a class="link" href="#">Manage <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/nav-drawer.js"></script>
+    <script src="../js/css-base.js"></script>
+</body>
+</html>
