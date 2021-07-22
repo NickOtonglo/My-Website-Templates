@@ -740,7 +740,8 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* Page - /beginner/favourites */
-.favourites-grp {
+.favourites-grp,
+#sectionListingHistory .container .listing-units-grp {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -793,4 +794,10 @@ nav .nav-menu .badge li.selected a {
 
 .favourites-grp .fav.unit .thumb {
     background: url('../images/thumb_unit.jpg') no-repeat;
+}
+
+/* Page - /beginner/property-history.html */
+#sectionListingHistory .card-sm {
+    width: 400px;
+    margin: 8px;
 }
