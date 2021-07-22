@@ -115,6 +115,24 @@ nav .nav-menu .badge li.selected a {
     color: var(--color-primary);
 }
 
+/* Badge */
+.badge {
+    position: relative;
+}
+
+.badge-mark {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--color-danger);
+    opacity: 0.9;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 0.6rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 /* Filler */
 .filler {
     position: absolute;
