@@ -58,6 +58,7 @@ footer {
 .container {
     width: var(--container-width-default);
     margin: auto;
+    /* max-width: 1540px; */
 }
 
 /* Navbar */
