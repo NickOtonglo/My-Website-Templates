@@ -913,6 +913,7 @@ nav .nav-menu .badge li.selected a {
     height: 180px;
     width: 180px;
     border-radius: 50%;
+    border: 2px solid #666;
     display: block;
     margin: 10px auto;
 }
@@ -924,5 +925,103 @@ nav .nav-menu .badge li.selected a {
 
 .section-dash .dash-grp .profile .profile-2 .edit {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 0;
+}
+
+.section-dash .dash-grp .items,
+.section-dash .dash-grp .charts {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.section-dash .dash-grp .items .item.card {
+    width: 250px;
+    height: 150px;
+}
+
+.section-dash .dash-grp .items .item.card {
+    margin: 15px 30px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.section-dash .dash-grp .items .item.card h4 {
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.section-dash .dash-grp .items .item.card.item-primary {
+    color: var(--color-primary);
+}
+
+.section-dash .dash-grp .items .item.card.item-primary:hover {
+    color: #fff;
+    background: var(--color-primary);
+}
+
+.section-dash .dash-grp .items .item.card.item-secondary {
+    color: var(--color-secondary);
+}
+
+.section-dash .dash-grp .items .item.card.item-secondary:hover {
+    color: #fff;
+    background: var(--color-secondary);
+}
+
+.section-dash .dash-grp .items .item.card.item-tertiary {
+    color: var(--color-tertiary);
+}
+
+.section-dash .dash-grp .items .item.card.item-tertiary:hover {
+    color: #fff;
+    background: var(--color-tertiary);
+}
+
+.section-dash .dash-grp .items .item.card.item-warning {
+    color: var(--color-warning);
+}
+
+.section-dash .dash-grp .items .item.card.item-warning:hover {
+    color: #fff;
+    background: var(--color-warning);
+}
+
+.section-dash .dash-grp .items .item.card.item-success {
+    color: var(--color-success);
+}
+
+.section-dash .dash-grp .items .item.card.item-success:hover {
+    color: #fff;
+    background: var(--color-success);
+}
+
+.section-dash .dash-grp .items .item.card.item-danger {
+    color: var(--color-danger);
+}
+
+.section-dash .dash-grp .items .item.card.item-danger:hover {
+    color: #fff;
+    background: var(--color-danger);
+}
+
+.section-dash .dash-grp .charts .chart {
+    height: 300px;
+    width: 550px;
+    border: 1px solid #666;
+}
+
+.section-dash .dash-grp .txt-items > * {
+    padding: 4px 0;
+}
+
+.section-dash .dash-grp .txt-items .grp-text {
+    font-size: 1.2rem;
+}
+
+.section-dash .dash-grp .txt-items .grp-text span {
+    font-size: 1.5rem;
 }
