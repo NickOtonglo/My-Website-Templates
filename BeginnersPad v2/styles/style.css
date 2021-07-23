@@ -831,3 +831,8 @@ nav .nav-menu .badge li.selected a {
     font-size: 1.3rem;
     padding: 5px 0;
 }
+
+/* Page - '*'/dashboard.html */
+.section-dash {
+    padding: 0;
+}
