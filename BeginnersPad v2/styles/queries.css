@@ -257,6 +257,12 @@
     }
 }
 
+@media(max-width: 688px) {
+    .section-dash .dash-grp .items {
+        justify-content: center;
+    }
+}
+
 @media(max-width: 565px) {
     #section-marketing .marketing-item h4 {
         font-size: 1.3rem;
@@ -290,6 +296,10 @@
 
     .form-group .form-check .form-check-label, .form-group .form-check .form-check-label a {
         font-size: 0.9rem;
+    }
+
+    .section-dash .dash-grp .profile {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -400,6 +410,10 @@
 
     #sectionMyReviews.section-listing-reviews {
         padding-top: 0;
+    }
+
+    .section-dash .dash-nav ul {
+        justify-content: flex-start;
     }
 }
 
