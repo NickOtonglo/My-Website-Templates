@@ -64,6 +64,130 @@
             </ul>
         </div>
     </div>
+
+    <section class="section-dash">
+        <div class="container">
+            <div class="dash-grp profile" id="dashProfile">
+                <h5 class="grp-label">Profile</h5>
+                <div class="profile-1">
+                    <img src="../images/avatar.png" alt="">
+                    <p>Welcome to your dashboard, <span>username</span>!</p>
+                </div>
+                <div class="profile-2">
+                    <p>Your basic info:</p>
+                    <ul>
+                        <li>Name: <span class="name">Firstname Lastname</span></li>
+                        <li>Email address: <span class="name">user@name.com</span></li>
+                        <li>Type: <span class="name">beginner</span></li>
+                        <li>Phone number: <span class="name">0700000000</span></li>
+                    </ul>
+                    <a href="#">Edit details</a>
+                    <button class="btn-link">Share your account <i class="fas fa-share-alt"></i></button>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashListings">
+                <h5 class="grp-label">Listings</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Listings Occupied</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Applications submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Applications pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Applications rejected</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Applications approved</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart" id="chartDashListingsBeginner"></div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTickets">
+                <h5 class="grp-label">Tickets</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Tickets submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Tickets pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Tickets resolved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Tickets open</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Tickets closed</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart" id="chartDashTicketsBeginner"></div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashReviews">
+                <h5 class="grp-label">Reviews</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Reviews done</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Reviews flagged</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Reviews removed</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart" id="chartDashReviewsBeginner"></div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashFavourites">
+                <h5 class="grp-label">Favourites</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Listings</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Units</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Articles</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart" id="cahrtDashBeginnerFavs"></div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashFavourites">
+                <h5 class="grp-label">Waiting list</h5>
+                <p class="grp-text">Your waiting list subscription status: <span class="status">inactive</span></p>
+                <p class="grp-text">Total waiting list subscription time: <span class="time">0 days</span></p>
+            </div>
+        </div>
+    </section>
     
     <script src="../js/nav-drawer.js"></script>
     <script src="../js/css-base.js"></script>
