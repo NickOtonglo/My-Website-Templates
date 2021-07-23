@@ -1008,10 +1008,17 @@ nav .nav-menu .badge li.selected a {
     background: var(--color-danger);
 }
 
+.section-dash .dash-grp .charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .section-dash .dash-grp .charts .chart {
     height: 300px;
     width: 550px;
     border: 1px solid #666;
+    margin: 15px 20px 0 20px;
 }
 
 .section-dash .dash-grp .txt-items > * {
