@@ -1,14 +1,14 @@
 var chartDashListingsBeginner = document.getElementById('chartDashListingsBeginner');
-var chartDashListingsBeginner = document.getElementById('chartDashListingsBeginner');
-var chartDashListingsBeginner = document.getElementById('chartDashListingsBeginner');
-var chartDashListingsBeginner = document.getElementById('chartDashListingsBeginner');
+var chartDashTicketsBeginner = document.getElementById('chartDashTicketsBeginner');
+var chartDashReviewsBeginner = document.getElementById('chartDashReviewsBeginner');
+var chartDashBeginnerFavs = document.getElementById('chartDashBeginnerFavs');
 
-var myChart = new Chart(chartDashListingsBeginner, {
+var chartListingBeginner = new Chart(chartDashListingsBeginner, {
     type: 'bar',
     data: {
         labels: ['occupied', 'submitted', 'pending', 'rejected', 'approved'],
         datasets: [{
-            label: 'Listings',
+            label: 'Applications',
             data: [12, 19, 3, 5, 2],
             backgroundColor: [
                 '#703680',
@@ -23,6 +23,97 @@ var myChart = new Chart(chartDashListingsBeginner, {
                 'rgb(207, 95, 50)',
                 'rgb(238, 14, 14)',
                 'rgb(13, 180, 138)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+var chartTicketsBeginner = new Chart(chartDashTicketsBeginner, {
+    type: 'bar',
+    data: {
+        labels: ['submitted', 'pending', 'resolved', 'open', 'closed'],
+        datasets: [{
+            label: 'Tickets',
+            data: [12, 19, 3, 5, 2],
+            backgroundColor: [
+                '#703680',
+                'rgb(207, 95, 50)',
+                'rgb(13, 180, 138)',
+                '#a058f1',
+                'rgb(238, 14, 14)'
+            ],
+            borderColor: [
+                '#703680',
+                'rgb(207, 95, 50)',
+                'rgb(13, 180, 138)',
+                '#a058f1',
+                'rgb(238, 14, 14)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+var chartReviewsBeginner = new Chart(chartDashReviewsBeginner, {
+    type: 'bar',
+    data: {
+        labels: ['total', 'flagged', 'removed'],
+        datasets: [{
+            label: 'Reviews',
+            data: [12, 19, 3, 5, 2],
+            backgroundColor: [
+                '#703680',
+                'rgb(207, 95, 50)',
+                'rgb(238, 14, 14)'
+            ],
+            borderColor: [
+                '#703680',
+                'rgb(207, 95, 50)',
+                'rgb(238, 14, 14)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+var chartBeginnerFavs = new Chart(chartDashBeginnerFavs, {
+    type: 'bar',
+    data: {
+        labels: ['listings', 'units', 'topics'],
+        datasets: [{
+            label: 'Favourites',
+            data: [12, 19, 3, 5, 2],
+            backgroundColor: [
+                '#703680',
+                '#362c41',
+                '#a058f1'
+            ],
+            borderColor: [
+                '#703680',
+                '#362c41',
+                '#a058f1'
             ],
             borderWidth: 1
         }]
