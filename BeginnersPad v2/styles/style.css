@@ -949,6 +949,10 @@ nav .nav-menu .badge li.selected a {
     position: relative;
 }
 
+.section-dash .dash-grp .items .item.card p {
+    font-weight: bold;
+}
+
 .section-dash .dash-grp .items .item.card h4 {
     margin-top: 40px;
     font-size: 2rem;
