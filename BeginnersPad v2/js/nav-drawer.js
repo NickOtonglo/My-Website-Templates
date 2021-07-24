@@ -6,18 +6,18 @@ let body = document.body;
 
 navDrawerOpen.onclick = function(){
     navDrawer.classList.remove('closed');
-    // body.classList.add('unfocused');
-    // pageFiller.classList.add('filler');
+    body.classList.add('unfocused');
+    pageFiller.classList.add('filler');
 };
 
 navDrawerClose.onclick = function(){
     navDrawer.classList.add('closed');
-    // body.classList.remove('unfocused');
-    // pageFiller.classList.remove('filler');
+    body.classList.remove('unfocused');
+    pageFiller.classList.remove('filler');
 }
 
-// pageFiller.onclick = function(){
-//     navDrawer.classList.add('closed');
-//     // body.classList.remove('unfocused');
-//     // pageFiller.classList.remove('filler');
-// }
+pageFiller.onclick = function(){
+    navDrawer.classList.add('closed');
+    body.classList.remove('unfocused');
+    pageFiller.classList.remove('filler');
+}
