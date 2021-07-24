@@ -105,7 +105,7 @@
                 <h5 class="grp-label">Listings</h5>
                 <div class="items">
                     <div class="item card item-primary">
-                        <p>Listings Occupied</p>
+                        <p>Listings occupied</p>
                         <h4>0</h4>
                     </div>
                     <div class="item card item-tertiary">
@@ -126,7 +126,9 @@
                     </div>
                 </div>
                 <div class="charts">
-                    <div class="chart" id="chartDashListingsBeginner"></div>
+                    <div class="chart">
+                        <canvas id="chartDashListingsBeginner" width="250" height="300"></canvas>
+                    </div>
                 </div>
             </div>
             <div class="dash-grp" id="dashTickets">
@@ -210,8 +212,9 @@
         </div>
     </section>
     
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../js/nav-drawer.js"></script>
-    <script src="../js/css-base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    <script src="/js/charts.js"></script>
+    <script src="/js/nav-drawer.js"></script>
+    <script src="/js/css-base.js"></script>
 </body>
 </html>
