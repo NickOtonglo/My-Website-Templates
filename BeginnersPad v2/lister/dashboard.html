@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/default-theme.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/queries.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/queries.css">
+    <title>Beginners Pad</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="/index.html">Beginners Pad</a></h1>
+        <i id="navToggle" class="fas fa-bars fa-2x toggle"></i>
+        <ul id="navMenu" class="nav-menu authed">
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark">1</span>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Account</a></li>
+            </div>
+            <div class="badge" id="navDrawerOpen">
+                <span class="badge-mark">3</span>
+                <li><i class="fas fa-bars"></i></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Filler -->
+    <div id="pageFiller"></div>
+
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="navDrawer">
+        <i id="navDrawerClose" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <ul>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</li>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Manage account</a></li>
+                <li><a href="/sign-in.html"><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Menu</p>
+            <ul>
+                <li class="selected"><a href="/lister/dashboard.html">Dashboard</a></li>
+                <li><a href="/view-listings.html">Listings</a></li>
+                <li><a href="/lister/my-listings.html">My listings</a></li>
+                <li><a href="/lister/favourites.html">Favourites</a></li>
+                <li><a href="/lister/beginner-applications.html">Beginner applications</a></li>
+                <li><a href="/lister/property-applications.html">My listing applications</a></li>
+                <li><a href="/view-tickets-user.html">My tickets</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section-dash">
+        <!-- Dashboard navbar -->
+        <div class="dash-nav">
+            <ul>
+                <li><a href="#dashProfile">Profile</a></li>
+                <li><a href="#dashListings">Listings</a></li>
+                <li><a href="#dashTickets">Tickets</a></li>
+                <li><a href="#dashReviews">Reviews</a></li>
+                <li><a href="#dashFavourites">Favourites</a></li>
+                <li><a href="#dashWaitingList">Waiting list</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="dash-grp" id="dashProfile">
+                <h5 class="grp-label">Profile</h5>
+                    <div class="profile">
+                        <div class="profile-1">
+                            <img src="../images/avatar.png" alt="">
+                            <p>Welcome to your dashboard, <span>username</span>!</p>
+                        </div>
+                        <div class="profile-2">
+                            <p>Your basic info:</p>
+                            <ul>
+                                <li>Name: <span class="name">Firstname Lastname</span></li>
+                                <li>Email address: <span class="name">user@name.com</span></li>
+                                <li>Type: <span class="name">beginner</span></li>
+                                <li>Phone number: <span class="name">0700000000</span></li>
+                            </ul>
+                            <div>
+                                <a class="edit" href="#">Edit basic info <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <button class="btn-link share">Share your account <i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+            </div>
+            <div class="dash-grp" id="dashListings">
+                <h5 class="grp-label">Listings</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Listings occupied</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Applications submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Applications pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Applications rejected</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Applications approved</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListingsBeginner" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTickets">
+                <h5 class="grp-label">Tickets</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Tickets submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Tickets pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Tickets resolved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Tickets open</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Tickets closed</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashTicketsBeginner" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashReviews">
+                <h5 class="grp-label">Reviews</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Reviews done</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Reviews flagged</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Reviews removed</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashReviewsBeginner" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashFavourites">
+                <h5 class="grp-label">Favourites</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Listings</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Units</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Topics</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashBeginnerFavs" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashWaitingList">
+                <h5 class="grp-label">Waiting list</h5>
+                <div class="txt-items">
+                    <p class="grp-text">Your waiting list subscription status: <span class="status">inactive</span></p>
+                    <p class="grp-text">Total waiting list subscription time: <span class="time">0 days</span></p>
+                    <div>
+                        <a class="edit" href="waiting-list.html">Go to waiting list <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    <script src="/js/charts.js"></script>
+    <script src="/js/nav-drawer.js"></script>
+    <script src="/js/css-base.js"></script>
+</body>
+</html>
