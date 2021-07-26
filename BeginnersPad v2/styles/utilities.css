@@ -101,7 +101,7 @@ button, .btn {
     color: #fff;
 }
 
-.btn-fav-close {
+.btn-close {
     border-radius: 5px;
     position: absolute;
     top: 0;
@@ -111,7 +111,7 @@ button, .btn {
     background: var(--color-background-main);
 }
 
-.btn-fav-close:hover {
+.btn-close:hover {
     background: var(--color-danger);
     color: #fff;
     border-color: var(--color-danger);
