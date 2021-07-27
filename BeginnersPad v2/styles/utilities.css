@@ -117,6 +117,18 @@ button, .btn {
     border-color: var(--color-danger);
 }
 
+.btn-popup-close {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn-popup-close:hover {
+    border: 1px solid var(--color-danger);
+    color: var(--color-danger);
+}
+
 /* Text */
 /* single-line text with ellipsis overflow */
 .txt-single-line, .card-info.txt-single-line > * {
@@ -584,4 +596,24 @@ select.btn-dropdown {
 
 .sub-grp ul li > span {
     font-weight: bold;
+}
+
+/* Popup */
+.popup {
+    display: unset;
+    position: fixed;
+    z-index: 19;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    background: #aaa;
+}
+
+.popup.closed {
+    display: none;
+}
+
+.popup-wrapper {
+    margin: auto;
+    padding: 25px;
 }
