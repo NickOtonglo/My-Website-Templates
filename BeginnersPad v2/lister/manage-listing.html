@@ -62,6 +62,12 @@
 
     <section class="section-listing-images">
         <div class="container">
+            <div class="title-grp">
+                <h3>Images</h3>
+                <div class="info-actions">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
             <div class="image-grp">
                 <div class="image">
                     <img src="/images/thumb_default.jpg" alt="">
@@ -96,36 +102,40 @@
                     <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
                 </div>
             </div>
+            <div class="title-grp">
+                <h3>Thumbnail</h3>
+                <div class="info-actions">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+            <div class="image-grp">
+                <div class="image">
+                    <img src="/images/thumb_default.jpg" alt="">
+                    <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="section-listing-primary">
         <div class="container">
-            <form action="" class="form-listing-primary">
-                <div class="listing-info">
-                    <div class="info-name">
-                        <input id="formListingName" placeholder="Listing name...">
-                        <div class="info-actions">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                    </div>
-                    <div class="info-location">
-                        <select name="" id="formListingLocale">
-                            <option value="" selected>--select location--</option>
-                            <option value="">Location, Location, Location</option>
-                        </select>
-                        <div class="info-actions">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                    </div>
-                    <div class="info-desc">
-                        <textarea id="formListingDesc" placeholder="Description..."></textarea>
-                        <div class="info-actions">
-                            <i class="fas fa-edit"></i>
-                        </div>
+            <h3>Primary information</h3>
+            <div class="listing-info-main">
+                <div class="info-name">
+                    <h1 class="name">Name</h1>
+                    <div class="info-actions">
+                        <i class="fas fa-edit"></i>
                     </div>
                 </div>
-            </form>
+                <p class="location">Location, Location, Location</p>
+            </div>
+            <div class="listing-info-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda nobis neque recusandae dicta distinctio
+                libero. Culpa nostrum molestiae fugit explicabo nam, hic qui enim aperiam impedit ad, possimus similique ullam
+                perspiciatis amet mollitia dolore inventore recusandae accusantium nulla, tempora dolorem deleniti reprehenderit. Natus
+                similique, sequi hic quas delectus saepe iste dolores, cupiditate quaerat error ex dolore, et ad quis id facere ipsam ab
+                libero voluptatem enim nemo. Dicta, nam?</p>
+            </div>
         </div>
     </section>
 
@@ -308,75 +318,6 @@
                     <div class="listing-map">
                         <h3>Location</h3>
                         <div id="map"></div>
-                    </div>
-                    <div class="listing-nearby-places">
-                        <h3>Nearby schools</h3>
-                        <div class="places-list">
-                            <div class="place" id="sch1">
-                                <h3 class="title" id="sch1-title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                            <div class="place" id="sch2">
-                                <h3 class="title" id="sch2-title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                            <div class="place" id="sch3">
-                                <h3 class="title" id="sch3-title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listing-nearby-places">
-                        <h3>Nearby markets</h3>
-                        <div class="places-list">
-                            <div class="place" id="mkt1">
-                                <h3 class="title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                            <div class="place" id="mkt2">
-                                <h3 class="title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                            <div class="place" id="mkt3">
-                                <h3 class="title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listing-nearby-places">
-                        <h3>Nearby bus stops</h3>
-                        <div class="places-list">
-                            <div class="place" id="bus1">
-                                <h3 class="title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                            <div class="place" id="bus2">
-                                <h3 class="title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                            <div class="place" id="bus3">
-                                <h3 class="title">Place name</h3>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, assumenda.</p>
-                                <p class="location">Location, Location, Location</p>
-                                <p class="distance">0 km</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

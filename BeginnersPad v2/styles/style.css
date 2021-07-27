@@ -445,16 +445,14 @@ nav .nav-menu .badge li.selected a {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .info-name .name {
-    flex: 9;
-    width: 10%;
     word-wrap: break-word;
 }
 
 .info-name .info-actions {
-    flex: 1;
     display: flex;
     justify-content: center;
     font-size: 1.8rem;
@@ -581,6 +579,51 @@ nav .nav-menu .badge li.selected a {
 .listing-nearby-places .place .location {
     font-size: 1.1rem;
     font-style: italic;
+}
+
+/* Page - /lister/manage-listing */
+.section-listing-images .title-grp > *,
+.section-listing-primary .primary-grp > *,
+.section-listing-secondary .title-grp > * {
+    display: inline-block;
+}
+
+.section-listing-images .title-grp i,
+.section-listing-primary .primary-grp i,
+.section-listing-secondary .title-grp i {
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.section-listing-images .title-grp i:hover,
+.section-listing-primary .primary-grp i:hover,
+.section-listing-secondary .title-grp i:hover {
+    color: var(--color-primary);
+}
+
+.section-listing-images .image-grp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.section-listing-images .image-grp .image {
+    position: relative;
+    margin: 5px 0;
+}
+
+.section-listing-images .image-grp .image img {
+    width: 300px;
+}
+
+.section-listing-primary .form-listing-primary .info-name input {
+    padding: 5px;
+    border: none;
 }
 
 /* Page - /view-listing-unit */
