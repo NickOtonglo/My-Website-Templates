@@ -141,7 +141,7 @@ nav .nav-menu .badge li.selected a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 19;
+    z-index: 18;
     background: rgba(0, 0, 0, 0.2);
     transition: 1s;
 }

@@ -65,7 +65,7 @@
             <div class="title-grp">
                 <h3>Images</h3>
                 <div class="info-actions">
-                    <i class="fas fa-plus"></i>
+                    <i id="popupToggle" class="fas fa-plus"></i>
                 </div>
             </div>
             <div class="image-grp">
@@ -325,10 +325,10 @@
     </section>
 
     <!-- Modals -->
-    <div class="popup popup-md" id="popupDemo">
+    <div class="popup popup-md closed" id="popupDemo">
         <div class="popup-wrapper">
             <h3>Modal demo</h3>
-            <button class="btn-link btn-popup-close"><i class="fas fa-times"></i></button>
+            <button id="popupClose" class="btn-link btn-popup-close"><i class="fas fa-times"></i></button>
         </div>
     </div>
     
@@ -337,6 +337,7 @@
     </script>
     <script src="/js/maps-view-listing.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    <script src="/js/popup.js"></script>
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/css-base.js"></script>
 </body>
