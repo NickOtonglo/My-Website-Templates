@@ -262,6 +262,10 @@
     .section-dash .dash-grp .items {
         justify-content: center;
     }
+
+    .section-listing-images .image-grp {
+        justify-content: center;
+    }
 }
 
 @media(max-width: 565px) {
@@ -415,6 +419,10 @@
 
     .section-dash .dash-nav ul {
         justify-content: flex-start;
+    }
+
+    .section-listing-images {
+        padding: 0;
     }
 }
 
