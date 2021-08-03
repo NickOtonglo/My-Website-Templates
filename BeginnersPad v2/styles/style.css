@@ -909,7 +909,8 @@ nav .nav-menu .badge li.selected a {
     position: relative;
 }
 
-.section-dash .dash-nav {
+.section-dash .dash-nav,
+.secondary-nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -918,7 +919,8 @@ nav .nav-menu .badge li.selected a {
     z-index: 1;
 }
 
-.section-dash .dash-nav ul {
+.section-dash .dash-nav ul,
+.secondary-nav ul {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -929,22 +931,26 @@ nav .nav-menu .badge li.selected a {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
-.section-dash .dash-nav ul::-webkit-scrollbar { /* WebKit */
+.section-dash .dash-nav ul::-webkit-scrollbar,
+.secondary-nav ul::-webkit-scrollbar { /* WebKit */
     width: 0;
     height: 0;
 }
 
-.section-dash .dash-nav ul li {
+.section-dash .dash-nav ul li,
+.secondary-nav ul li {
     padding: 5px 8px;
     margin: 0 2px;
     height: 35px;
 }
 
-.section-dash .dash-nav ul li:hover {
+.section-dash .dash-nav ul li:hover,
+.secondary-nav ul li:hover {
     border-bottom: 2px solid var(--color-tertiary);
 }
 
-.section-dash .dash-nav ul li a {
+.section-dash .dash-nav ul li a,
+.secondary-nav ul li a {
     text-decoration: none;
     white-space:nowrap;
 }
