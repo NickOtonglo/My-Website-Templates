@@ -737,6 +737,7 @@ nav .nav-menu .badge li.selected a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: var(--color-font);
 }
 
 #listerUnitMain.section-unit-main .title-grp .info-actions {
