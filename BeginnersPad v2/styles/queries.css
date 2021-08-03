@@ -185,12 +185,10 @@
         margin: 0 auto;
     }
 
-    .secondary-nav {
-        padding-left: 20px;
-    }
-
     .secondary-nav ul {
         justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
