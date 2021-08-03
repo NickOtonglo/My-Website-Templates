@@ -545,6 +545,21 @@ nav .nav-menu .badge li.selected a {
     margin-top: 10px;
 }
 
+.listing-grp-bordered {
+    border: 1px solid #666;
+    margin: 15px;
+    padding: 10px;
+}
+
+.listing-grp-bordered ul li {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.listing-grp-bordered ul li span {
+    font-weight: bold;
+}
+
 .listing-features .features,
 .listing-nearby-places .place,
 .listing-reviews .review-item {
