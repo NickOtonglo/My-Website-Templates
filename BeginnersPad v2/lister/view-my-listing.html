@@ -302,6 +302,25 @@
                             <button>Management log</button>
                         </div>
                     </div>
+                    <div class="listing-stats" id="listing-stats">
+                        <h3>Stats</h3>
+                        <div class="listing-item-bordered">
+                            <p>Date added: <span id="statsListingTimestamp">01-Jan-2021 00:00:00</span></p>
+                            <p>Views: <span id="statsListingViews">0</span></p>
+                            <p>Times favourited: <span id="statsListingFavourites">0</span></p>
+                            <p>Times suspended: <span id="statsListingSuspended">0</span></p>
+                            <p>Units count: <span id="statsUnitCount">0</span></p>
+                            <p>Units occupied: <span id="statsUnitOccupied"></span>0</p>
+                            <p>Units unoccupied: <span id="statsUnitUnoccupied">0</span></p>
+                            <p>Units hidden: <span id="statsUnitHidden">0</span></p>
+                        </div>
+                    </div>
+                    <div class="charts">
+                        <h3>Popularity chart</h3>
+                        <div class="chart" style="height: 300px;width: 250px;">
+                            <canvas id="chartDashListingsBeginner" width="250" height="300"></canvas>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel">
                     <div class="listing-features" id="listing-features">
@@ -472,6 +491,8 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&callback=initMap">
     </script>
     <script src="/js/maps-view-listing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    <script src="/js/charts.js"></script>
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/css-base.js"></script>
 </body>
