@@ -172,11 +172,11 @@
         padding-top: 25px;
     }
 
-    #tickets-user-list.section-read.links .panel-grp {
+    #tickets-user-list.section-read .panel-grp {
         grid-template-columns: 1fr;
     }
 
-    #tickets-user-list.section-read.links .panel-grp .panel:last-child {
+    #tickets-user-list.section-read .panel-grp .panel:last-child {
         grid-row: 1;
         grid-column: 1 / span 1;
     }

@@ -521,7 +521,7 @@ select.btn-dropdown {
 }
 
 /* .section-read (e.g. view-topics.html) */
-.section-read.links .panel-grp {
+.section-read .panel-grp {
     grid-template-columns: 3fr 1fr;
 }
 
@@ -529,7 +529,7 @@ select.btn-dropdown {
     padding: 15px 0;
 }
 
-.section-read.links .item.item-bottom-border {
+.section-read .item.item-bottom-border {
     border-bottom: 1px dashed #666;
 }
 
@@ -557,6 +557,19 @@ select.btn-dropdown {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.section-read .item .text-beginner-application {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.section-read .item .text-approved span {
+    color: var(--color-success);
+}
+
+.section-read .item .text-declined span {
+    color: var(--color-danger);
 }
 
 .txt-six-line {
