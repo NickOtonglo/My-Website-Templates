@@ -172,11 +172,11 @@
         padding-top: 25px;
     }
 
-    #tickets-user-list.section-read .panel-grp {
+    .section-read .panel-grp {
         grid-template-columns: 1fr;
     }
 
-    #tickets-user-list.section-read .panel-grp .panel:last-child {
+    .section-read .panel-grp .panel:last-child {
         grid-row: 1;
         grid-column: 1 / span 1;
     }
@@ -246,7 +246,7 @@
         font-size: 0.85rem;
     }
 
-    #tickets-user-list.section-read.links .panel-grp .panel .text-main {
+    .section-read.links .panel-grp .panel .text-main {
         -webkit-line-clamp: 5;
     }
 
@@ -393,12 +393,13 @@
     }
 
     .section-read {
-        padding-top: 10px;
-    }
-
-    #tickets-user-list.section-read {
+        /* padding-top: 10px; */
         padding-top: 0;
     }
+
+    /* #tickets-user-list.section-read {
+        padding-top: 0;
+    } */
 
     .section-help {
         padding-top: 0;
