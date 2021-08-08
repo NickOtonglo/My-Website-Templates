@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/default-theme.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/queries.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/queries.css">
+    <title>Beginners Pad</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="/index.html">Beginners Pad</a></h1>
+        <i id="navToggle" class="fas fa-bars fa-2x toggle"></i>
+        <ul id="navMenu" class="nav-menu authed">
+            <div class="badge">
+                <span class="badge-mark"></span>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            </div>
+            <div class="badge">
+                <span class="badge-mark">1</span>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Account</a></li>
+            </div>
+            <div class="badge" id="navDrawerOpen">
+                <span class="badge-mark">3</span>
+                <li><i class="fas fa-bars"></i></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Filler -->
+    <div id="pageFiller"></div>
+
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="navDrawer">
+        <i id="navDrawerClose" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <ul>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</li>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Manage account</a></li>
+                <li><a href="/sign-in.html"><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Menu</p>
+            <ul>
+                <li><a href="/lister/dashboard.html">Dashboard</a></li>
+                <li><a href="/view-listings.html">Listings</a></li>
+                <li><a href="/lister/my-listings.html">My listings</a></li>
+                <li><a href="/lister/favourites.html">Favourites</a></li>
+                <li><a href="/lister/view-beginner-applications.html">Beginner applications</a></li>
+                <li><a href="/lister/view-property-applications.html">My listing applications</a></li>
+                <li><a href="/view-tickets-user.html">My tickets</a></li>
+                <li><a href="/lister/banned-users.html">Banned users</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Search bar -->
+    <section id="search-bar">
+        <div class="container">
+            <form class="search-bar">
+                <div class="search-bar-grp">
+                    <input type="text" class="search-input" placeholder="search...">
+                    <div class="search-button">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-listings" id="listerMyListings">
+        <div class="container">
+            <div class="btn-grp horizontal">
+                <button class="selected">All</button>
+                <button>Not submitted</button>
+                <button>Pending</button>
+                <button>Approved</button>
+                <button>Rejected</button>
+                <button>Suspended</button>
+                <button>Hidden/Private</button>
+            </div>
+            <div class="btn-grp vertical">
+                <button class="selected">All</button>
+                <button>Not submitted</button>
+                <button>Pending</button>
+                <button>Approved</button>
+                <button>Rejected</button>
+                <button>Suspended</button>
+                <button>Hidden/Private</button>
+            </div>
+            <div class="container-btn-dropdown">
+                <select class="btn-dropdown" name="listing_sort" id="listing_sort">
+                    <option value="" selected>Sort by newest</option>
+                    <option value="">Sort by oldest</option>
+                    <option value="">Sort by cheapest</option>
+                    <option value="">Sort by priciest</option>
+                    <option value="">Sort by largest area</option>
+                    <option value="">Sort by most rooms</option>
+                </select>
+            </div>
+            <div class="listing-units-list">
+                <div class="listing-units-grp">
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: not rated</p>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: not rated</p>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: not rated</p>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="card-sm card-2">
+                        <a href="/lister/view-my-listing.html">
+                            <div class="thumb"></div>
+                            <div class="details">
+                                <h2>Listing name</h2>
+                                <div class="location">
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location,</span>
+                                    <span class="spec">Location</span>
+                                </div>
+                                <p class="timestamp">Added 5 hours ago</p>
+                                <div class="info-rating-grp">
+                                    <p class="rating">Rating: 4.0/5</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/nav-drawer.js"></script>
+    <script src="/js/search-bar-scroll.js"></script>
+    <script src="/js/css-base.js"></script>
+</body>
+</html>
