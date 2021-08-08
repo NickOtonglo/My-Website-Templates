@@ -271,6 +271,14 @@
     .section-listing-images .image-grp {
         justify-content: center;
     }
+
+    .section-listings#sectionMyListings .top-buttons .vertical {
+        display: flex;
+    }
+    
+    .section-listings#sectionMyListings .top-buttons .horizontal {
+        display: none;
+    }
 }
 
 @media(max-width: 565px) {

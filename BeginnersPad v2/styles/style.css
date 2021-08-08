@@ -306,6 +306,10 @@ nav .nav-menu .badge li.selected a {
     display: none;
 }
 
+.section-listings#sectionMyListings .top-buttons .horizontal {
+    display: flex;
+}
+
 /* Marketing */
 #section-marketing .marketing-item {
     padding-top: 20px;
