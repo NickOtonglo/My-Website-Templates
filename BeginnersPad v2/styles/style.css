@@ -295,6 +295,17 @@ nav .nav-menu .badge li.selected a {
     margin-bottom: 50px;
 }
 
+.section-listings#sectionMyListings .top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 25px 0;
+}
+
+.section-listings#sectionMyListings .top-buttons .vertical {
+    display: none;
+}
+
 /* Marketing */
 #section-marketing .marketing-item {
     padding-top: 20px;
@@ -1127,4 +1138,17 @@ nav .nav-menu .badge li.selected a {
 
 .section-dash .dash-grp .txt-items .grp-text span {
     font-size: 1.5rem;
+}
+
+/* Page - /lister/view-property-applications.html */
+#sectionMyListings .container .listing-units-grp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#sectionMyListings .container .listing-units-grp .card-sm {
+    width: 450px;
 }
