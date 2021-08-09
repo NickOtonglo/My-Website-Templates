@@ -1150,7 +1150,7 @@ nav .nav-menu .badge li.selected a {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #sectionMyListings .container .listing-units-grp .card-sm {
