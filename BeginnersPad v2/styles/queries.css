@@ -438,6 +438,14 @@
     .section-listing-images {
         padding: 0;
     }
+
+    .section-read .item .user-grp {
+        flex-wrap: wrap;
+    }
+
+    .section-read .item .user-grp .thumb {
+        margin: 10px;
+    }
 }
 
 @media(max-width: 408px) {
