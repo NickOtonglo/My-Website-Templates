@@ -572,6 +572,19 @@ select.btn-dropdown {
     color: var(--color-danger);
 }
 
+.section-read .item .user-grp {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.section-read .item .user-grp .thumb {
+    width: 130px;
+    height: 130px;
+    margin: 0 10px;
+    border: 1px solid #666;
+}
+
 .txt-six-line {
     padding: 5px 0;
     overflow: hidden;
