@@ -67,10 +67,13 @@
             <ul>
                 <li><a href="#dashProfile">Profile</a></li>
                 <li><a href="#dashListings">Listings</a></li>
+                <li><a href="#dashUnits">Units</a></li>
+                <li><a href="#dashBeginnerApplications">Beginner applications</a></li>
+                <li><a href="#dashTours">Tours</a></li>
+                <li><a href="#dashBannedUsers">Banned users</a></li>
+                <li><a href="#dashRatings">Ratings</a></li>
                 <li><a href="#dashTickets">Tickets</a></li>
-                <li><a href="#dashReviews">Reviews</a></li>
                 <li><a href="#dashFavourites">Favourites</a></li>
-                <li><a href="#dashWaitingList">Waiting list</a></li>
             </ul>
         </div>
 
@@ -87,7 +90,7 @@
                             <ul>
                                 <li>Name: <span class="name">Firstname Lastname</span></li>
                                 <li>Email address: <span class="name">user@name.com</span></li>
-                                <li>Type: <span class="name">beginner</span></li>
+                                <li>Type: <span class="name">lister</span></li>
                                 <li>Phone number: <span class="name">0700000000</span></li>
                             </ul>
                             <div>
@@ -101,29 +104,171 @@
                 <h5 class="grp-label">Listings</h5>
                 <div class="items">
                     <div class="item card item-primary">
-                        <p>Listings occupied</p>
+                        <p>All listings</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card">
+                        <p>Unsubmitted</p>
                         <h4>0</h4>
                     </div>
                     <div class="item card item-tertiary">
-                        <p>Applications submitted</p>
-                        <h4>0</h4>
-                    </div>
-                    <div class="item card item-warning">
-                        <p>Applications pending</p>
-                        <h4>0</h4>
-                    </div>
-                    <div class="item card item-danger">
-                        <p>Applications rejected</p>
+                        <p>Pending</p>
                         <h4>0</h4>
                     </div>
                     <div class="item card item-success">
-                        <p>Applications approved</p>
+                        <p>Approved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Rejected</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Suspended</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Hidden</p>
                         <h4>0</h4>
                     </div>
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashListingsBeginner" width="250" height="300"></canvas>
+                        <canvas id="chartDashListerListings" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashUnits">
+                <h5 class="grp-label">Units</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All units</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Occupied</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Unoccupied</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Active</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Hidden</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerUnits" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashBeginnerApplications">
+                <h5 class="grp-label">Beginner Applications</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All applications</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Approved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Rejected</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerBegAppl" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTours">
+                <h5 class="grp-label">Tours</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All appointments</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Past</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card">
+                        <p>Status</p>
+                        <h4>open</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerTours" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashBannedUsers">
+                <h5 class="grp-label">Banned Users</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All users</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Most common category</p>
+                        <h4>none</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Ban appeals</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerBanned" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashRatings">
+                <h5 class="grp-label">Ratings (Average)</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>You (lister)</p>
+                        <h4>0/5</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Listings</p>
+                        <h4>0/5</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Units</p>
+                        <h4>0/5</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Tours</p>
+                        <h4>0/5</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerRating" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -153,29 +298,7 @@
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashTicketsBeginner" width="250" height="300"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="dash-grp" id="dashReviews">
-                <h5 class="grp-label">Reviews</h5>
-                <div class="items">
-                    <div class="item card item-primary">
-                        <p>Reviews done</p>
-                        <h4>0</h4>
-                    </div>
-                    <div class="item card item-warning">
-                        <p>Reviews flagged</p>
-                        <h4>0</h4>
-                    </div>
-                    <div class="item card item-danger">
-                        <p>Reviews removed</p>
-                        <h4>0</h4>
-                    </div>
-                </div>
-                <div class="charts">
-                    <div class="chart">
-                        <canvas id="chartDashReviewsBeginner" width="250" height="300"></canvas>
+                        <canvas id="chartDashTicketsLister" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -197,17 +320,7 @@
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashBeginnerFavs" width="250" height="300"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="dash-grp" id="dashWaitingList">
-                <h5 class="grp-label">Waiting list</h5>
-                <div class="txt-items">
-                    <p class="grp-text">Your waiting list subscription status: <span class="status">inactive</span></p>
-                    <p class="grp-text">Total waiting list subscription time: <span class="time">0 days</span></p>
-                    <div>
-                        <a class="edit" href="waiting-list.html">Go to waiting list <i class="fas fa-chevron-right"></i></a>
+                        <canvas id="chartDashListerFavs" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
