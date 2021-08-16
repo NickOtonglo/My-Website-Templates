@@ -104,6 +104,12 @@
     }
 }
 
+@media(max-width: 800px) {
+    .section-dash #dashNavLister.dash-nav ul {
+        justify-content: flex-start;
+    }
+}
+
 @media(max-width: 768px) {
     #section-listings .container, #section-marketing .container,
     .section-listings .container{
