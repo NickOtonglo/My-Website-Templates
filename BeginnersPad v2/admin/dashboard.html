@@ -5,224 +5,388 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/dashmin.css">
-    <link rel="stylesheet" href="../styles/default-theme.css">
-    <title>Dashmin - Simple Dashboard</title>
+    <link rel="stylesheet" href="/styles/default-theme.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/queries.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/queries.css">
+    <title>Beginners Pad</title>
 </head>
 <body>
-    <!-- Nav drawer -->
-    <div id="dsmNavDrawer" class="nav-drawer nav-open">
-        <div class="nav-drawer-logo">
-            <a href="#"><h2>DashMin v2.0</h2></a>
-            <i id="dsmNavDrawerToggle" class="fas fa-tachometer-alt fa-2x"></i>
-        </div>
-        <div class="container">
-            <div class="nav-drawer-category">
-                <!-- Users -->
-                <p>Users</p>
-                <ul>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Regular</a></li>
-                    <li><a href="#">Premium</a></li>
-                    <li><a href="#">Inactive</a></li>
-                    <li><a href="#">Suspended</a></li>
-                    <li><a href="#">Tickets</a></li>
-                </ul>
-            </div>
-            <div class="nav-drawer-category">
-                <!-- Sales -->
-                <p>Transactions</p>
-                <ul>
-                    <li><a href="#">Most Recent</a></li>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Verified</a></li>
-                    <li><a href="#">Failed</a></li>
-                    <li><a href="#">Blocked</a></li>
-                    <li><a href="#">Flagged</a></li>
-                </ul>
-            </div>
-            <div class="nav-drawer-category">
-                <!-- Tools -->
-                <p>Tools</p>
-                <ul>
-                    <li><a href="#">Analysis</a></li>
-                    <li><a href="#">Merging</a></li>
-                    <li><a href="#">Transfer</a></li>
-                    <li><a href="#">Automation</a></li>
-                </ul>
-            </div>
-            <div class="nav-drawer-category">
-                <!-- System -->
-                <p>System</p>
-                <ul>
-                    <li><a href="#">Maintenance</a></li>
-                    <li><a href="#">Logs</a></li>
-                    <li><a href="#">Auto-pilot</a></li>
-                    <li><a href="#">Guides</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
     <!-- Navbar -->
     <nav>
-        <h2>Dashboard</h2>
-        <ul class="nav-menu">
+        <h1><a href="/index.html">Beginners Pad</a></h1>
+        <i id="navToggle" class="fas fa-bars fa-2x toggle"></i>
+        <ul id="navMenu" class="nav-menu authed">
             <div class="badge">
-                <span class="badge-mark">19</span>
-                <li><a href="#"><i class="fas fa-question-circle fa-2x"></i></a></li>
+                <span class="badge-mark"></span>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</a></li>
             </div>
             <div class="badge">
-                <span class="badge-mark">10</span>
-                <li><a href="#"><i class="fas fa-envelope-open fa-2x"></i></a></li>
+                <span class="badge-mark">1</span>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Account</a></li>
             </div>
-            <div class="badge">
-                <li><i class="fas fa-user-circle fa-2x"></i></li>
+            <div class="badge" id="navDrawerOpen">
+                <span class="badge-mark">3</span>
+                <li><i class="fas fa-bars"></i></li>
             </div>
         </ul>
     </nav>
 
-    <!-- Main area -->
-    <section id="dsmSectionMain" class="section-main nav-open">
-        <div class="container">
-            <div class="label">
-                <p>Live Feed</p>
-            </div>
-            <div class="cards">
-                <div class="card card-warning">
-                    <p>Unresolved Tickets</p>
-                    <h3>19</h3>
-                    <i class="fas fa-ticket-alt fa-3x"></i>
-                </div>
-                <div class="card card-success">
-                    <p>Closed Tickets</p>
-                    <h3>87</h3>
-                    <i class="fas fa-ticket-alt fa-3x"></i>
-                </div>
-                <div class="card card-warning">
-                    <p>Urgent Tickets</p>
-                    <h3>6</h3>
-                    <i class="fas fa-ticket-alt fa-3x"></i>
-                </div>
-                <div class="card card-primary">
-                    <p>Unread Messages</p>
-                    <h3>10</h3>
-                    <i class="fas fa-envelope fa-3x"></i>
-                </div>
-                <div class="card card-danger">
-                    <p>Flagged Transactions</p>
-                    <h3>3</h3>
-                    <i class="fas fa-money-check-alt fa-3x"></i>
-                </div>
-                <div class="card card-warning">
-                    <p>Suspended Users</p>
-                    <h3>11</h3>
-                    <i class="fas fa-user-slash fa-3x"></i>
-                </div>
-            </div>
+    <!-- Filler -->
+    <div id="pageFiller"></div>
 
-            <div class="label">
-                <p>Updates</p>
-            </div>
-            <div class="content">
-                <div class="content-categories">
-                    <div class="content-table">
-                        <h5>User Status</h5>
-                        <table>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td>Kohn Doe</td>
-                                <td>kohn@doe.com</td>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <td>Alicin Wanda Land</td>
-                                <td>wonderlander@mail.com</td>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <td>Tobb Ako</td>
-                                <td>tobb@smoke.com</td>
-                                <td>Inactive</td>
-                            </tr>
-                            <tr>
-                                <td>Some Body</td>
-                                <td>some@body.com</td>
-                                <td>Suspended</td>
-                            </tr>
-                            <tr>
-                                <td>Debt Ceiling</td>
-                                <td>debt@ceiling.com</td>
-                                <td>Inactive</td>
-                            </tr>
-                            <tr>
-                                <td>End Game</td>
-                                <td>end@game.com</td>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <td>Sodium Hypochlorite</td>
-                                <td>hypo.c@mail.com</td>
-                                <td>Suspended</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="content-sidebar">
-                        <div class="container">
-                            <h5>Recent</h5>
-                            <ul>
-                                <li class="content-sidebar-item">
-                                    <img src="images/avatar.png" alt="">
-                                    <div class="item-info">
-                                        <h4>Kohn Doe</h4>
-                                        <p class="action">Update sales record #7864.7</p>
-                                        <p class="time">43 minutes ago</p>
-                                    </div>
-                                </li>
-                                <li class="content-sidebar-item">
-                                    <img src="images/avatar.png" alt="">
-                                    <div class="item-info">
-                                        <h4>Kohn Doe</h4>
-                                        <p class="action">Update sales record #7864.4</p>
-                                        <p class="time">55 minutes ago</p>
-                                    </div>
-                                </li>
-                                <li class="content-sidebar-item">
-                                    <img src="images/avatar.png" alt="">
-                                    <div class="item-info">
-                                        <h4>Kohn Doe</h4>
-                                        <p class="action">Request sales report #7864</p>
-                                        <p class="time">1 hour ago</p>
-                                    </div>
-                                </li>
-                                <li class="content-sidebar-item">
-                                    <img src="images/avatar.png" alt="">
-                                    <div class="item-info">
-                                        <h4>Kohn Doe</h4>
-                                        <p class="action">Update purchases report #7971</p>
-                                        <p class="time">2 hours ago</p>
-                                    </div>
-                                </li>
-                                <li class="content-sidebar-item">
-                                    <img src="images/avatar.png" alt="">
-                                    <div class="item-info">
-                                        <h4>Kohn Doe</h4>
-                                        <p class="action">Request purchases report #7971</p>
-                                        <p class="time">2 hours ago</p>
-                                    </div>
-                                </li>
-                            </ul>
+    <!-- Nav drawer -->
+    <div class="nav-drawer closed" id="navDrawer">
+        <i id="navDrawerClose" class="fas fa-times fa-2x"></i>
+        <div class="nav-drawer-category">
+            <ul>
+                <li><a href="/help.html"><i class="fas fa-question-circle"></i> Help</li>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Manage account</a></li>
+                <li><a href="/sign-in.html"><i class="fas fa-sign-out-alt"></i> Sign out</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Menu</p>
+            <ul>
+                <li class="selected"><a href="/admin/dashboard.html">Dashboard</a></li>
+                <li><a href="/admin/bookmarks.html">Bookmarks</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Listings</p>
+            <ul>
+                <li><a href="/view-listings.html">View all</a></li>
+                <li><a href="/admin/manage-listings.html">Manage</a></li>
+                <li><a href="/admin/manage-listings-logs.html">Listing management log</a></li>
+                <li><a href="/admin/manage-listings-reviews.html">Manage reviews</a></li>
+                <li><a href="/admin/listing-applications.html">Applications</a></li>
+                <li><a href="/admin/listing-applications-logs.html">Application management log</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Users</p>
+            <ul>
+                <li><a href="/view-users.html">View all</a></li>
+                <li><a href="/admin/manage-users.html">Manage</a></li>
+                <li><a href="/admin/manage-users-logs.html">Management log</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Zones</p>
+            <ul>
+                <li><a href="/admin/manage-zones.html">Manage</a></li>
+                <li><a href="/admin/manage-listings-logs.html">Management log</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Tags & topics</p>
+            <ul>
+                <li><a href="view-topics.html">View topics</a></li>
+                <li><a href="/admin/manage-topics.html">Manage topics</a></li>
+                <li><a href="/admin/manage-topics-logs.html">Topic management log</a></li>
+                <li><a href="/admin/manage-tags.html">Manage tags</a></li>
+                <li><a href="/admin/manage-tags-logs.html">Tag management log</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Tags & topics</p>
+            <ul>
+                <li><a href="view-topics.html">View topics</a></li>
+                <li><a href="/admin/manage-topics.html">Manage topics</a></li>
+                <li><a href="/admin/manage-topics-logs.html">Topic management log</a></li>
+                <li><a href="/admin/manage-tags.html">Manage tags</a></li>
+                <li><a href="/admin/manage-tags-logs.html">Tag management log</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>Help & tickets</p>
+            <ul>
+                <li><a href="view-tickets.html">View tickets</a></li>
+                <li><a href="/admin/manage-tickets-log.html">Ticket management log</a></li>
+                <li><a href="/admin/manage-help-categories.html">Manage help categories</a></li>
+                <li><a href="/admin/manage-tags.html">Manage FAQs</a></li>
+            </ul>
+        </div>
+        <div class="nav-drawer-category">
+            <p>System</p>
+            <ul>
+                <li><a href="#">Manage</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">System logs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section-dash">
+        <!-- Dashboard navbar -->
+        <div class="dash-nav" id="dashNavLister">
+            <ul>
+                <li><a href="#dashProfile">Profile</a></li>
+                <li><a href="#dashListings">Listings</a></li>
+                <li><a href="#dashUnits">Units</a></li>
+                <li><a href="#dashBeginnerApplications">Beginner applications</a></li>
+                <li><a href="#dashTours">Tours</a></li>
+                <li><a href="#dashBannedUsers">Banned users</a></li>
+                <li><a href="#dashRatings">Ratings</a></li>
+                <li><a href="#dashTickets">Tickets</a></li>
+                <li><a href="#dashFavourites">Favourites</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="dash-grp" id="dashProfile">
+                <h5 class="grp-label">Profile</h5>
+                    <div class="profile">
+                        <div class="profile-1">
+                            <img src="../images/avatar.png" alt="">
+                            <p>Welcome to your dashboard, <span>username</span>!</p>
                         </div>
+                        <div class="profile-2">
+                            <p>Your basic info:</p>
+                            <ul>
+                                <li>Name: <span class="name">Firstname Lastname</span></li>
+                                <li>Email address: <span class="name">user@name.com</span></li>
+                                <li>Type: <span class="name">lister</span></li>
+                                <li>Phone number: <span class="name">0700000000</span></li>
+                            </ul>
+                            <div>
+                                <a class="edit" href="#">Edit basic info <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <button class="btn-link share">Share your profile <i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+            </div>
+            <div class="dash-grp" id="dashListings">
+                <h5 class="grp-label">Listings</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All listings</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card">
+                        <p>Unsubmitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Approved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Rejected</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Suspended</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Hidden</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerListings" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashUnits">
+                <h5 class="grp-label">Units</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All units</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Occupied</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Unoccupied</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Active</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Hidden</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerUnits" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashBeginnerApplications">
+                <h5 class="grp-label">Beginner Applications</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All applications</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Approved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Rejected</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerBegAppl" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTours">
+                <h5 class="grp-label">Tours</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All appointments</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Past</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card">
+                        <p>Status</p>
+                        <h4>open</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerTours" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashBannedUsers">
+                <h5 class="grp-label">Banned Users</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All users</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Most common category</p>
+                        <h4>none</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Ban appeals</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerBanned" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashRatings">
+                <h5 class="grp-label">Ratings (Average)</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>You (lister)</p>
+                        <h4>0/5</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Listings</p>
+                        <h4>0/5</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Units</p>
+                        <h4>0/5</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Tours</p>
+                        <h4>0/5</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerRating" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTickets">
+                <h5 class="grp-label">Tickets</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Tickets submitted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Tickets pending</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Tickets resolved</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Tickets open</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Tickets closed</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerTickets" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashFavourites">
+                <h5 class="grp-label">Favourites</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Listings</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Units</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Topics</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashListerFavs" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="../js/dashmin.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    <script src="/js/charts-lister-dashboard.js"></script>
+    <script src="/js/nav-drawer.js"></script>
+    <script src="/js/css-base.js"></script>
 </body>
 </html>
