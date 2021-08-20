@@ -325,6 +325,10 @@
     .section-dash .dash-grp .profile {
         grid-template-columns: 1fr;
     }
+
+    .table-grp {
+        overflow-x:auto;
+    }
 }
 
 @media(max-width: 499px) {
@@ -451,6 +455,10 @@
 
     .section-read .item .user-grp .thumb {
         margin: 10px;
+    }
+
+    #sectionTable {
+        padding-top: 10px;
     }
 }
 
