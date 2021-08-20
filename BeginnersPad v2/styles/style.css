@@ -49,6 +49,27 @@ nav {
     overflow-x: hidden;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+th, td {
+    padding: 8px 10px;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr:first-child:hover {
+    cursor: default;
+}
+
 footer {
     background: var(--color-secondary);
     padding: 8px 20px;
@@ -1155,4 +1176,38 @@ nav .nav-menu .badge li.selected a {
 
 #sectionMyListings .container .listing-units-grp .card-sm {
     width: 450px;
+}
+
+/* .table-grp */
+.table-grp .table-title {
+    padding: 10px 0;
+}
+
+.table-grp table th {
+    background: var(--color-primary);
+    color: var(--color-font-contrast);
+    text-align: left;
+    font-weight: normal;
+}
+
+.table-grp table,
+.table-grp table th,
+.table-grp table td {
+    border: 1px solid var(--color-primary);
+}
+
+/* .table-grp table tr:nth-child(even) {
+    background: var(--color-secondary);
+} */
+
+.table-grp table tr:hover {
+    background-color: #ccc;
+}
+
+.table-grp table td {
+    /* https://stackoverflow.com/questions/9789723/css-text-overflow-in-a-table-cell */
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
