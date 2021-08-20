@@ -389,6 +389,15 @@ select.btn-dropdown {
     margin-bottom: 20px;
 }
 
+.container-btn-dropdown.multi {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-btn-dropdown.multi > * {
+    margin: 8px 4px;
+}
+
 /* Maps */
 .listing-map #map {
     border: 1px solid #666;
