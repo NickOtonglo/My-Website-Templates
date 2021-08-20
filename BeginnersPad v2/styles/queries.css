@@ -326,9 +326,9 @@
         grid-template-columns: 1fr;
     }
 
-    .table-grp {
+    /* .table-grp {
         overflow-x:auto;
-    }
+    } */
 }
 
 @media(max-width: 499px) {

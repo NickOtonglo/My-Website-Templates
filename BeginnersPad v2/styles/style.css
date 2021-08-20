@@ -1179,6 +1179,10 @@ nav .nav-menu .badge li.selected a {
 }
 
 /* .table-grp */
+.table-grp {
+    overflow-x:auto;
+}
+
 .table-grp .table-title {
     padding: 10px 0;
 }
