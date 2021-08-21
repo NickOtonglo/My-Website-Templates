@@ -316,18 +316,18 @@ nav .nav-menu .badge li.selected a {
     margin-bottom: 50px;
 }
 
-.section-listings#sectionMyListings .top-buttons {
+.top-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 0 25px 0;
 }
 
-.section-listings#sectionMyListings .top-buttons .vertical {
+.top-buttons .vertical {
     display: none;
 }
 
-.section-listings#sectionMyListings .top-buttons .horizontal {
+.top-buttons .horizontal {
     display: flex;
 }
 
@@ -838,7 +838,7 @@ nav .nav-menu .badge li.selected a {
 }
 
 .section-listing-reviews .review-item {
-    padding-top: 18px;
+    /* padding-top: 18px; */
     padding-bottom: 18px;
     border: none;
     border-bottom: 1px dashed #666;
