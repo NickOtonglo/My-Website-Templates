@@ -460,6 +460,10 @@
     #sectionTable {
         padding-top: 10px;
     }
+
+    #sectionManageReviews {
+        padding-top: 0;
+    }
 }
 
 @media(max-width: 408px) {
