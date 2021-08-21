@@ -85,6 +85,13 @@
     }
 }
 
+@media(max-width: 1024px) {
+    #sectionManageReviews.section-listing-reviews .reviews-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 @media(max-width: 941px) {
     .panel-grp,
     .section-listing-secondary .panel-grp,
@@ -502,6 +509,11 @@
 
     #showcaseListingUnit.showcase-small {
         height: 140px;
+    }
+
+    .section-listing-reviews .review-item.plus {
+        grid-template-columns: 1fr;
+        height: unset;
     }
 }
 

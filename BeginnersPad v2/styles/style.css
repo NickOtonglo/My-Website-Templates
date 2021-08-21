@@ -861,6 +861,7 @@ nav .nav-menu .badge li.selected a {
 #sectionManageReviews.section-listing-reviews .reviews-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .section-listing-reviews .review-item.plus {
@@ -868,6 +869,7 @@ nav .nav-menu .badge li.selected a {
     grid-template-columns: 1fr 2fr;
     height: 220px;
     max-width: 600px;
+    margin: auto;
 }
 
 .section-listing-reviews .review-item.plus a .thumb {
@@ -877,6 +879,10 @@ nav .nav-menu .badge li.selected a {
 
 .section-listing-reviews .review-item.plus .plus-info {
     margin-left: 10px;
+}
+
+.section-listing-reviews .review-item.plus .plus-info .listing {
+    margin: 3px 0;
 }
 
 .section-listing-reviews .review-item.plus .plus-info .occupant-details {
