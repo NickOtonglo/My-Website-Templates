@@ -598,7 +598,8 @@ nav .nav-menu .badge li.selected a {
 
 .listing-features .features,
 .listing-nearby-places .place,
-.listing-reviews .review-item {
+.listing-reviews .review-item,
+.listing-reviews .review-item.plus {
     border: 1px solid #666;
     margin: 15px;
     padding: 10px;
@@ -849,8 +850,58 @@ nav .nav-menu .badge li.selected a {
     border-bottom: none;
 }
 
+.section-listing-reviews .review-item.plus:last-child {
+    border-bottom: 1px solid #666;
+}
+
 .section-listing-reviews .review-item .review {
     text-align: justify;
+}
+
+#sectionManageReviews.section-listing-reviews .reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-listing-reviews .review-item.plus {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 220px;
+    max-width: 600px;
+}
+
+.section-listing-reviews .review-item.plus a .thumb {
+    height: 200px;
+    background: url('/images/thumb_default.jpg') no-repeat center;
+}
+
+.section-listing-reviews .review-item.plus .plus-info {
+    margin-left: 10px;
+}
+
+.section-listing-reviews .review-item.plus .plus-info .occupant-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.section-listing-reviews .review-item.plus .plus-info .occupant-details img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.section-listing-reviews .review-item.plus .plus-info .review a {
+    text-decoration: none;
+}
+
+.section-listing-reviews .review-item.plus .plus-info .plus-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Page - /view-tickets-user */
