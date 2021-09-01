@@ -154,13 +154,16 @@ button, .btn {
     transition: 0.3s;
 }
 
-.card:hover, .card-sm:hover {
+.card:hover,
+.card-sm:hover,
+.card-user:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
     transform: translateY(-5px);
 }
 
 .card a:hover,
-.card-sm a:hover {
+.card-sm a:hover,
+.card-user a:hover {
     text-decoration: none;
     font-weight: normal;
 }
@@ -208,7 +211,8 @@ button, .btn {
 }
 
 /* Card v2 & Unit cards */
-.card-sm {
+.card-sm,
+.card-user {
     margin: 15px;
     border-radius: 7px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);

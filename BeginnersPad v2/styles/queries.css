@@ -83,6 +83,10 @@
     .listing-info-aux .aux-grp .data {
         font-size: 1.0rem;
     }
+
+    #sectionUserProfile.section-user .container {
+        justify-content: space-between;
+    }
 }
 
 @media(max-width: 1024px) {
