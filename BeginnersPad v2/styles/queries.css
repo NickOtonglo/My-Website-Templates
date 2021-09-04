@@ -209,6 +209,12 @@
     }
 }
 
+@media(max-width: 753px) {
+    .section-users .cards {
+        justify-content: center;
+    }
+}
+
 @media(max-width: 720px) {
     #section-listings {
         padding-bottom: 30px;
