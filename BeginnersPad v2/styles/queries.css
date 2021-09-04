@@ -350,6 +350,12 @@
     } */
 }
 
+@media(max-width: 546px) {
+    .section-zones .cards {
+        justify-content: center;
+    }
+}
+
 @media(max-width: 499px) {
     nav {
         flex-direction: column;
