@@ -173,14 +173,16 @@ button, .btn {
 
 .card:hover,
 .card-sm:hover,
-.card-user:hover {
+.card-user:hover,
+.card-generic:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
     transform: translateY(-5px);
 }
 
 .card a:hover,
 .card-sm a:hover,
-.card-user a:hover {
+.card-user a:hover,
+.card-generic a:hover {
     text-decoration: none;
     font-weight: normal;
 }
@@ -229,7 +231,8 @@ button, .btn {
 
 /* Card v2 & Unit cards */
 .card-sm,
-.card-user {
+.card-user,
+.card-generic {
     margin: 15px;
     border-radius: 7px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
@@ -279,6 +282,14 @@ button, .btn {
 .card-2 .thumb {
     background: url('../images/thumb_default.jpg') no-repeat center;
     border-radius: 7px 0 0 7px;
+}
+
+.card-generic .text {
+    padding: 8px;
+}
+
+.card-generic .text .txt-sm {
+    font-size: 0.9rem;
 }
 
 /* Section title */
@@ -425,6 +436,16 @@ select.btn-dropdown {
     margin: 15px;
     padding: 10px;
     height: 300px;
+}
+
+.section-showcase-map {
+    height: 350px;
+    border-bottom: 1px solid var(--color-primary);
+    border-top: 1px solid var(--color-primary);
+}
+
+.section-showcase-map #map {
+    height: 100%;
 }
 
 /* More images button */

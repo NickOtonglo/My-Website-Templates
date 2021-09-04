@@ -1319,3 +1319,16 @@ nav .nav-menu .badge li.selected a {
     align-items: center;
     justify-content: space-between;
 }
+
+/* Page - /admin/manage-zones.html */
+.section-zones .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-zones .cards .card-generic {
+    max-width: 350px;
+}
