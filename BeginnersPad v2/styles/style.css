@@ -1319,7 +1319,3 @@ nav .nav-menu .badge li.selected a {
     align-items: center;
     justify-content: space-between;
 }
-
-.section-users .card-user {
-    cursor: pointer;
-}
