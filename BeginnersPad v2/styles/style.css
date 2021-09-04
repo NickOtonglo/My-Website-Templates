@@ -1281,29 +1281,45 @@ nav .nav-menu .badge li.selected a {
     justify-content: flex-start;
 }
 
-.section-user .profile .card-user {
+.section-user .profile .card-user,
+.section-users .profile .card-user {
     padding: 8px;
     /* display: inline-block; */
     max-width: 450px;
     background-color: #ffe;
 }
 
-.section-user .profile .card-user .details {
+.section-user .profile .card-user .details,
+.section-users .profile .card-user .details {
     display: flex;
     flex-direction: row;
 }
 
-.section-user .profile .card-user .title {
+.section-user .profile .card-user .title,
+.section-users .profile .card-user .title {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 1px dashed var(--color-font);
     margin-bottom: 5px;
 }
 
-.section-user .profile .card-user .details img {
+.section-user .profile .card-user .details img,
+.section-users .profile .card-user .details img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     margin: 8px;
     border: 1px solid var(--color-font);
+}
+
+.section-users .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-users .card-user {
+    cursor: pointer;
 }
