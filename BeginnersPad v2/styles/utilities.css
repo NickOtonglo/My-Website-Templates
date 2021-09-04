@@ -129,6 +129,23 @@ button, .btn {
     color: var(--color-danger);
 }
 
+/* Floating action button */
+.fab-container {
+    padding: 10px;
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 17;
+}
+
+.fab {
+    font-family: inherit;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+    font-size: 1rem;
+}
+
 /* Text */
 /* single-line text with ellipsis overflow */
 .txt-single-line, .card-info.txt-single-line > * {
