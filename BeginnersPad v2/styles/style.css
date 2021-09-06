@@ -556,7 +556,8 @@ nav .nav-menu .badge li.selected a {
 
 /* see "utilities.css" for cards section */
 
-.panel .lister-details .details {
+.panel .lister-details .details,
+.panel .panel-item.bordered .data {
     border: 1px solid #666;
     margin: 15px;
     padding: 10px;
@@ -588,7 +589,8 @@ nav .nav-menu .badge li.selected a {
     padding: 10px;
 }
 
-.listing-grp-bordered ul li {
+.listing-grp-bordered ul li,
+.panel-item .data ul li {
     list-style: square;
     margin-left: 20px;
 }
@@ -1333,3 +1335,5 @@ nav .nav-menu .badge li.selected a {
 .section-zones .cards .card-generic {
     max-width: 350px;
 }
+
+/* Page - /admin/manage-zone.html */

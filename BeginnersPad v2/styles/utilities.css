@@ -431,7 +431,8 @@ select.btn-dropdown {
 }
 
 /* Maps */
-.listing-map #map {
+.listing-map #map,
+.zone-map #map {
     border: 1px solid #666;
     margin: 15px;
     padding: 10px;
