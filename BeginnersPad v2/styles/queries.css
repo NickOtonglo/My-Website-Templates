@@ -207,6 +207,10 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .section-zones .panel-grp {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media(max-width: 753px) {
@@ -354,6 +358,10 @@
     .section-zones .cards {
         justify-content: center;
     }
+
+    .section-zones .panel .cards {
+        justify-content: space-between;
+    }
 }
 
 @media(max-width: 499px) {
@@ -487,6 +495,10 @@
     }
 
     #sectionManageReviews {
+        padding-top: 0;
+    }
+
+    #sectionViewZone {
         padding-top: 0;
     }
 }
