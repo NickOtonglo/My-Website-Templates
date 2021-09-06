@@ -540,7 +540,8 @@ nav .nav-menu .badge li.selected a {
 }
 
 .section-listing-secondary .panel-grp,
-.section-unit-secondary .panel-grp {
+.section-unit-secondary .panel-grp,
+.section-zones .panel-grp {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
