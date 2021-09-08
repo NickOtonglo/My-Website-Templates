@@ -110,7 +110,8 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .section-listing-reviews .reviews-list {
+    .section-listing-reviews .reviews-list,
+    .listing-units-grp#sectionZoneListingUnits {
         grid-template-columns: 1fr;
     }
 }
