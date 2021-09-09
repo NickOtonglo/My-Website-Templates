@@ -568,6 +568,11 @@ select.btn-dropdown {
     background: #666;
 }
 
+.categories-grp .category.selected button {
+    color: var(--color-background-main);
+    background: #666;
+}
+
 .section-blank {
     padding: 40px 0;
 }
