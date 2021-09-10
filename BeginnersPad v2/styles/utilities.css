@@ -300,6 +300,10 @@ button, .btn {
     text-transform: capitalize;
 }
 
+.section-title .lowercase {
+    text-transform: lowercase;
+}
+
 /* Links */
 #section-links {
     padding: 0 50px;
