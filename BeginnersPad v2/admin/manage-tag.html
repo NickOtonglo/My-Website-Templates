@@ -108,9 +108,150 @@
         </div>
     </div>
 
-    <!-- <h3 class="section-title">Zone name</h3> -->
+    <h3 class="section-title">Manage tag - <span class="lowercase">#tagname</span></h3>
 
+    <section class="section-tag">
+        <div class="container">
+            <div class="panel-grp">
+                <div class="panel">
+                    <div class="panel-item bordered">
+                        <div class="title-grp">
+                            <h3>Tag details</h3>
+                            <div class="info-actions">
+                                <a href="#">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <ul>
+                                <li>Tag title (ID <span>000</span>)</li>
+                                <li>Use cases: <span> 0</span></li>
+                                <li>Added on: <span>01-01-2021 00:00:00</span></li>
+                                <li>Description: <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, dolorum!</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="charts">
+                        <h3>Relative use chart</h3>
+                        <div class="chart" style="height: 300px;width: 250px;">
+                            <canvas id="chartDashListingsBeginner" width="250" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-item">
+                        <h3>Use cases</h3>
+                        <div class="favourites-grp">
+                            <div class="fav unit">
+                                <a href="/admin/manage-listing-unit.html">
+                                    <div class="thumb"></div>
+                                    <div class="details">
+                                        <h3 class="txt-single-line">Unit title</h3>
+                                        <div class="specs">
+                                            <span class="spec">1 bed,</span>
+                                            <span class="spec">2 bath,</span>
+                                            <span class="spec">40sq M</span>
+                                        </div>
+                                        <div class="deposit">
+                                            <span class="label">Initial deposit:</span>
+                                            <span class="data">not required</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="label">KES</span>
+                                            <span class="data">0.00</span>
+                                        </div>
+                                        <p class="timestamp">Added 5 hours ago</p>
+                                    </div>
+                                </a>
+                                <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="fav topic">
+                                <a href="../view-topic.html">
+                                    <h3 class="title-main txt-single-line">Listing a property - Get started</h3>
+                                    <p class="text-main txt-six-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam impedit ut, harum dicta molestiae laudantium et
+                                    totam doloribus molestias cum ducimus fuga. Sunt natus, iste consequuntur eaque officiis ad omnis voluptatem quasi,
+                                    consequatur repudiandae similique, quis nemo eius. Reiciendis voluptates error numquam ipsam adipisci perferendis libero
+                                    aspernatur excepturi eligendi beatae blanditiis asperiores earum, repellendus, sunt voluptatem illo corrupti praesentium
+                                    debitis architecto autem unde, eaque enim fugit deleniti. Nobis repellendus aliquid perspiciatis, dolorum facilis earum
+                                    asperiores quo rerum, quisquam rem facere quos voluptas consequuntur unde ipsum exercitationem ad! Ab delectus
+                                    voluptates fuga amet quia blanditiis numquam. Dolores fugit atque at!</p>
+                                </a>
+                                <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="fav topic">
+                                <a href="../view-topic.html">
+                                    <h3 class="title-main txt-single-line">Listing a property - Get started</h3>
+                                    <p class="text-main txt-six-line">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam impedit ut, harum dicta molestiae laudantium et
+                                    totam doloribus molestias cum ducimus fuga. Sunt natus, iste consequuntur eaque officiis ad omnis voluptatem quasi,
+                                    consequatur repudiandae similique, quis nemo eius. Reiciendis voluptates error numquam ipsam adipisci perferendis libero
+                                    aspernatur excepturi eligendi beatae blanditiis asperiores earum, repellendus, sunt voluptatem illo corrupti praesentium
+                                    debitis architecto autem unde, eaque enim fugit deleniti. Nobis repellendus aliquid perspiciatis, dolorum facilis earum
+                                    asperiores quo rerum, quisquam rem facere quos voluptas consequuntur unde ipsum exercitationem ad! Ab delectus
+                                    voluptates fuga amet quia blanditiis numquam. Dolores fugit atque at!</p>
+                                </a>
+                                <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="fav unit">
+                                <a href="/admin/manage-listing-unit.html">
+                                    <div class="thumb"></div>
+                                    <div class="details">
+                                        <h3 class="txt-single-line">Unit title</h3>
+                                        <div class="specs">
+                                            <span class="spec">1 bed,</span>
+                                            <span class="spec">2 bath,</span>
+                                            <span class="spec">40sq M</span>
+                                        </div>
+                                        <div class="deposit">
+                                            <span class="label">Initial deposit:</span>
+                                            <span class="data">not required</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="label">KES</span>
+                                            <span class="data">0.00</span>
+                                        </div>
+                                        <p class="timestamp">Added 5 hours ago</p>
+                                    </div>
+                                </a>
+                                <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="fav listing">
+                                <a href="/admin/manage-listing.html">
+                                    <div class="thumb"></div>
+                                    <div class="details">
+                                        <h3 class="txt-single-line">Listing name</h3>
+                                        <div class="location">
+                                            <span class="spec">Location,</span>
+                                            <span class="spec">Location,</span>
+                                            <span class="spec">Location</span>
+                                        </div>
+                                        <p class="timestamp">Added 5 hours ago</p>
+                                        <div class="info-rating-grp">
+                                            <p class="rating">Rating: 4.0/5</p>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="section-more">
+                            <a href="/admin/manage-tag-use-cases.html">View more <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    <script src="/js/charts.js"></script>
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/css-base.js"></script>
 </body>
