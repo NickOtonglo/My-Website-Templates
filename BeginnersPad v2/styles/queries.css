@@ -99,7 +99,8 @@
 @media(max-width: 941px) {
     .panel-grp,
     .section-listing-secondary .panel-grp,
-    .section-unit-secondary .panel-grp {
+    .section-unit-secondary .panel-grp,
+    .section-tag .panel-grp {
         grid-template-columns: 1fr;
     }
 
@@ -113,6 +114,15 @@
     .section-listing-reviews .reviews-list,
     .listing-units-grp#sectionZoneListingUnits {
         grid-template-columns: 1fr;
+    }
+
+    .section-tag .favourites-grp {
+        justify-content: space-between;
+    }
+
+    .section-tag .favourites-grp .fav {
+        margin: 8px 2px;
+        width: 100%;
     }
 }
 
@@ -500,6 +510,10 @@
     }
 
     #sectionViewZone {
+        padding-top: 0;
+    }
+
+    #sectionTag {
         padding-top: 0;
     }
 }
