@@ -435,7 +435,64 @@ select.btn-dropdown {
     margin: 8px 4px;
 }
 
+/* btn-dropdown-grp */
+.btn-dropdown-grp {
+    position: relative;
+    width: 100%;
+}
 
+.btn-dropdown-grp .btn-dropdown {
+    border-radius: 5px;
+    background: var(--color-primary);
+    color: var(--color-font-contrast);
+    font-size: 1.1rem;
+}
+
+.btn-dropdown-grp .btn-dropdown:active {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.15s;
+}
+
+.btn-dropdown-grp .btn-dropdown-items {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    margin-top: 2px;
+    z-index: 19;
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+}
+
+.btn-dropdown-grp .btn-dropdown-items.open {
+    visibility: visible;
+}
+
+.btn-dropdown-grp .btn-dropdown-items .item {
+    padding: 5px 10px;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+}
+
+.btn-dropdown-grp .btn-dropdown-items .item:active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.btn-dropdown-grp .btn-dropdown-items .item:first-child {
+    border-top: none;
+}
+
+/* .btn-dropdown-grp .btn-dropdown-items .item:hover {
+    background: rgba(0, 0, 0, 0.1);
+} */
+
+.btn-dropdown-grp .btn-dropdown-items .item:first-child:hover {
+    border-radius: 3px 3px 0 0;
+}
+
+.btn-dropdown-grp .btn-dropdown-items .item:last-child:hover {
+    border-radius: 0 0 3px 3px;
+}
 
 /* Maps */
 .listing-map #map,
