@@ -27,7 +27,8 @@ button, .btn {
 
 .btn-primary:hover,
 .btn-danger:hover,
-.btn-warning:hover {
+.btn-warning:hover,
+.btn-dropdown-grp .btn-dropdown:hover {
     opacity: 0.8;
 }
 
@@ -433,6 +434,8 @@ select.btn-dropdown {
 .container-btn-dropdown.multi > * {
     margin: 8px 4px;
 }
+
+
 
 /* Maps */
 .listing-map #map,
