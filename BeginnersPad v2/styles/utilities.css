@@ -458,7 +458,7 @@ select.btn-dropdown {
     border-radius: 3px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     margin-top: 2px;
-    z-index: 19;
+    z-index: 17;
     visibility: hidden;
     position: absolute;
     top: 45px;
