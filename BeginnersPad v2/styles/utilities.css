@@ -462,6 +462,7 @@ select.btn-dropdown {
     visibility: hidden;
     position: absolute;
     top: 45px;
+    transition: visibility 0.15s;
 }
 
 .btn-dropdown-grp .btn-dropdown-items.open {

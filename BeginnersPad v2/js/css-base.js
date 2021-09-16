@@ -30,3 +30,9 @@ btnDropGrp1.onclick = function(){
         listDropGrp1.classList.add('open');
     }
 }
+
+listDropGrp1.onclick = function(){
+    if(listDropGrp1.classList.contains('open')){
+        listDropGrp1.classList.remove('open');
+    }
+}
