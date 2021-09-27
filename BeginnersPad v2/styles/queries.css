@@ -94,6 +94,10 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .section-dash #dashNavAdmin.dash-nav ul {
+        justify-content: flex-start;
+    }
 }
 
 @media(max-width: 941px) {
