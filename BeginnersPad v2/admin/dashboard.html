@@ -110,17 +110,21 @@
 
     <section class="section-dash">
         <!-- Dashboard navbar -->
-        <div class="dash-nav" id="dashNavLister">
+        <div class="dash-nav" id="dashNavAdmin">
             <ul>
                 <li><a href="#dashProfile">Profile</a></li>
+                <li><a href="#dashUsers">Users</a></li>
                 <li><a href="#dashListings">Listings</a></li>
                 <li><a href="#dashUnits">Units</a></li>
                 <li><a href="#dashBeginnerApplications">Beginner applications</a></li>
                 <li><a href="#dashTours">Tours</a></li>
-                <li><a href="#dashBannedUsers">Banned users</a></li>
+                <li><a href="#dashReviews">Reviews</a></li>
                 <li><a href="#dashRatings">Ratings</a></li>
                 <li><a href="#dashTickets">Tickets</a></li>
-                <li><a href="#dashFavourites">Favourites</a></li>
+                <li><a href="#dashZones">Zones</a></li>
+                <li><a href="#dashTopics">Topics</a></li>
+                <li><a href="#dashTags">Tags</a></li>
+                <li><a href="#dashBookmarks">Bookmarks</a></li>
             </ul>
         </div>
 
@@ -137,7 +141,7 @@
                             <ul>
                                 <li>Name: <span class="name">Firstname Lastname</span></li>
                                 <li>Email address: <span class="name">user@name.com</span></li>
-                                <li>Type: <span class="name">lister</span></li>
+                                <li>Type: <span class="name">administrator</span></li>
                                 <li>Phone number: <span class="name">0700000000</span></li>
                             </ul>
                             <div>
@@ -146,6 +150,52 @@
                             <button class="btn-link share">Share your profile <i class="fas fa-share-alt"></i></button>
                         </div>
                     </div>
+            </div>
+            <div class="dash-grp" id="dashUsers">
+                <h5 class="grp-label">Users</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All users</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Beginners</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Listers</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Admins</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card">
+                        <p>Others</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Suspended</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Banned by listers</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Most common ban category</p>
+                        <h4>none</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Ban appeals</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashAdminUsers" width="250" height="300"></canvas>
+                    </div>
+                </div>
             </div>
             <div class="dash-grp" id="dashListings">
                 <h5 class="grp-label">Listings</h5>
@@ -185,7 +235,7 @@
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashListerListings" width="250" height="300"></canvas>
+                        <canvas id="chartDashAdminListings" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -215,7 +265,7 @@
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashListerUnits" width="250" height="300"></canvas>
+                        <canvas id="chartDashAdminUnits" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -223,7 +273,7 @@
                 <h5 class="grp-label">Beginner Applications</h5>
                 <div class="items">
                     <div class="item card item-primary">
-                        <p>All applications</p>
+                        <p>All</p>
                         <h4>0</h4>
                     </div>
                     <div class="item card item-tertiary">
@@ -241,7 +291,41 @@
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashListerBegAppl" width="250" height="300"></canvas>
+                        <canvas id="chartDashAdminBegAppl" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashReviews">
+                <h5 class="grp-label">Reviews</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Listing</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Unit</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Topics</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Muted</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Flagged</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashAdminReviews" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -261,35 +345,13 @@
                         <h4>0</h4>
                     </div>
                     <div class="item card">
-                        <p>Status</p>
-                        <h4>open</h4>
+                        <p>Open status</p>
+                        <h4>0%</h4>
                     </div>
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashListerTours" width="250" height="300"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="dash-grp" id="dashBannedUsers">
-                <h5 class="grp-label">Banned Users</h5>
-                <div class="items">
-                    <div class="item card item-primary">
-                        <p>All users</p>
-                        <h4>0</h4>
-                    </div>
-                    <div class="item card item-tertiary">
-                        <p>Most common category</p>
-                        <h4>none</h4>
-                    </div>
-                    <div class="item card item-secondary">
-                        <p>Ban appeals</p>
-                        <h4>0</h4>
-                    </div>
-                </div>
-                <div class="charts">
-                    <div class="chart">
-                        <canvas id="chartDashListerBanned" width="250" height="300"></canvas>
+                        <canvas id="chartDashAdminTours" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
@@ -297,18 +359,18 @@
                 <h5 class="grp-label">Ratings (Average)</h5>
                 <div class="items">
                     <div class="item card item-primary">
-                        <p>You (lister)</p>
+                        <p>Lister</p>
                         <h4>0/5</h4>
                     </div>
-                    <div class="item card item-primary">
+                    <div class="item card item-tertiary">
                         <p>Listings</p>
                         <h4>0/5</h4>
                     </div>
-                    <div class="item card item-primary">
+                    <div class="item card item-tertiary">
                         <p>Units</p>
                         <h4>0/5</h4>
                     </div>
-                    <div class="item card item-primary">
+                    <div class="item card item-secondary">
                         <p>Tours</p>
                         <h4>0/5</h4>
                     </div>
@@ -342,15 +404,113 @@
                         <p>Tickets closed</p>
                         <h4>0</h4>
                     </div>
+                    <div class="item card item-secondary">
+                        <p>FAQs</p>
+                        <h4>0</h4>
+                    </div>
                 </div>
                 <div class="charts">
                     <div class="chart">
-                        <canvas id="chartDashListerTickets" width="250" height="300"></canvas>
+                        <canvas id="chartDashAdminTickets" width="250" height="300"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="dash-grp" id="dashFavourites">
-                <h5 class="grp-label">Favourites</h5>
+            <div class="dash-grp" id="dashZones">
+                <h5 class="grp-label">Zones</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>Zones</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-tertiary">
+                        <p>Sub-zones</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-primary">
+                        <p>Av. listing per zone</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-secondary">
+                        <p>Av. listing per sub-zone</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Most populous zone</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Most populous sub-zone</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashAdminZones" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTopics">
+                <h5 class="grp-label">Topics</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Published</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-danger">
+                        <p>Removed</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Most published category</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Least published category</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Most read category</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Least read category</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashAdminTopics" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashTags">
+                <h5 class="grp-label">Tags</h5>
+                <div class="items">
+                    <div class="item card item-primary">
+                        <p>All</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-success">
+                        <p>Most used</p>
+                        <h4>0</h4>
+                    </div>
+                    <div class="item card item-warning">
+                        <p>Least used</p>
+                        <h4>0</h4>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart">
+                        <canvas id="chartDashAdminTags" width="250" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-grp" id="dashBookmarks">
+                <h5 class="grp-label">Bookmarks</h5>
                 <div class="items">
                     <div class="item card item-primary">
                         <p>Listings</p>
