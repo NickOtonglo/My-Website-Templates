@@ -104,7 +104,8 @@
     .panel-grp,
     .section-listing-secondary .panel-grp,
     .section-unit-secondary .panel-grp,
-    .section-tag .panel-grp {
+    .section-tag .panel-grp,
+    .section-user-profile .panel-grp {
         grid-template-columns: 1fr;
     }
 
@@ -520,6 +521,28 @@
     #sectionTag {
         padding-top: 0;
     }
+
+    .showcase-avatar .action-buttons {
+        align-items: flex-start;
+    }
+
+    .showcase-avatar {
+        height: 180px;
+    }
+
+    .showcase-avatar .container .card-wrapper {
+        position: absolute;
+        width: 100%;
+        color: var(--color-font);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 60px;
+    }
+
+    .section-user-profile .panel-item .favourites-grp .fav {
+        width: 300px;
+    }
 }
 
 @media(max-width: 408px) {
@@ -636,5 +659,9 @@
 
     #showcaseListingUnit.showcase-small .container p {
         font-size: .8rem;
+    }
+
+    .section-user-profile .panel-item .favourites-grp .fav {
+        width: 220px;
     }
 }
