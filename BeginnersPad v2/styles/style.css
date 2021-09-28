@@ -273,6 +273,14 @@ nav .nav-menu .badge li.selected a {
     padding: 0;
 }
 
+.showcase-avatar {
+    background: url(../images/city_clipart.png) center center;
+    filter: opacity(0.9);
+    color: #fff;
+    height: 270px;
+    padding: 0;
+}
+
 .showcase-overlay {
     background: rgba(136, 105, 162, 0.7);
     min-height: inherit;
@@ -312,6 +320,42 @@ nav .nav-menu .badge li.selected a {
 #showcase .btn-link {
     background-color: var(--color-background-main);
     border: none;
+}
+
+.showcase-avatar .container {
+    position: relative;
+    height: inherit;
+}
+
+.showcase-avatar .container .card-wrapper {
+    position: absolute;
+    width: 100%;
+    color: var(--color-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+}
+
+.showcase-avatar .container .card-wrapper .card-user:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+}
+
+.showcase-avatar .action-buttons {
+    position: absolute;
+    /* left: 100%; */
+    /* top: 100%; */
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.showcase-avatar .action-buttons i {
+    padding: 15px;
+    cursor: pointer;
 }
 
 /* Listings */
@@ -547,7 +591,8 @@ nav .nav-menu .badge li.selected a {
 .section-listing-secondary .panel-grp,
 .section-unit-secondary .panel-grp,
 .section-zones .panel-grp,
-.section-tag .panel-grp {
+.section-tag .panel-grp,
+.section-user-profile .panel-grp {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -1292,21 +1337,28 @@ nav .nav-menu .badge li.selected a {
 }
 
 .section-user .profile .card-user,
-.section-users .profile .card-user {
+.section-users .profile .card-user,
+.showcase-avatar .card-user {
     padding: 8px;
     /* display: inline-block; */
     max-width: 450px;
     background-color: #ffe;
 }
 
+.showcase-avatar .card-user {
+    max-width: 320px;
+}
+
 .section-user .profile .card-user .details,
-.section-users .profile .card-user .details {
+.section-users .profile .card-user .details,
+.showcase-avatar .card-user .details {
     display: flex;
     flex-direction: row;
 }
 
 .section-user .profile .card-user .title,
-.section-users .profile .card-user .title {
+.section-users .profile .card-user .title,
+.showcase-avatar .card-user .title {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 1px dashed var(--color-font);
@@ -1314,7 +1366,8 @@ nav .nav-menu .badge li.selected a {
 }
 
 .section-user .profile .card-user .details img,
-.section-users .profile .card-user .details img {
+.section-users .profile .card-user .details img,
+.showcase-avatar .card-user .details img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
