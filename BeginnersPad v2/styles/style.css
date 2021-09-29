@@ -450,15 +450,18 @@ nav .nav-menu .badge li.selected a {
     margin: 10px 0
 }
 
-#form-auth .form-group:first-child {
+#form-auth .form-group:first-child,
+#formUpdateAccount .form-group:first-child {
     display: flex;
 } 
 
-#form-auth .grp-name:first-child {
+#form-auth .grp-name:first-child,
+#formUpdateAccount .grp-name:first-child {
     margin-right: 5px;
 }
 
-#form-auth .grp-name:last-child {
+#form-auth .grp-name:last-child,
+#formUpdateAccount .grp-name:first-child {
     margin-left: 5px;
 }
 

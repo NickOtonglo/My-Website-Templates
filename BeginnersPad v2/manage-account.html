@@ -198,6 +198,70 @@
         </div>
     </section>
 
+    <div class="modal modal-small open">
+        <div class="modal-header">
+            <h3>Title</h3>
+            <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <div class="img-grp rounded">
+                    <img src="/images/avatar.png" alt="">
+                    <button class="btn-link btn-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="category">
+                <h3>Account details</h3>
+                <form id="formUpdateAccount">
+                    <div class="form-group">
+                        <div class="grp-name">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                        <div class="grp-name">
+                            <label for="lname">Last name</label>
+                            <input type="text" name="lname" id="lname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email address*</label>
+                        <input type="email" name="Email address" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Phone number (+254xxxxxxxxx)</label>
+                        <input type="text" name="telephone" id="telephone">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username (must be unique)</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Update">
+                </form>
+            </div>
+            <div class="category">
+                <h3>Password</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="password">Old password</label>
+                        <input type="password" name="password_old" id="password_old">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">New password</label>
+                        <input type="password" name="password" id="password_new">
+                    </div>
+                    <div class="form-group">
+                        <label for="password_confirmation">Confirm new password</label>
+                        <input type="password" name="password_confirmation" id="password_confirmation">
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Update password">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
+
     <script src="js/css-base.js"></script>
 </body>
 </html>
