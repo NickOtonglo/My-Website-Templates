@@ -11,6 +11,11 @@ button, .btn {
     cursor: pointer;
     border: none;
     font-family: inherit;
+    /* https://stackoverflow.com/questions/6900124/how-to-make-certain-text-not-selectable-with-css */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .btn-link {
@@ -405,6 +410,20 @@ form .btn-submit:hover {
 .form-group .form-check input[type=checkbox] {
     display: inline;
     width: 15px;
+}
+
+.form-group.danger label {
+    color: var(--color-danger);
+}
+
+.form-group.danger input,
+.form-group.danger select,
+.form-group.danger textarea {
+    background: rgba(238, 33, 33, 0.3);
+    border-color: var(--color-danger);
+    padding: 6px 16px;
+    color: var(--color-danger);
+    font-weight: bold;
 }
 
 /* No scroll footer */
