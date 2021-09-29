@@ -5,7 +5,11 @@ let body = document.body;
 let btnDropGrp1,btn_dropdown_grp,listDropGrp1,pageFiller,
 modalTrigger,modal,modalHeaderClose,modalFooterClose;
 
-if (document.getElementById('modalTrigger') && document.getElementById('pageFiller')){
+if (document.getElementById('pageFiller')){
+    pageFiller = document.getElementById('pageFiller');
+}
+
+if (document.getElementById('modalTrigger')){
     modalTrigger = document.getElementById('modalTrigger');
     modal = document.getElementById('modal');
     modalFooterClose = document.getElementById('modalFooterClose');
