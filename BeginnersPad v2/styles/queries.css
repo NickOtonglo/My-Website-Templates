@@ -543,6 +543,10 @@
     .section-user-profile .panel-item .favourites-grp .fav {
         width: 300px;
     }
+
+    .modal {
+        width: 100%;
+    }
 }
 
 @media(max-width: 408px) {

@@ -7,19 +7,6 @@ if (document.getElementById('btnDropGrp1')){
     btnDropGrp1 = document.getElementById('btnDropGrp1');
     listDropGrp1 = document.getElementById('listDropGrp1');
     // console.log('exists');
-    btnDropGrp1.onclick = function(){
-        if(listDropGrp1.classList.contains('open')){
-            listDropGrp1.classList.remove('open');
-        } else {
-            listDropGrp1.classList.add('open');
-        }
-    }
-    
-    listDropGrp1.onclick = function(){
-        if(listDropGrp1.classList.contains('open')){
-            listDropGrp1.classList.remove('open');
-        }
-    }
 } else {
     // console.log('!exists');
 }
@@ -35,3 +22,17 @@ navToggle.onclick = function(){
         navMenu.classList.add('open');
     }
 };
+
+btnDropGrp1.onclick = function(){
+    if(listDropGrp1.classList.contains('open')){
+        listDropGrp1.classList.remove('open');
+    } else {
+        listDropGrp1.classList.add('open');
+    }
+}
+
+listDropGrp1.onclick = function(){
+    if(listDropGrp1.classList.contains('open')){
+        listDropGrp1.classList.remove('open');
+    }
+}
