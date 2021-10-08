@@ -18,7 +18,7 @@ if (document.getElementById('modalTrigger')){
         toggleModal();
     }
     pageFiller.onclick = function(){
-        // toggleModal();
+        closePageFiller();
     }
     modalHeaderClose.onclick = function(){
         toggleModal();
@@ -70,5 +70,17 @@ function toggleModal() {
         modal.classList.add('open');
         body.classList.add('unfocused');
         pageFiller.classList.add('filler');
+    }
+}
+
+function closePageFiller(){
+    if(document.querySelector('#navDrawer') && !document.querySelector('#navDrawer').classList.contains('closed')){
+        pageFiller.classList.remove('filler');
+        body.classList.remove('unfocused');
+        document.querySelector('#navDrawer').classList.add('closed');
+    } else if(document.querySelector('#modal') && document.querySelector('#modal').classList.contains('open')){
+        modal.classList.remove('open');
+        body.classList.remove('unfocused');
+        pageFiller.classList.remove('filler');
     }
 }

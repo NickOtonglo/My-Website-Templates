@@ -61,30 +61,6 @@ function init() {
             setError(grpPass);
         }
     }
-    
-    if (document.querySelector('#password_old')){
-        passwordOld = document.querySelector('#password_old');
-        grpOldPass = document.querySelector('#grpOldPass');
-        if (passwordOld.value.trim() == ""){
-            setError(grpOldPass);
-        }
-    }
-    
-    if (document.querySelector('#password_new')){
-        passwordNew = document.querySelector('#password_new');
-        grpNewPass = document.querySelector('#grpNewPass');
-        if (passwordNew.value.trim() == ""){
-            setError(grpNewPass);
-        }
-    }
-    
-    if (document.querySelector('#password_confirmation')){
-        passwordConf = document.querySelector('#password_confirmation');
-        grpConfPass = document.querySelector('#grpConfPass');
-        if (passwordConf.value.trim() == ""){
-            setError(grpConfPass);
-        }
-    }
 }
 
 function hideDetailsAlerts(){
@@ -108,15 +84,6 @@ function hideDetailsAlerts(){
     });
     document.querySelector('#password').addEventListener('input', function (){
         removeError(grpPass);
-    });
-    document.querySelector('#password_old').addEventListener('input', function (){
-        removeError(grpOldPass);
-    });
-    document.querySelector('#password_new').addEventListener('input', function (){
-        removeError(grpNewPass);
-    });
-    document.querySelector('#password_confirmation').addEventListener('input', function (){
-        removeError(grpConfPass);
     });
 }
 
