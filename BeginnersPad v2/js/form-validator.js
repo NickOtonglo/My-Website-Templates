@@ -2,59 +2,85 @@
 let fname,lname,email,telephone,username,user_type,password;
 let grpNames,grpEmail,grpPhone,grpUname,grpAccount,grpPass;
 
+hideDetailsAlerts();
+
 function init() {
-    hideDetailsAlerts();
-    if (document.getElementById('fname')){
-        fname = document.getElementById('fname');
-        grpNames = document.getElementById('grpNames');
+    // hideDetailsAlerts();
+    if (document.querySelector('#fname')){
+        fname = document.querySelector('#fname');
+        grpNames = document.querySelector('#grpNames');
         if (fname.value.trim() == ""){
             setError(grpNames);
         }
     }
 
-    if (document.getElementById('lname')){
-        lname = document.getElementById('lname');
-        grpNames = document.getElementById('grpNames');
+    if (document.querySelector('#lname')){
+        lname = document.querySelector('#lname');
+        grpNames = document.querySelector('#grpNames');
         if (lname.value.trim() == ""){
             setError(grpNames);
         }
     }
 
-    if (document.getElementById('email')){
-        email = document.getElementById('email');
-        grpEmail = document.getElementById('grpEmail');
+    if (document.querySelector('#email')){
+        email = document.querySelector('#email');
+        grpEmail = document.querySelector('#grpEmail');
         if (email.value.trim() == ""){
             setError(grpEmail);
         }
     }
 
-    if (document.getElementById('telephone')){
-        telephone = document.getElementById('telephone');
-        grpPhone = document.getElementById('grpPhone');
+    if (document.querySelector('#telephone')){
+        telephone = document.querySelector('#telephone');
+        grpPhone = document.querySelector('#grpPhone');
         if (telephone.value.trim() == ""){
             setError(grpPhone);
         }
     }
 
-    if (document.getElementById('username')){
-        username = document.getElementById('username');
-        grpUname = document.getElementById('grpUname');
+    if (document.querySelector('#username')){
+        username = document.querySelector('#username');
+        grpUname = document.querySelector('#grpUname');
         if (username.value.trim() == ""){
             setError(grpUname);
         }
     }
 
-    if (document.getElementById('user_type')){
-        user_type = document.getElementById('user_type');
-        grpAccount = document.getElementById('grpAccount');
+    if (document.querySelector('#user_type')){
+        user_type = document.querySelector('#user_type');
+        grpAccount = document.querySelector('#grpAccount');
         if (user_type.value.trim() == ""){
             setError(grpAccount);
         }
     }
-
-    if (document.getElementById('password')){
-        password = document.getElementById('password');
-        grpPass = document.getElementById('grpPass');
+    
+    if (document.querySelector('#password')){
+        password = document.querySelector('#password');
+        grpPass = document.querySelector('#grpPass');
+        if (password.value.trim() == ""){
+            setError(grpPass);
+        }
+    }
+    
+    if (document.querySelector('#password_old')){
+        password = document.querySelector('#password_old');
+        grpPass = document.querySelector('#grpOldPass');
+        if (password.value.trim() == ""){
+            setError(grpPass);
+        }
+    }
+    
+    if (document.querySelector('#password_new')){
+        password = document.querySelector('#password_new');
+        grpPass = document.querySelector('#grpNewPass');
+        if (password.value.trim() == ""){
+            setError(grpPass);
+        }
+    }
+    
+    if (document.querySelector('#password_confirmation')){
+        password = document.querySelector('#password_confirmation');
+        grpPass = document.querySelector('#grpConfPass');
         if (password.value.trim() == ""){
             setError(grpPass);
         }
@@ -62,27 +88,26 @@ function init() {
 }
 
 function hideDetailsAlerts(){
-    $('#fname').on('input', function () {
+    document.querySelector('#fname').addEventListener('input', function (){
         removeError(grpNames);
     });
-    $('#lname').on('input', function () {
+    document.querySelector('#lname').addEventListener('input', function (){
         removeError(grpNames);
     });
-    $('#email').on('input', function () {
+    document.querySelector('#email').addEventListener('input', function (){
         removeError(grpEmail);
     });
-    $('#telephone').on('input', function () {
+    document.querySelector('#telephone').addEventListener('input', function (){
         removeError(grpPhone);
     });
-    $('#username').on('input', function () {
+    document.querySelector('#username').addEventListener('input', function (){
         removeError(grpUname);
     });
-    $('#user_type').on('input', function () {
+    document.querySelector('#user_type').addEventListener('input', function (){
         removeError(grpAccount);
     });
-    $('#password').on('input', function (e) {
+    document.querySelector('#password').addEventListener('input', function (){
         removeError(grpPass);
-        $(this).val($(this).val().replace(/[|&;$%@"<>(){},]/g, ''));
     });
 }
 
