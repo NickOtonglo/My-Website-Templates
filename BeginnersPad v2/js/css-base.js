@@ -2,8 +2,7 @@
 let navToggle = document.getElementById('navToggle');
 let navMenu = document.getElementById('navMenu');
 let body = document.body;
-let btnDropGrp1,btn_dropdown_grp,listDropGrp1,pageFiller;
-// modalTrigger,modal,modalHeaderClose,modalFooterClose;
+let btnDropGrp1,btn_dropdown_grp,listDropGrp1,pageFiller,modalTrigger,modal,modalHeaderClose,modalFooterClose;
 
 if (document.getElementById('pageFiller')){
     pageFiller = document.getElementById('pageFiller');
@@ -11,22 +10,22 @@ if (document.getElementById('pageFiller')){
 
 if (document.getElementById('modalTrigger')){
     modalTrigger = document.getElementById('modalTrigger');
-    // modal = document.getElementById('modal');
-    // modalFooterClose = document.getElementById('modalFooterClose');
-    // modalHeaderClose = document.getElementById('modalHeaderClose');
+    modal = document.getElementById('modal');
+    modalFooterClose = document.getElementById('modalFooterClose');
+    modalHeaderClose = document.getElementById('modalHeaderClose');
     pageFiller = document.getElementById('pageFiller');
-    // modalTrigger.onclick = function(){
-    //     toggleModal();
-    // }
-    pageFiller.onclick = function(){
+    modalTrigger.onclick = function(){
         toggleModal();
     }
-    // modalHeaderClose.onclick = function(){
-    //     toggleModal();
-    // }
-    // modalFooterClose.onclick = function(){
-    //     toggleModal();
-    // }
+    pageFiller.onclick = function(){
+        // toggleModal();
+    }
+    modalHeaderClose.onclick = function(){
+        toggleModal();
+    }
+    modalFooterClose.onclick = function(){
+        toggleModal();
+    }
 }
 
 if (document.getElementById('btnDropGrp1')){
@@ -62,14 +61,14 @@ navToggle.onclick = function(){
     }
 };
 
-// function toggleModal() {
-//     if(modal.classList.contains('open')){
-//         modal.classList.remove('open');
-//         body.classList.remove('unfocused');
-//         pageFiller.classList.remove('filler');
-//     } else {
-//         modal.classList.add('open');
-//         body.classList.add('unfocused');
-//         pageFiller.classList.add('filler');
-//     }
-// }
+function toggleModal() {
+    if(modal.classList.contains('open')){
+        modal.classList.remove('open');
+        body.classList.remove('unfocused');
+        pageFiller.classList.remove('filler');
+    } else {
+        modal.classList.add('open');
+        body.classList.add('unfocused');
+        pageFiller.classList.add('filler');
+    }
+}
