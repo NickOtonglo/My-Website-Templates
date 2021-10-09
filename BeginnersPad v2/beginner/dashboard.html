@@ -246,7 +246,7 @@
                 <form>
                     <div class="form-group" id="grpLink">
                         <label for="link">Link</label>
-                        <input type="text" name="link" id="link" placeholder="beginnerspad.com/user/username">
+                        <input type="text" name="link" id="link" value="beginnerspad.com/user/username">
                     </div>
                 </form>
             </div>
@@ -256,6 +256,9 @@
         </div>
     </div>
     
+    <script>
+        document.querySelector('#link').readOnly = true;
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
     <script src="/js/charts.js"></script>
     <script src="/js/nav-drawer.js"></script>
