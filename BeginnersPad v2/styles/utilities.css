@@ -858,3 +858,38 @@ select.btn-dropdown {
     position: absolute;
     left: 60%;
 }
+
+.share-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.share-panel .item {
+    margin: 3px auto;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.share-panel .item:hover {
+    color: var(--color-links);
+}
+
+.share-panel .item.facebook:hover {
+    color: rgba(66,103,178,0.8);
+}
+
+.share-panel .item.messenger:hover {
+    color: rgba(0,160,255,0.6);
+}
+
+.share-panel .item.twitter:hover {
+    color: rgba(29,161,242,1.0);
+}
+
+.share-panel .item i {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
