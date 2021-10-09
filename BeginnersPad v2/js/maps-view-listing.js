@@ -1,7 +1,9 @@
 let map;
 
 function initMap() {
-    const myLatLng = { lat: -1.3003396575224304, lng: 36.78208334575244 };
+  const myLatLng = { lat: -1.3003396575224304, lng: 36.78208334575244 };
+  
+  if(document.querySelector("#map")){
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 16,
       center: myLatLng,
@@ -11,7 +13,9 @@ function initMap() {
       map,
       title: "Listing Name",
     });
+  }
 
+  if(document.querySelector("#map2")){
     const map2 = new google.maps.Map(document.querySelector("#map2"), {
       zoom: 16,
       center: myLatLng,
@@ -22,6 +26,7 @@ function initMap() {
       map2,
       title: "Zone Name",
     });
+  }
 }
 
 // var map;
