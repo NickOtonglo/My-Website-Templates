@@ -109,7 +109,7 @@
     </div>
 
     <div class="fab-container">
-        <button class="fab btn-primary"><i class="fas fa-plus"></i> Add zone</button>
+        <button id="modalTrigger" class="fab btn-primary"><i class="fas fa-plus"></i> Add zone</button>
     </div>
 
     <div class="section-showcase-map">
@@ -225,6 +225,57 @@
             </div>
         </div>
     </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Add zone</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formCreateZone">
+                    <div class="form-group" id="grpName">
+                        <label for="name">Zone name*</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group" id="grpCountry">
+                        <label for="country">Account type</label>
+                        <select name="country" id="country">
+                            <option value="" selected>--select country--</option>
+                            <option value="KE">Kenya (KE)</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="grpCounty">
+                        <label for="county">County*</label>
+                        <input type="county" name="county" id="county">
+                    </div>
+                    <div class="form-group" id="grpLat">
+                        <label for="latitude">Latitude</label>
+                        <input type="number" name="latitude" id="latitude">
+                    </div>
+                    <div class="form-group" id="grpLong">
+                        <label for="longitude">Longitude</label>
+                        <input type="number" name="longitude" id="longitude">
+                    </div>
+                    <div class="form-group" id="zoneMap" style="height: 300px;margin: 15px 0;">
+                        <div id="map2" style="height: 100%;"></div>
+                    </div>
+                    <div class="form-group" id="grpRadius">
+                        <label for="radius">Radius (km)</label>
+                        <input type="number" name="radius" id="radius">
+                    </div>
+                    <div class="form-group" id="grpTimezone">
+                        <label for="timezone">Timezone</label>
+                        <input type="text" name="timezone" id="timezone">
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Create" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
     
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&callback=initMap">

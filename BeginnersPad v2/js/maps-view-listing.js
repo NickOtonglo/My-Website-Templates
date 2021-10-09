@@ -12,6 +12,16 @@ function initMap() {
       title: "Listing Name",
     });
 
+    const map2 = new google.maps.Map(document.querySelector("#map2"), {
+      zoom: 16,
+      center: myLatLng,
+      mapTypeControl: false,
+    });
+    new google.maps.Marker({
+      position: myLatLng,
+      map2,
+      title: "Zone Name",
+    });
 }
 
 // var map;
