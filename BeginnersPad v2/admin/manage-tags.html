@@ -109,7 +109,7 @@
     </div>
 
     <div class="fab-container">
-        <button class="fab btn-primary"><i class="fas fa-plus"></i> Add tag</button>
+        <button id="modalTrigger" class="fab btn-primary"><i class="fas fa-plus"></i> Add tag</button>
     </div>
 
     <h3 class="section-title">Manage tags</h3>
@@ -214,9 +214,35 @@
             </div>
         </div>
     </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Add user</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formAddTag">
+                    <div class="form-group" id="grpTitle">
+                        <label for="title">Tag title*</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="form-group" id="grpDescription">
+                        <label for="description">Description*</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Create" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
     
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/search-bar-scroll.js"></script>
+    <script src="/js/form-validator-manage-tags.js"></script>
     <script src="/js/css-base.js"></script>
 </body>
 </html>
