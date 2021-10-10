@@ -838,6 +838,7 @@ select.btn-dropdown {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .modal .modal-content .img-grp.rounded {
