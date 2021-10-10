@@ -109,7 +109,7 @@
     </div>
 
     <div class="fab-container">
-        <button class="fab btn-primary"><i class="fas fa-plus"></i> Add category</button>
+        <button id="modalTrigger" class="fab btn-primary"><i class="fas fa-plus"></i> Add category</button>
     </div>
 
     <h3 class="section-title">Manage help categories</h3>
@@ -224,6 +224,42 @@
             </div>
         </div>
     </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Add category</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formAddCategory">
+                    <div class="form-group" id="grpTitle">
+                        <label for="title">Category title*</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="form-group" id="grpDescription">
+                        <label for="description">Description*</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group" id="grpPriority">
+                        <label for="priority">Priority*</label>
+                        <select name="priority" id="priority">
+                            <option value="" selected>--select priority--</option>
+                            <option value="1">1 (lowest)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (highest)</option>
+                        </select>
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Create" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
     
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/search-bar-scroll.js"></script>
