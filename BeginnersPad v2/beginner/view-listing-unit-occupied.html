@@ -152,8 +152,8 @@
                                 <button class="btn-link">Contact lister</button>
                             </div>
                             <div class="item">
-                                <!-- <a href="#"><button class="btn-primary">Review listing</button></a> -->
-                                <a href="/beginner/view-my-review.html"><button class="btn-primary">Review listing</button></a>
+                                <button id="modalTrigger" class="btn-primary">Review listing</button>
+                                <!-- <a href="/beginner/view-my-review.html"><button class="btn-primary">Review listing</button></a> -->
                             </div>
                         </div>
                     </div>
@@ -207,6 +207,38 @@
             </div>
         </div>
     </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Add review</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formAddReview">
+                    <div class="form-group" id="grpDescription">
+                        <label for="description">Description*</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group" id="grpRating">
+                        <label for="rating">Rating*</label>
+                        <select name="rating" id="rating">
+                            <option value="" selected>--select rating--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Submit" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
     
     <script src="../js/nav-drawer.js"></script>
     <script src="../js/css-base.js"></script>
