@@ -99,7 +99,7 @@
                 <div class="info-name">
                     <h1 class="name">Name</h1>
                     <div class="info-actions">
-                        <i class="fas fa-share-alt"></i>
+                        <i class="fas fa-share-alt" id="modalTrigger"></i>
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
@@ -501,14 +501,52 @@
         </div>
     </section>
 
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Share listing</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <div class="share-panel">
+                    <div class="item facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="item messenger">
+                        <i class="fab fa-facebook-messenger fa-2x"></i>
+                        <p>Messenger</p>
+                    </div>
+                    <div class="item twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p>Email</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group" id="grpLink">
+                        <label for="link">Link</label>
+                        <input type="text" name="link" id="link" value="beginnerspad.com/user/username">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2021 Beginners Pad</p>
     </footer>
 
-    <!-- <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&libraries=places&callback=initMap">
-    </script> -->
+    <script>
+        document.querySelector('#link').readOnly = true;
+    </script>
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&callback=initMap">
     </script>
