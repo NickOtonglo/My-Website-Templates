@@ -107,6 +107,9 @@
         </div>
     </div>
 
+    <!-- Filler -->
+    <div id="pageFiller"></div>
+
     <section class="section-unit-main">
         <div class="container">
             <div class="main-img">
@@ -125,7 +128,7 @@
             <div class="main-info">
                 <div class="info-name">
                     <div class="info-actions">
-                        <i class="fas fa-share-alt"></i>
+                        <i class="fas fa-share-alt" id="modalTrigger"></i>
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
@@ -302,6 +305,47 @@
         </div>
     </section>
 
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Share unit</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <div class="share-panel">
+                    <div class="item facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="item messenger">
+                        <i class="fab fa-facebook-messenger fa-2x"></i>
+                        <p>Messenger</p>
+                    </div>
+                    <div class="item twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p>Email</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group" id="grpLink">
+                        <label for="link">Link</label>
+                        <input type="text" name="link" id="link" value="beginnerspad.com/user/username">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#link').readOnly = true;
+    </script>
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/css-base.js"></script>
 </body>
