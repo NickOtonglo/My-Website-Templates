@@ -794,6 +794,23 @@ nav .nav-menu .badge li.selected a {
     align-self: center;
 }
 
+.section-unit-main .main-info .info-actions {
+    justify-content: flex-start;
+}
+
+.section-unit-main .main-info .info-actions i {
+    padding: 0;
+    margin: 0;
+}
+
+.section-unit-main .main-info .info-actions i:first-child {
+    margin-right: 10px;
+}
+
+.section-unit-main .main-info .info-actions i:last-child {
+    margin-left: 10px;
+}
+
 .section-unit-main .main-info h2 {
     font-size: 1.9rem;
     margin: 15px 0;
