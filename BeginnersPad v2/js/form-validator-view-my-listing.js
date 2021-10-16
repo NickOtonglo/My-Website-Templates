@@ -11,6 +11,8 @@ function init() {
         grpName = document.querySelector('#grpName');
         if (unitName.value.trim() == ""){
             setError(grpName);
+        } else {
+            window.location.href = '/lister/manage-listing-unit.html';
         }
     }
 }
