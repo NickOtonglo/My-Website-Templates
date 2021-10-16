@@ -99,7 +99,7 @@
                 <div class="info-name">
                     <h1 class="name">Name</h1>
                     <div class="info-actions">
-                        <i class="fas fa-share-alt" id="modalTrigger"></i>
+                        <i class="fas fa-share-alt" id="modalTrigger1"></i>
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
@@ -151,9 +151,10 @@
                         <div class="title-grp">
                             <h3>Units available</h3>
                             <div class="info-actions">
-                                <a href="/lister/manage-listing-unit.html">
+                                <!-- <a href="/lister/manage-listing-unit.html">
                                     <i class="fas fa-plus"></i>
-                                </a>
+                                </a> -->
+                                <i class="fas fa-plus" id="modalTrigger2"></i>
                             </div>
                         </div>
                         <div class="listing-units-grp">
@@ -501,10 +502,10 @@
         </div>
     </section>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal1">
         <div class="modal-header">
             <h2>Share listing</h2>
-            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+            <button id="modalHeaderClose1" class="btn-link btn-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="modal-content">
             <div class="category">
@@ -535,7 +536,45 @@
             </div>
         </div>
         <div class="modal-footer">
-            <button id="modalFooterClose" class="btn btn-link">Close</button>
+            <button id="modalFooterClose1" class="btn btn-link">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-header">
+            <h2>Add listing</h2>
+            <button id="modalHeaderClose2" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <div class="share-panel">
+                    <div class="item facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="item messenger">
+                        <i class="fab fa-facebook-messenger fa-2x"></i>
+                        <p>Messenger</p>
+                    </div>
+                    <div class="item twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p>Email</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group" id="grpLink">
+                        <label for="link">Link</label>
+                        <input type="text" name="link" id="link" value="beginnerspad.com/user/username">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose2" class="btn btn-link">Close</button>
         </div>
     </div>
 
@@ -555,5 +594,6 @@
     <script src="/js/charts.js"></script>
     <script src="/js/nav-drawer.js"></script>
     <script src="/js/css-base.js"></script>
+    <script src="/js/modals-view-my-listing.js"></script>
 </body>
 </html>
