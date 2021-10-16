@@ -542,34 +542,17 @@
 
     <div class="modal" id="modal2">
         <div class="modal-header">
-            <h2>Add listing</h2>
+            <h2>Add unit</h2>
             <button id="modalHeaderClose2" class="btn-link btn-close"><i class="fas fa-times"></i></button>
         </div>
         <div class="modal-content">
             <div class="category">
-                <div class="share-panel">
-                    <div class="item facebook">
-                        <i class="fab fa-facebook fa-2x"></i>
-                        <p>Facebook</p>
+                <form id="formCreateUnit">
+                    <div class="form-group" id="grpName">
+                        <label for="name">Unit name*</label>
+                        <input type="text" name="name" id="name">
                     </div>
-                    <div class="item messenger">
-                        <i class="fab fa-facebook-messenger fa-2x"></i>
-                        <p>Messenger</p>
-                    </div>
-                    <div class="item twitter">
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <p>Twitter</p>
-                    </div>
-                    <div class="item">
-                        <i class="fas fa-envelope fa-2x"></i>
-                        <p>Email</p>
-                    </div>
-                </div>
-                <form>
-                    <div class="form-group" id="grpLink">
-                        <label for="link">Link</label>
-                        <input type="text" name="link" id="link" value="beginnerspad.com/user/username">
-                    </div>
+                    <input class="btn btn-submit" type="button" value="Create" onclick="init();">
                 </form>
             </div>
         </div>
