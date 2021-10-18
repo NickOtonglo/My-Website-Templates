@@ -66,7 +66,10 @@
             <div class="title-grp">
                 <h3>Images</h3>
                 <div class="info-actions">
-                    <i id="popupToggle" class="fas fa-plus"></i>
+                    <i id="btnImgFaux" class="fas fa-plus"></i>
+                    <form action="">
+                        <input class="file-path-wrapper" accept="image/*" name="btn_submit" id="btnImgReal" type="file" style="display: none;"/>
+                    </form>
                 </div>
             </div>
             <div class="image-grp">
@@ -106,7 +109,10 @@
             <div class="title-grp">
                 <h3>Thumbnail</h3>
                 <div class="info-actions">
-                    <i class="fas fa-plus"></i>
+                    <i id="btnThumbFaux" class="fas fa-plus"></i>
+                    <form action="">
+                        <input class="file-path-wrapper" accept="image/*" name="btn_submit" id="btnThumbReal" type="file" style="display: none;"/>
+                    </form>
                 </div>
             </div>
             <div class="image-grp">
@@ -124,7 +130,7 @@
                 <div class="title-grp">
                     <h2>Unit name</h2>
                     <div class="info-actions">
-                        <i class="fas fa-edit"></i>
+                        <i id="modalTrigger1" class="fas fa-edit"></i>
                         <i class="fas fa-share-alt"></i>
                         <i class="fas fa-heart"></i>
                     </div>
@@ -146,7 +152,7 @@
                         <div class="title-grp">
                             <h3>Unit features</h3>
                             <div class="info-actions">
-                                <i class="fas fa-edit"></i>
+                                <i id="modalTrigger2" class="fas fa-edit"></i>
                             </div>
                         </div>
                         <div class="features">
@@ -166,7 +172,7 @@
                         <div class="title-grp">
                             <h3>Disclaimer (important)</h3>
                             <div class="info-actions">
-                                <i class="fas fa-edit"></i>
+                                <i id="modalTrigger3" class="fas fa-edit"></i>
                             </div>
                         </div>
                         <div class="features">
@@ -223,14 +229,101 @@
         </div>
     </section>
 
-    <!-- Modals -->
-    <div class="popup popup-md closed" id="popupDemo">
-        <div class="popup-wrapper">
-            <h3>Modal demo</h3>
-            <button id="popupClose" class="btn-link btn-popup-close"><i class="fas fa-times"></i></button>
+    <div class="modal" id="modal1">
+        <div class="modal-header">
+            <h2>Edit unit info</h2>
+            <button id="modalHeaderClose1" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formUpdateUnit">
+                    <div class="form-group" id="grpName">
+                        <label for="name">Unit name*</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group" id="grpPrice">
+                        <label for="price">Latitude</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div class="form-group" id="grpDeposit">
+                        <label for="deposit">Initial deposit</label>
+                        <select name="deposit" id="deposit">
+                            <option value="" selected>--select--</option>
+                            <option value="0">Not required</option>
+                            <option value="1">Required</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="grpDepAmt">
+                        <label for="depAmt">Deposit amount*</label>
+                        <input type="text" name="depAmt" id="depAmt">
+                    </div>
+                    <div class="form-group" id="grpFloor">
+                        <label for="floor">Floor*</label>
+                        <input type="number" name="floor" id="floor">
+                    </div>
+                    <div class="form-group" id="grpDescription">
+                        <label for="description">Description*</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Update" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose1" class="btn btn-link">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-header">
+            <h2>Unit features</h2>
+            <button id="modalHeaderClose2" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formUpdateUnitFeatures">
+                    <div class="form-group" id="grpFeatures">
+                        <label for="features">Features (seperate each item with a semicolon)</label>
+                        <textarea name="features" id="features" cols="30" rows="10"></textarea>
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Update" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose2" class="btn btn-link">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-header">
+            <h2>Disclaimer</h2>
+            <button id="modalHeaderClose3" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formUpdateUnitDisclaimer">
+                    <div class="form-group" id="grpDisclaimer">
+                        <label for="disclaimer">Disclaimer (seperate each item with a semicolon)</label>
+                        <textarea name="disclaimer" id="disclaimer" cols="30" rows="10"></textarea>
+                    </div>
+                    <input class="btn btn-submit" type="button" value="Update" onclick="init();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose3" class="btn btn-link">Close</button>
         </div>
     </div>
     
+    <script>
+        document.querySelector('#btnImgFaux').addEventListener('click',function() {
+            document.querySelector('#btnImgReal').click();
+        });
+        document.querySelector('#btnThumbFaux').addEventListener('click',function() {
+            document.querySelector('#btnThumbReal').click();
+        });
+    </script>
     <script src="/js/maps-view-listing.js"></script>
     <!-- <script src="/js/popup.js"></script> -->
     <script src="/js/nav-drawer.js"></script>
