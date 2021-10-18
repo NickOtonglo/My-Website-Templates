@@ -154,9 +154,10 @@
                         <div class="title-grp">
                             <h3>Units available</h3>
                             <div class="info-actions">
-                                <a href="/lister/manage-listing-unit.html">
+                                <!-- <a href="/lister/manage-listing-unit.html">
                                     <i class="fas fa-plus"></i>
-                                </a>
+                                </a> -->
+                                <i id="modalTrigger" class="fas fa-plus"></i>
                             </div>
                         </div>
                         <div class="listing-units-grp">
@@ -341,6 +342,27 @@
             </div>
         </div>
     </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2>Add unit</h2>
+            <button id="modalHeaderClose" class="btn-link btn-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-content">
+            <div class="category">
+                <form id="formCreateUnit">
+                    <div class="form-group" id="grpName2">
+                        <label for="unitName">Unit name*</label>
+                        <input type="text" name="unitName" id="unitName">
+                    </div>
+                    <input id="btnCreateUnit" class="btn btn-submit" type="button" value="Create" onclick="initUnit();">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="modalFooterClose" class="btn btn-link">Close</button>
+        </div>
+    </div>
 
     <div class="modal" id="modal1">
         <div class="modal-header">
