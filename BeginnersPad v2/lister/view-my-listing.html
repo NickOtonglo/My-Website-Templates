@@ -306,8 +306,8 @@
                             <button>Make private (hide)</button>
                             <button>Submit for approval</button>
                             <button>Withdraw submission</button>
-                            <button>Edit listing</button>
-                            <button>Add unit</button>
+                            <button onclick="window.location.href='/lister/manage-listing.html';">Edit listing</button>
+                            <button id="btnAddUnit">Add unit</button>
                             <button>Delete</button>
                         </div>
                     </div>
@@ -568,6 +568,9 @@
 
     <script>
         document.querySelector('#link').readOnly = true;
+        document.querySelector('#btnAddUnit').addEventListener('click',function() {
+            document.querySelector('#modalTrigger2').click();
+        });
     </script>
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&callback=initMap">
