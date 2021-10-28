@@ -33,9 +33,12 @@ var service;
 var infowindow;
 let request;
 let sch,mkt,bus;
+let marker1, marker2;
+let marker2Lat,marker2Lng;
+let kilimani;
 
 function initPlaces() {
-  var kilimani = new google.maps.LatLng(-1.3003396575224304, 36.78208334575244);
+  kilimani = new google.maps.LatLng(-1.3003396575224304, 36.78208334575244);
 
   map = new google.maps.Map(document.getElementById('map'), {
       center: kilimani,
@@ -71,6 +74,16 @@ function initPlaces() {
 
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
+
+  marker1 = new google.maps.Marker({
+    position: { lat: -1.3003396575224304, lng: 36.78208334575244 },
+    map: map,
+  });
+}
+
+function setPlacesDist(){
+  console.log(google.maps.geometry.spherical
+    .computeDistanceBetween(kilimani, new google.maps.LatLng(marker2Lat, marker2Lng)));
 }
 
 function callback(results, status) {
@@ -102,10 +115,40 @@ function callback(results, status) {
           bus.innerHTML = results[i].name;
           document.querySelector(`#bus${i+1} .description`).innerHTML = `Status: ${results[i].business_status}`;
           document.querySelector(`#bus${i+1} .location`).innerHTML = results[i].vicinity;
+
+          var service = new google.maps.places.PlacesService(map);
+          service.getDetails({
+              placeId: results[i].place_id
+          }, function (result, status) {
+              marker2 = new google.maps.Marker({
+                  map: map,
+                  place: {
+                      placeId: result.place_id,
+                      location: result.geometry.location
+                  }
+              });
+              console.log(marker2);
+          });
+
+          // console.log(marker1.getPosition().lat());
+
+          // const app = async () => {
+          //   const response = await marker2.getPosition().lat();
+          //   console.log(response.results);
+          // };
+          
+          // app();
+
+          // getCoordinates(marker2.getPosition().lat(),marker2.getPosition().lng(),
+          // () => {console.log(google.maps.geometry.spherical
+          //     .computeDistanceBetween(kilimani, new google.maps.LatLng(marker2Lat, marker2Lng)))})
+
+          // marker2Lat = marker2.getPosition().lat();
+          // marker2Lng = marker2.getPosition().lng();
+          // console.log(google.maps.geometry.spherical
+          //   .computeDistanceBetween(kilimani, new google.maps.LatLng(marker2Lat, marker2Lng)));
         }
       }
-
-      console.log(results[i])
     }
   }
 }
