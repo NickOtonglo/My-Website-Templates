@@ -22,8 +22,8 @@ function initZone() {
     });
   }
 
-  if(document.querySelector("#mapSubzone")){
-    const map2 = new google.maps.Map(document.querySelector("#mapSubzone"), {
+  if(document.querySelector("#map2")){
+    const map2 = new google.maps.Map(document.querySelector("#map2"), {
       zoom: 15,
       center: myLatLng,
       mapTypeControl: false,
