@@ -41,9 +41,15 @@ function initPlaces() {
   listingPlace = new google.maps.LatLng(-1.3003396575224304, 36.78208334575244);
 
   map = new google.maps.Map(document.getElementById('map'), {
-      center: listingPlace,
-      zoom: 15
-    });
+    center: listingPlace,
+    zoom: 15
+  });
+  new google.maps.Marker({
+    position: listingPlace,
+    map: map,
+    title: "Listing",
+    icon: '/images/marker-listing.png',
+  });
 
   request = {
     location: listingPlace,
