@@ -11,7 +11,8 @@ function initMap() {
     new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: "Listing Name",
+      title: "Listing",
+      icon: '/images/marker-listing.png',
     });
   }
 
