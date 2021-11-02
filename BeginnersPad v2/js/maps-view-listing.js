@@ -35,11 +35,15 @@ var infowindow;
 let request;
 let sch,mkt,bus;
 let marker1, marker2;
+let latPlace,lngPlace;
 let markers = [];
 let listingPlace;
+let geocoder;
 
 function initPlaces() {
   listingPlace = new google.maps.LatLng(-1.3003396575224304, 36.78208334575244);
+
+  geocoder = new google.maps.Geocoder();
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: listingPlace,
@@ -101,6 +105,8 @@ function callback(results, status) {
             sch1.onclick = () => {
               placeLocationMarker(placesObject.data_sch1);
             }
+            codeAddress(placesObject.data_sch1.place_id);
+            // console.log(placesObject.data_sch1.place_id)
           }
           if(i === 1){
             placesObject.id_sch2 = i;
@@ -212,4 +218,25 @@ function setMapOnAll(map) {
 function hideMarkers() {
   setMapOnAll(null);
   markers = [];
+}
+
+function codeAddress(placeId) {
+  geocoder.geocode( { 'placeId': placeId}, function(results, status) {
+    if (status == 'OK') {
+      map.setCenter(results[0].geometry.location);
+      marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+      latPlace = results[0].geometry.location.lat();
+      lngPlace = results[0].geometry.location.lng();
+      console.log();
+    } else {
+      console.error('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
+
+function calculatePlacesDistance(place1,place2){
+  return google.maps.geometry.spherical.computeDistanceBetween(place1,place2);
 }
