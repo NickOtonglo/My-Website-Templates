@@ -105,7 +105,7 @@ function callback(results, status) {
             sch1.onclick = () => {
               placeLocationMarker(placesObject.data_sch1);
             }
-            codeAddress(placesObject.data_sch1.place_id);
+            codeAddress(placesObject.data_sch1.place_id,'sch1');
             // console.log(placesObject.data_sch1.place_id)
           }
           if(i === 1){
@@ -115,6 +115,7 @@ function callback(results, status) {
             sch2.onclick = () => {
               placeLocationMarker(placesObject.data_sch2);
             }
+            codeAddress(placesObject.data_sch2.place_id,'sch2');
           }
           if(i === 2){
             placesObject.id_sch3 = i;
@@ -123,6 +124,7 @@ function callback(results, status) {
             sch3.onclick = () => {
               placeLocationMarker(placesObject.data_sch3);
             }
+            codeAddress(placesObject.data_sch3.place_id,'sch3');
           }
         }
         if(results[i].types[0].includes('market')){
@@ -137,6 +139,7 @@ function callback(results, status) {
             mkt1.onclick = () => {
               placeLocationMarker(placesObject.data_mkt1);
             }
+            codeAddress(placesObject.data_mkt1.place_id,'mkt1');
           }
           if(i === 1){
             placesObject.id_mkt2 = i;
@@ -145,6 +148,7 @@ function callback(results, status) {
             mkt2.onclick = () => {
               placeLocationMarker(placesObject.data_mkt2);
             }
+            codeAddress(placesObject.data_mkt2.place_id,'mkt2');
           }
           if(i === 2){
             placesObject.id_mkt3 = i;
@@ -153,6 +157,7 @@ function callback(results, status) {
             mkt3.onclick = () => {
               placeLocationMarker(placesObject.data_mkt3);
             }
+            codeAddress(placesObject.data_mkt3.place_id,'mkt3');
           }
         }
         if(results[i].types[0].includes('bus_station')){
@@ -167,6 +172,7 @@ function callback(results, status) {
             bus1.onclick = () => {
               placeLocationMarker(placesObject.data_bus1);
             }
+            codeAddress(placesObject.data_bus1.place_id,'bus1');
           }
           if(i === 1){
             placesObject.id_bus2 = i;
@@ -175,6 +181,7 @@ function callback(results, status) {
             bus2.onclick = () => {
               placeLocationMarker(placesObject.data_bus2);
             }
+            codeAddress(placesObject.data_bus2.place_id,'bus2');
           }
           if(i === 2){
             placesObject.id_bus3 = i;
@@ -183,6 +190,7 @@ function callback(results, status) {
             bus3.onclick = () => {
               placeLocationMarker(placesObject.data_bus3);
             }
+            codeAddress(placesObject.data_bus3.place_id,'bus3');
           }
         }
       }
@@ -220,17 +228,18 @@ function hideMarkers() {
   markers = [];
 }
 
-function codeAddress(placeId) {
+function codeAddress(placeId,placeDiv) {
   geocoder.geocode( { 'placeId': placeId}, function(results, status) {
     if (status == 'OK') {
-      map.setCenter(results[0].geometry.location);
-      marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location
-      });
+      // map.setCenter(results[0].geometry.location);
+      // marker = new google.maps.Marker({
+      //     map: map,
+      //     position: results[0].geometry.location
+      // });
       latPlace = results[0].geometry.location.lat();
       lngPlace = results[0].geometry.location.lng();
-      console.log();
+      document.querySelector(`#${placeDiv} .distance`).innerHTML
+       = calculatePlacesDistance(listingPlace,new google.maps.LatLng(latPlace,lngPlace))+" km";
     } else {
       console.error('Geocode was not successful for the following reason: ' + status);
     }
@@ -238,5 +247,5 @@ function codeAddress(placeId) {
 }
 
 function calculatePlacesDistance(place1,place2){
-  return google.maps.geometry.spherical.computeDistanceBetween(place1,place2);
+  return Math.round(google.maps.geometry.spherical.computeDistanceBetween(place1,place2)) / 1000;
 }
