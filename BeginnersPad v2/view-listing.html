@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/photoswipe.css">
+    <link rel="stylesheet" href="/styles/default-skin/default-skin.css"> 
     <link rel="stylesheet" href="styles/default-theme.css">
     <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -47,7 +49,7 @@
             <div class="showcase-listing-img-7"></div>
             <div class="showcase-listing-img-8"></div>
         </div>
-        <div class="more-images">
+        <div class="more-images" id="toggleShowcase">
             <i class="fas fa-images"></i>
             <span>View images</span>
         </div>
@@ -481,7 +483,7 @@
             </div>
     
             <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
+            <div id="pswpUi" class="pswp__ui pswp__ui--hidden">
     
                 <div class="pswp__top-bar">
     
@@ -543,6 +545,9 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjtXueHrMV4qUXj0tdwD0dvCqxgM3mKds&libraries=places,geometry&callback=initPlaces">
     </script>
     <script src="/js/maps-view-listing.js"></script>
+    <script src="/js/photoswipe.js"></script>
+    <script src="/js/photoswipe-ui-default.js"></script>
+    <script src="/js/pswp-gallery.js"></script>
     <script src="js/css-base.js"></script>
 </body>
 </html>

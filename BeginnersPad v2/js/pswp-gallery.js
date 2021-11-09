@@ -1,26 +1,64 @@
 var pswpElement = document.querySelectorAll('.pswp')[0];
 
 // build items array
-var items = [
+var listingImg = [
     {
-        src: 'https://placekitten.com/600/400',
+        src: '/images/thumb_default.jpg',
         w: 600,
-        h: 400
+        h: 383
     },
     {
-        src: 'https://placekitten.com/1200/900',
-        w: 1200,
-        h: 900
-    }
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
+    {
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
+    {
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
+    {
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
+    {
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
+    {
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
+    {
+        src: '/images/thumb_default.jpg',
+        w: 600,
+        h: 383
+    },
 ];
+
+
 
 // define options (if needed)
 var options = {
     // optionName: 'option value'
     // for example:
-    index: 0 // start at first slide
+    index: 0, // start at first slide
+    shareEl: false
 };
 
-// Initializes and opens PhotoSwipe
-var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-gallery.init();
+// let PhotoSwipeUI_Default = document.querySelector('#pswpUi');
+
+let toggleShowcase = document.querySelector('#toggleShowcase');
+toggleShowcase.addEventListener('click',(e) => {
+    // Initializes and opens PhotoSwipe
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, listingImg, options);
+    gallery.init();
+});
